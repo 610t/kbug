@@ -1,0 +1,38 @@
+nwdiag{
+  inet [shape = cloud];
+  inet -- "Nexus 5"
+
+  network wireless {
+    "FreeBSD RaspPi B" [address = "DHCP"];
+    "Nexus 5";
+
+#    "OpenBSD kohjin" [address = "DHCP"];
+    "OpenBSD vaio" [address = "DHCP"];
+#    "OpenBSD kohjin" [address = "DHCP", shape="cisco.upc"];
+#    "OpenBSD vaio" [address = "DHCP", shape="cisco.upc"];
+  }
+
+  network internal {
+    address = "192.168.60.x/24";
+
+    "FreeBSD RaspPi B" [address = ".1"];
+
+    NetWalker [address = ".2"];
+
+    "NetBSD RaspPi B+" [address = ".11"];
+    "NetBSD RaspPi2 B" [address = ".12"];
+    "(NetBSD BeagleBoard)" [address = ".13"];
+
+#    "OpenBSD kohjin" [address = "DHCP"];
+    "OpenBSD vaio" [address = "DHCP"];
+
+    group distcc {
+      label="distcc cluster"
+
+      "NetBSD RaspPi2 B";
+      "NetBSD RaspPi B+";
+      "(NetBSD BeagleBoard)";
+      NetWalker;
+    }
+  }
+}
