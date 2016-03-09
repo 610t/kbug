@@ -1,0 +1,215 @@
+\documentclass[notumble,combine]{leaflet}
+%\documentclass[a4paper,notumble,combine,debug]{leaflet}
+%\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+%\usepackage{lmodern}
+%\renewcommand{\bfdefault}{b}
+%\usepackage{microtype}
+\usepackage{color, graphicx}
+\usepackage{alltt}
+\usepackage{url}
+\usepackage{ascmac}
+%\usepackage{ifthen}
+
+\graphicspath{{figures/}} 
+
+\title{
+	\vfill
+	\resizebox{\linewidth}{!}{\bf 関西*BSDユーザ会}%
+	\\[\baselineskip]
+        \resizebox{\linewidth}{!}{{\bf \url{http://www.kbug.gr.jp/}}}
+	\vfill
+	\vfill
+	\includegraphics[width=\textwidth]{kbug-logo}
+	\vfill
+        \resizebox{2cm}{!}{\textcolor{red}{\bf{@}}}
+	\vfill
+%	\includegraphics[width=4cm]{kof-banner}\\
+%	\vfill
+	\includegraphics[width=\textwidth]{OSC2008-logo}
+%        \resizebox{\linewidth}{!}{オープンソースカンファレンス2008 Kansai}
+        \resizebox{\linewidth}{!}{{\bf \url{http://www.ospn.jp/osc2008-kansai/}}}
+%        {\normalsize
+%        \url{http://www.ospn.jp/osc2008-kansai/}\\
+%        }
+}
+
+\date{}
+%\CutLine*{1} \CutLine*{2} \CutLine*{3} \CutLine*{4} \CutLine*{5}
+%\CutLine*{6}
+
+% \AddToBackground*{2}{% Background of a large page
+%   \put(\LenToUnit{.25\paperwidth},\LenToUnit{.4\paperheight}){%
+%     \includegraphics[width=14.85cm]{sqlogo}
+% }}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\pagebreak{}
+\section{関西*BSDユーザ会ってなに?}
+関西 *BSD ユーザ会 (Kansai *BSD Users Group)とは、
+BSD系OSのユーザ同士の情報交換のための{\em 場}で、1999年に作
+成されました。
+
+年に数度(大体2ヶ月に1度程度)の勉強会や宴会を行っています。
+
+\begin{center}
+ \includegraphics[width=5cm]{CIMG1797}\\
+ 飲み会は大切
+\end{center}
+
+\subsection{K*BSDの基本理念}
+K*BUGの基本理念は以下のようになっています。
+
+少し難しく感じるかもしれないですが、BSDへの愛と情熱があれば、
+あなたがやりたいと思うことができる場がK*BUGなのです。
+
+\url{http://www.kbug.gr.jp/charter.html}より。
+
+\fbox{\begin{minipage}{\textwidth}
+\begin{itemize}
+\item 場の提供を目的とする
+\item 人のケツは叩くが足は引っ張らない
+\item 来るものは拒まず、猿ものは追わず
+\item だれでも役員になれる。誰でも役員は止められる
+\end{itemize}
+\end{minipage}}
+
+\subsubsection{場の提供を目的とする}
+
+    このユーザ会は、「場」を提供します、が、その先に主体的に踏み込むことは会員それぞれにお任せしたいと思います。ユーザ会自体で「あれしよう、これしよう」という目的を掲げることはありません。「あれしよう、これしよう」は会員一人一人の想いの現れです。メーリングリストやサーバ運営でさえ、いや、この会の「運営」さえ、「場を作ろう」という、ある会員の想いに他の人間が賛同して行なわれているものです。
+
+
+\subsubsection{人のケツは叩くが足は引っ張らない}
+    誰かが何かをしようとするとき、メーリングリストで相談してみましょう。それを支援しようというメンバがきっといると思います。目立ちたがりでノリのいいメンバが多数いるはずですから、彼らがきっとあなたを助けてくれるでしょう。精神的支援に留まることもあるでしょうが。
+
+    誰かが何かをやろうとしているとき、その活動に違和感を感じることもあるでしょう。その場合、単に違和感を表明するのではなく、やり手のノリを補うようなコメントを出すようにしましょう。
+
+\subsubsection{来るものは拒まず、猿ものは追わず}
+
+    BSD を肴になにかやりたい人ならいつでも歓迎します。なんかノリが違うぞとなると、いつでも立ち去って頂ければよろしいと思います。そのために、入会金も会費も取りません。 一度場が出来上がってしまうと、それなりのノリが生まれるのは避けられないと考えます。馬があうあわないが出てくるのもやむを得ないでしょう。関西のグループが我々で唯一絶対でなければならないというつもりもありません。我々の活動がしっくりいかない方が、新しくまた別のグループを結成してもよいでしょう。
+
+\subsubsection{だれでも役員になれる。誰でも役員は止められる}
+
+    なにかやるぜと言った時点で、あなたはそのプロジェクトの担当役員に任命されるでしょう。役員になったとしても具体的なメリットはほとんどありませんが、 K*BUG メーリングリストとサーバを使って仲間を募り、知恵を集めどんどん好き勝手に進めましょう。
+
+
+
+
+\section{最近の活動}
+\subsection{2008年7月13日(土)@京都}
+\subsection{2008年5月17日(土)@京都}
+\begin{itemize}
+\item ZFS
+\item NanoBSD紹介
+\item ThinkPad X61のSuspend/Resumeについて
+\item FT245で遊ぼう
+\item ワンセグのお話
+\item DebianのOpenSSL関連
+\item 懇親会:んまい
+\end{itemize}
+\begin{center}
+ \includegraphics[width=5cm]{CIMG1793}\\
+ 勉強会での発表: FT245で遊ぼう
+\end{center}
+\subsection{2008年3月15日(土)@大阪}
+\begin{itemize}
+\item iPod jailbreak
+\item iSCSI関連
+\item freebsd-update
+\item USB地デジ
+\item twitter-API
+\item 懇親会 %:????
+\end{itemize}
+\subsection{2008年2月9日(土)@京都}
+\begin{itemize}
+\item Life with dtrace
+\item サーバのヘッドレス運用について
+\item 負け組日記 FreeBSD/amd64
+\item kurobox-pro + LCD pro
+\item 最近の(BSDでの)Squeak
+\item 音声で遊ぼう
+\item おみやげ: HD-30 どこでもドライバー
+\item 新年会:んまい
+\end{itemize}
+\subsection{2008年3月15日(土)@大阪}
+\subsection{2007年12月8日(土)@大阪}
+\begin{itemize}
+\item 総会
+\item 忘年会 %:???
+\end{itemize}
+\subsection{2007年11月10日(土)@KOF2007に合流}
+\begin{itemize}
+\item JNUGブースに合流%???
+\item 懇親会%:???
+\end{itemize}
+%\subsection{2007年9月8日(土)@大阪}
+%\subsection{2007年7月14日(土)@京都}
+%\subsection{2007年5月19日(土)@大阪}
+%\subsection{2007年3月17日(土)@京都}
+%\subsection{2007年1月14日(日)@大阪}
+\pagebreak{}
+
+\section{BSDに関する情報}
+%\subsection{書籍}
+\subsection{リンク集}
+\begin{itemize}
+\item JNUG(Japan NetBSD Users Group)\\
+  今回ご一緒にブースを出させていただきました(\_o\_)\\
+  \url{http://www.jp.netbsd.org/}
+\item FreeBSD友の会  \url{http://www.jp.freebsd.org/}
+\item OpenBSD本家  \url{http://www.openbsd.org/ja/}
+%\item 若草OpenBSD友の会\\
+%  \url{http://www.openbsd.ics.nara-wu.ac.jp/wakakusa/}
+\end{itemize}
+
+\begin{center}
+{\Large\bf メモ}
+\end{center}
+\pagebreak{}
+\section{最近のニュース}
+\begin{itemize}
+\item AsiaBSDCon2008開催\\
+ 東京理科大学森戸記念館で、BSDに関する国際会議が行われました。\\
+ \url{http://2008.asiabsdcon.org/}
+\item BSD Magazine創刊!!(ASCIIのでわありません;-)\\
+ \url{http://www.bsdmag.org/}
+\end{itemize}
+%\subsection{ニュース}
+
+%\begin{center}
+% \includegraphics[width=5cm]{oval-mandara}
+%\end{center}
+
+%\subsection{イベント}
+
+%\pagebreak{}
+\section{これからの関連イベント(予定)}
+\begin{itemize}
+\item 2008年 9月 6日(土) 	第5回研究会 	大阪(or 鳥取?)
+\item 2008年11月 7日(金),8(土)  KOF2008 \\ (\url{http://k-of.jp/})
+\item 2008年11月 8日(土) 	第6回研究会 	神戸
+\item 2008年12月 6日(土) 	定期総会+第7回研究会+忘年会 	大阪
+\item 2009年 3月12日(木)-15(日) AsiaBSDCon 2009 (\url{http://2009.asiabsdcon.org/})
+\end{itemize}
+
+\begin{minipage}{\textwidth}
+\begin{boxnote}
+\section{kbug-usersメーリングリスト}
+K*BUGでは、K*BUGメンバーの情報交換や、イベントなどの情報伝達用に
+kbug-usersメーリングリストを用意しています。
+
+K*BUGメンバーは、基本的にはこのメーリングリストを読んでいることが期待
+されます。
+
+購読は以下のURLをご参照ください。
+\begin{itemize}
+ \item \url{http://www.kbug.gr.jp/maillist.html}
+\end{itemize}
+\end{boxnote}
+\end{minipage}
+
+%\vfill
+
+\end{document}  
