@@ -1,215 +1,248 @@
 \documentclass[notumble,combine]{leaflet}
-%\documentclass[a4paper,notumble,combine,debug]{leaflet}
-%\usepackage[utf8]{inputenc}
-%\usepackage[T1]{fontenc}
-%\usepackage{lmodern}
-%\renewcommand{\bfdefault}{b}
-%\usepackage{microtype}
-\usepackage{color, graphicx}
+\usepackage[dvipsnames,usenames]{color}
+\usepackage{graphicx}
 \usepackage{alltt}
 \usepackage{url}
 \usepackage{ascmac}
-%\usepackage{ifthen}
+\usepackage{comment}
+\usepackage{here}
+\usepackage{wrapfig}
+
+\makeatletter
+% from leaflet.cls
+\renewcommand\section{\@startsection{section}{1}{\z@}%
+  {-3.5ex \@plus -.75ex}%
+  {1ex} %{1.5ex}%
+  {\normalfont\large\sectfont\color{NavyBlue}}}
+\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
+  {-2.5ex plus -.5ex}%
+  {1\p@} %{1ex}%
+  {\normalfont\normalsize\sectfont\color{BrickRed}}}
+\makeatother
 
 \graphicspath{{figures/}} 
 
 \title{
 	\vfill
-	\resizebox{\linewidth}{!}{\bf ´ØÀ¾*BSD¥æ¡¼¥¶²ñ}%
+	\includegraphics[width=\textwidth]{kbug-logo}
+	\vfill
+	\resizebox{\linewidth}{!}{\bf é–¢è¥¿*BSDãƒ¦ãƒ¼ã‚¶ä¼š}%
 	\\[\baselineskip]
         \resizebox{\linewidth}{!}{{\bf \url{http://www.kbug.gr.jp/}}}
 	\vfill
-	\vfill
-	\includegraphics[width=\textwidth]{kbug-logo}
-	\vfill
         \resizebox{2cm}{!}{\textcolor{red}{\bf{@}}}
 	\vfill
-%	\includegraphics[width=4cm]{kof-banner}\\
-%	\vfill
-	\includegraphics[width=\textwidth]{OSC2008-logo}
-%        \resizebox{\linewidth}{!}{¥ª¡¼¥×¥ó¥½¡¼¥¹¥«¥ó¥Õ¥¡¥ì¥ó¥¹2008 Kansai}
-        \resizebox{\linewidth}{!}{{\bf \url{http://www.ospn.jp/osc2008-kansai/}}}
-%        {\normalsize
-%        \url{http://www.ospn.jp/osc2008-kansai/}\\
-%        }
+	\includegraphics[width=\textwidth]{banner2008}
+        \resizebox{\linewidth}{!}{{\bf \url{http://k-of.jp/2008/}}}\\
+        \resizebox{\linewidth}{!}{2008å¹´11æœˆ7æ—¥(é‡‘),8æ—¥(åœŸ)}
 }
 
 \date{}
-%\CutLine*{1} \CutLine*{2} \CutLine*{3} \CutLine*{4} \CutLine*{5}
-%\CutLine*{6}
-
-% \AddToBackground*{2}{% Background of a large page
-%   \put(\LenToUnit{.25\paperwidth},\LenToUnit{.4\paperheight}){%
-%     \includegraphics[width=14.85cm]{sqlogo}
-% }}
 
 \begin{document}
 \maketitle
 \thispagestyle{empty}
 \pagebreak{}
-\section{´ØÀ¾*BSD¥æ¡¼¥¶²ñ¤Ã¤Æ¤Ê¤Ë?}
-´ØÀ¾ *BSD ¥æ¡¼¥¶²ñ (Kansai *BSD Users Group)¤È¤Ï¡¢
-BSD·ÏOS¤Î¥æ¡¼¥¶Æ±»Î¤Î¾ğÊó¸ò´¹¤Î¤¿¤á¤Î{\em ¾ì}¤Ç¡¢1999Ç¯¤Ëºî
-À®¤µ¤ì¤Ş¤·¤¿¡£
+\section{é–¢è¥¿*BSDãƒ¦ãƒ¼ã‚¶ä¼šã£ã¦ãªã«?}
+é–¢è¥¿ *BSD ãƒ¦ãƒ¼ã‚¶ä¼š (Kansai *BSD Users Group; K*BUG)ã¨ã¯ã€
+BSDç³»OSã®ãƒ¦ãƒ¼ã‚¶åŒå£«ã®æƒ…å ±äº¤æ›ã®ãŸã‚ã®{\em å ´}ã§ã€1999å¹´ã«ä½œ
+æˆã•ã‚Œã¾ã—ãŸã€‚
 
-Ç¯¤Ë¿ôÅÙ(ÂçÂÎ2¥ö·î¤Ë1ÅÙÄøÅÙ)¤ÎÊÙ¶¯²ñ¤ä±ã²ñ¤ò¹Ô¤Ã¤Æ¤¤¤Ş¤¹¡£
+å¹´ã«æ•°åº¦(å¤§ä½“2ãƒ¶æœˆã«1åº¦ç¨‹åº¦)ã®å‹‰å¼·ä¼šã‚„å®´ä¼šã‚’è¡Œã£ã¦ã„ã¾ã™ã€‚
 
-\begin{center}
- \includegraphics[width=5cm]{CIMG1797}\\
- °û¤ß²ñ¤ÏÂçÀÚ
-\end{center}
-
-\subsection{K*BSD¤Î´ğËÜÍıÇ°}
-K*BUG¤Î´ğËÜÍıÇ°¤Ï°Ê²¼¤Î¤è¤¦¤Ë¤Ê¤Ã¤Æ¤¤¤Ş¤¹¡£
-
-¾¯¤·Æñ¤·¤¯´¶¤¸¤ë¤«¤â¤·¤ì¤Ê¤¤¤Ç¤¹¤¬¡¢BSD¤Ø¤Î°¦¤È¾ğÇ®¤¬¤¢¤ì¤Ğ¡¢
-¤¢¤Ê¤¿¤¬¤ä¤ê¤¿¤¤¤È»×¤¦¤³¤È¤¬¤Ç¤­¤ë¾ì¤¬K*BUG¤Ê¤Î¤Ç¤¹¡£
-
-\url{http://www.kbug.gr.jp/charter.html}¤è¤ê¡£
+\subsection{K*BSDã®åŸºæœ¬ç†å¿µ}
+K*BUGã®åŸºæœ¬ç†å¿µã¯ä»¥ä¸‹ã®ã‚ˆã†ã«ãªã£ã¦ã„ã¾ã™
+(\url{http://www.kbug.gr.jp/charter.html}ã‚ˆã‚Š)ã€‚
 
 \fbox{\begin{minipage}{\textwidth}
 \begin{itemize}
-\item ¾ì¤ÎÄó¶¡¤òÌÜÅª¤È¤¹¤ë
-\item ¿Í¤Î¥±¥Ä¤ÏÃ¡¤¯¤¬Â­¤Ï°ú¤ÃÄ¥¤é¤Ê¤¤
-\item Íè¤ë¤â¤Î¤Ïµñ¤Ş¤º¡¢±î¤â¤Î¤ÏÄÉ¤ï¤º
-\item ¤À¤ì¤Ç¤âÌò°÷¤Ë¤Ê¤ì¤ë¡£Ã¯¤Ç¤âÌò°÷¤Ï»ß¤á¤é¤ì¤ë
+\item å ´ã®æä¾›ã‚’ç›®çš„ã¨ã™ã‚‹
+\item äººã®ã‚±ãƒ„ã¯å©ããŒè¶³ã¯å¼•ã£å¼µã‚‰ãªã„
+\item æ¥ã‚‹ã‚‚ã®ã¯æ‹’ã¾ãšã€çŒ¿ã‚‚ã®ã¯è¿½ã‚ãš
+\item ã ã‚Œã§ã‚‚å½¹å“¡ã«ãªã‚Œã‚‹ã€‚èª°ã§ã‚‚å½¹å“¡ã¯æ­¢ã‚ã‚‰ã‚Œã‚‹
 \end{itemize}
 \end{minipage}}
+\begin{wrapfigure}[8]{r}{3cm}
+\begin{center}
+ \includegraphics[width=3cm]{CIMG2521}\\
+ é£²ã¿ä¼šã¯å¤§åˆ‡
+\end{center}
+\end{wrapfigure}
 
-\subsubsection{¾ì¤ÎÄó¶¡¤òÌÜÅª¤È¤¹¤ë}
+å°‘ã—é›£ã—ãæ„Ÿã˜ã‚‹ã‹ã‚‚ã—ã‚Œãªã„ã§ã™ãŒã€\textcolor{red}{BSDã¸ã®æ„›ã¨æƒ…ç†±}ãŒã‚ã‚Œã°ã€
+ã‚ãªãŸãŒ\textcolor{blue}{ã‚„ã‚ŠãŸã„ã¨æ€ã†ã“ã¨ãŒã§ãã‚‹å ´}ãŒK*BUGãªã®ã§ã™ã€‚
 
-    ¤³¤Î¥æ¡¼¥¶²ñ¤Ï¡¢¡Ö¾ì¡×¤òÄó¶¡¤·¤Ş¤¹¡¢¤¬¡¢¤½¤ÎÀè¤Ë¼çÂÎÅª¤ËÆ§¤ß¹ş¤à¤³¤È¤Ï²ñ°÷¤½¤ì¤¾¤ì¤Ë¤ªÇ¤¤»¤·¤¿¤¤¤È»×¤¤¤Ş¤¹¡£¥æ¡¼¥¶²ñ¼«ÂÎ¤Ç¡Ö¤¢¤ì¤·¤è¤¦¡¢¤³¤ì¤·¤è¤¦¡×¤È¤¤¤¦ÌÜÅª¤ò·Ç¤²¤ë¤³¤È¤Ï¤¢¤ê¤Ş¤»¤ó¡£¡Ö¤¢¤ì¤·¤è¤¦¡¢¤³¤ì¤·¤è¤¦¡×¤Ï²ñ°÷°ì¿Í°ì¿Í¤ÎÁÛ¤¤¤Î¸½¤ì¤Ç¤¹¡£¥á¡¼¥ê¥ó¥°¥ê¥¹¥È¤ä¥µ¡¼¥Ğ±¿±Ä¤Ç¤µ¤¨¡¢¤¤¤ä¡¢¤³¤Î²ñ¤Î¡Ö±¿±Ä¡×¤µ¤¨¡¢¡Ö¾ì¤òºî¤í¤¦¡×¤È¤¤¤¦¡¢¤¢¤ë²ñ°÷¤ÎÁÛ¤¤¤ËÂ¾¤Î¿Í´Ö¤¬»¿Æ±¤·¤Æ¹Ô¤Ê¤ï¤ì¤Æ¤¤¤ë¤â¤Î¤Ç¤¹¡£
+ã¾ãŸã€ãƒ¡ãƒ³ãƒãƒ¼ã¯è‰²ã€…ãªæŠ€è¡“ã«è©³ã—ã„ã§ã™ã—ã€æŠ€è¡“ã«é–¢ã™ã‚‹è©±ã‚‚å¤§å¥½ããªã®ã§ã€
+ã‚ãªãŸã®ç–‘å•ãªã©ã‚‚ã¶ã¤ã‘ã¦ã¿ã¦ãã ã•ã„ã€‚
 
+\section{æœ€è¿‘ã®æ´»å‹•}
+KOF2007ã‹ã‚‰ã®æœ€è¿‘ã®æ´»å‹•ã¨ãã®å†…å®¹ã¯ä»¥ä¸‹ã®ã¨ãŠã‚Šã§ã™ã€‚
 
-\subsubsection{¿Í¤Î¥±¥Ä¤ÏÃ¡¤¯¤¬Â­¤Ï°ú¤ÃÄ¥¤é¤Ê¤¤}
-    Ã¯¤«¤¬²¿¤«¤ò¤·¤è¤¦¤È¤¹¤ë¤È¤­¡¢¥á¡¼¥ê¥ó¥°¥ê¥¹¥È¤ÇÁêÃÌ¤·¤Æ¤ß¤Ş¤·¤ç¤¦¡£¤½¤ì¤ò»Ù±ç¤·¤è¤¦¤È¤¤¤¦¥á¥ó¥Ğ¤¬¤­¤Ã¤È¤¤¤ë¤È»×¤¤¤Ş¤¹¡£ÌÜÎ©¤Á¤¿¤¬¤ê¤Ç¥Î¥ê¤Î¤¤¤¤¥á¥ó¥Ğ¤¬Â¿¿ô¤¤¤ë¤Ï¤º¤Ç¤¹¤«¤é¡¢Èà¤é¤¬¤­¤Ã¤È¤¢¤Ê¤¿¤ò½õ¤±¤Æ¤¯¤ì¤ë¤Ç¤·¤ç¤¦¡£Àº¿ÀÅª»Ù±ç¤ËÎ±¤Ş¤ë¤³¤È¤â¤¢¤ë¤Ç¤·¤ç¤¦¤¬¡£
+ã‚‚ã—ã€èˆˆå‘³ã®ã‚ã‚‹ãƒ†ãƒ¼ãƒãŒã‚ã‚‹ã‚ˆã†ã§ã—ãŸã‚‰ã€æ˜¯éä¸€åº¦éŠã³ã«ãã¦ãã ã•ã„ã€‚
 
-    Ã¯¤«¤¬²¿¤«¤ò¤ä¤í¤¦¤È¤·¤Æ¤¤¤ë¤È¤­¡¢¤½¤Î³èÆ°¤Ë°ãÏÂ´¶¤ò´¶¤¸¤ë¤³¤È¤â¤¢¤ë¤Ç¤·¤ç¤¦¡£¤½¤Î¾ì¹ç¡¢Ã±¤Ë°ãÏÂ´¶¤òÉ½ÌÀ¤¹¤ë¤Î¤Ç¤Ï¤Ê¤¯¡¢¤ä¤ê¼ê¤Î¥Î¥ê¤òÊä¤¦¤è¤¦¤Ê¥³¥á¥ó¥È¤ò½Ğ¤¹¤è¤¦¤Ë¤·¤Ş¤·¤ç¤¦¡£
+\subsection{2008å¹´9æœˆ6æ—¥(åœŸ)@å¤§é˜ª}
+\begin{itemize}
+\item iPod touchã‚’ä½¿ã£ãŸä½•ã‹
+\item ã¯ã˜ã‚ã‚ˆã†Network Audio
+\item perlã§ãƒ­ã‚°ã‚¤ãƒ³ãƒ—ãƒ­ã‚­ã‚·
+\item Typolight WebCMSã®æ¦‚è¦
+\item ã¼ãã®ãªã¤ã‚„ã™ã¿2008(æœªå®Œ)
+\item æ‡‡è¦ªä¼š: å››å­£å½©
+\end{itemize}
+\subsection{2008å¹´8æœˆ13æ—¥(åœŸ) OSC2008 Kansai@äº¬éƒ½}
+\begin{wrapfigure}{r}{3cm}
+\begin{center}
+ \includegraphics[width=3cm]{CIMG2018}%\\
+ %OSC2008 Kansaiãƒ–ãƒ¼ã‚¹ã®æ§˜å­
+\end{center}
+\end{wrapfigure}
 
-\subsubsection{Íè¤ë¤â¤Î¤Ïµñ¤Ş¤º¡¢±î¤â¤Î¤ÏÄÉ¤ï¤º}
+OSC2008 Kansai\footnote{\url{http://www.ospn.jp/osc2008-kansai/}}ã§ã€JNUGã•ã‚“ã¨å…±åŒãƒ–ãƒ¼ã‚¹ã‚’è¨­ç½®ã—ã¾ã—ãŸã€‚
 
-    BSD ¤òºè¤Ë¤Ê¤Ë¤«¤ä¤ê¤¿¤¤¿Í¤Ê¤é¤¤¤Ä¤Ç¤â´¿·Ş¤·¤Ş¤¹¡£¤Ê¤ó¤«¥Î¥ê¤¬°ã¤¦¤¾¤È¤Ê¤ë¤È¡¢¤¤¤Ä¤Ç¤âÎ©¤Áµî¤Ã¤ÆÄº¤±¤ì¤Ğ¤è¤í¤·¤¤¤È»×¤¤¤Ş¤¹¡£¤½¤Î¤¿¤á¤Ë¡¢Æş²ñ¶â¤â²ñÈñ¤â¼è¤ê¤Ş¤»¤ó¡£ °ìÅÙ¾ì¤¬½ĞÍè¾å¤¬¤Ã¤Æ¤·¤Ş¤¦¤È¡¢¤½¤ì¤Ê¤ê¤Î¥Î¥ê¤¬À¸¤Ş¤ì¤ë¤Î¤ÏÈò¤±¤é¤ì¤Ê¤¤¤È¹Í¤¨¤Ş¤¹¡£ÇÏ¤¬¤¢¤¦¤¢¤ï¤Ê¤¤¤¬½Ğ¤Æ¤¯¤ë¤Î¤â¤ä¤à¤òÆÀ¤Ê¤¤¤Ç¤·¤ç¤¦¡£´ØÀ¾¤Î¥°¥ë¡¼¥×¤¬²æ¡¹¤ÇÍ£°ìÀäÂĞ¤Ç¤Ê¤±¤ì¤Ğ¤Ê¤é¤Ê¤¤¤È¤¤¤¦¤Ä¤â¤ê¤â¤¢¤ê¤Ş¤»¤ó¡£²æ¡¹¤Î³èÆ°¤¬¤·¤Ã¤¯¤ê¤¤¤«¤Ê¤¤Êı¤¬¡¢¿·¤·¤¯¤Ş¤¿ÊÌ¤Î¥°¥ë¡¼¥×¤ò·ëÀ®¤·¤Æ¤â¤è¤¤¤Ç¤·¤ç¤¦¡£
-
-\subsubsection{¤À¤ì¤Ç¤âÌò°÷¤Ë¤Ê¤ì¤ë¡£Ã¯¤Ç¤âÌò°÷¤Ï»ß¤á¤é¤ì¤ë}
-
-    ¤Ê¤Ë¤«¤ä¤ë¤¼¤È¸À¤Ã¤¿»şÅÀ¤Ç¡¢¤¢¤Ê¤¿¤Ï¤½¤Î¥×¥í¥¸¥§¥¯¥È¤ÎÃ´ÅöÌò°÷¤ËÇ¤Ì¿¤µ¤ì¤ë¤Ç¤·¤ç¤¦¡£Ìò°÷¤Ë¤Ê¤Ã¤¿¤È¤·¤Æ¤â¶ñÂÎÅª¤Ê¥á¥ê¥Ã¥È¤Ï¤Û¤È¤ó¤É¤¢¤ê¤Ş¤»¤ó¤¬¡¢ K*BUG ¥á¡¼¥ê¥ó¥°¥ê¥¹¥È¤È¥µ¡¼¥Ğ¤ò»È¤Ã¤ÆÃç´Ö¤òÊç¤ê¡¢ÃÎ·Ã¤ò½¸¤á¤É¤ó¤É¤ó¹¥¤­¾¡¼ê¤Ë¿Ê¤á¤Ş¤·¤ç¤¦¡£
-
-
-
-
-\section{ºÇ¶á¤Î³èÆ°}
-\subsection{2008Ç¯7·î13Æü(ÅÚ)@µşÅÔ}
-\subsection{2008Ç¯5·î17Æü(ÅÚ)@µşÅÔ}
+\begin{itemize}
+\item NetBSDãªã²ã¨ã¨ã
+\item å±•ç¤º
+\begin{itemize}
+\item BeBox (NetBSDåŒ–å¤±æ•—)
+\item NetBSD/O2
+\item ãƒã‚®é™ã‚Šã‚µãƒ¼ãƒœ + FT232ã‚’ä½¿ã£ãŸLCDãƒ‘ãƒãƒ«
+\item é­…æƒ‘ã®ãˆã³ã˜ã‚…ã‚“ã‚³ãƒ¬ã‚¯ã‚·ãƒ§ãƒ³
+\item Squeak/MGL2@NetBSD/hpcmips
+\end{itemize}
+\item ãƒ–ãƒ¼ã‚¹ä¼ç”»
+\begin{itemize}
+\item bcbench \footnote{\url{http://www.yagoto-urayama.jp/~oshimaya/nbug/etc/bench/bcbench.html}}ãƒã‚­ãƒ³ãƒ¬ãƒ¼ã‚¹
+\item å¤ã®äº¬éƒ½æ’ä¾‹:é›»åŠ›æ¸¬å®š
+\end{itemize}
+\end{itemize}
+\subsection{2008å¹´7æœˆ13æ—¥(åœŸ)@äº¬éƒ½}
+\subsection{2008å¹´5æœˆ17æ—¥(åœŸ)@äº¬éƒ½}
 \begin{itemize}
 \item ZFS
-\item NanoBSD¾Ò²ğ
-\item ThinkPad X61¤ÎSuspend/Resume¤Ë¤Ä¤¤¤Æ
-\item FT245¤ÇÍ·¤Ü¤¦
-\item ¥ï¥ó¥»¥°¤Î¤ªÏÃ
-\item Debian¤ÎOpenSSL´ØÏ¢
-\item º©¿Æ²ñ:¤ó¤Ş¤¤
+\item NanoBSDç´¹ä»‹
+\item ThinkPad X61ã®Suspend/Resumeã«ã¤ã„ã¦
+\item FT245ã§éŠã¼ã†
+\item ãƒ¯ãƒ³ã‚»ã‚°ã®ãŠè©±
+\item Debianã®OpenSSLé–¢é€£
+\item æ‡‡è¦ªä¼š:ã‚“ã¾ã„
 \end{itemize}
-\begin{center}
- \includegraphics[width=5cm]{CIMG1793}\\
- ÊÙ¶¯²ñ¤Ç¤ÎÈ¯É½: FT245¤ÇÍ·¤Ü¤¦
-\end{center}
-\subsection{2008Ç¯3·î15Æü(ÅÚ)@Âçºå}
+\subsection{2008å¹´3æœˆ15æ—¥(åœŸ)@å¤§é˜ª}
 \begin{itemize}
 \item iPod jailbreak
-\item iSCSI´ØÏ¢
+\item iSCSIé–¢é€£
 \item freebsd-update
-\item USBÃÏ¥Ç¥¸
+\item USBåœ°ãƒ‡ã‚¸
 \item twitter-API
-\item º©¿Æ²ñ %:????
+\item æ‡‡è¦ªä¼š %:????
 \end{itemize}
-\subsection{2008Ç¯2·î9Æü(ÅÚ)@µşÅÔ}
+
+\subsection{2008å¹´2æœˆ9æ—¥(åœŸ)@äº¬éƒ½}
 \begin{itemize}
 \item Life with dtrace
-\item ¥µ¡¼¥Ğ¤Î¥Ø¥Ã¥É¥ì¥¹±¿ÍÑ¤Ë¤Ä¤¤¤Æ
-\item Éé¤±ÁÈÆüµ­ FreeBSD/amd64
+\item ã‚µãƒ¼ãƒã®ãƒ˜ãƒƒãƒ‰ãƒ¬ã‚¹é‹ç”¨ã«ã¤ã„ã¦
+\item è² ã‘çµ„æ—¥è¨˜ FreeBSD/amd64
 \item kurobox-pro + LCD pro
-\item ºÇ¶á¤Î(BSD¤Ç¤Î)Squeak
-\item ²»À¼¤ÇÍ·¤Ü¤¦
-\item ¤ª¤ß¤ä¤²: HD-30 ¤É¤³¤Ç¤â¥É¥é¥¤¥Ğ¡¼
-\item ¿·Ç¯²ñ:¤ó¤Ş¤¤
-\end{itemize}
-\subsection{2008Ç¯3·î15Æü(ÅÚ)@Âçºå}
-\subsection{2007Ç¯12·î8Æü(ÅÚ)@Âçºå}
-\begin{itemize}
-\item Áí²ñ
-\item ËºÇ¯²ñ %:???
-\end{itemize}
-\subsection{2007Ç¯11·î10Æü(ÅÚ)@KOF2007¤Ë¹çÎ®}
-\begin{itemize}
-\item JNUG¥Ö¡¼¥¹¤Ë¹çÎ®%???
-\item º©¿Æ²ñ%:???
-\end{itemize}
-%\subsection{2007Ç¯9·î8Æü(ÅÚ)@Âçºå}
-%\subsection{2007Ç¯7·î14Æü(ÅÚ)@µşÅÔ}
-%\subsection{2007Ç¯5·î19Æü(ÅÚ)@Âçºå}
-%\subsection{2007Ç¯3·î17Æü(ÅÚ)@µşÅÔ}
-%\subsection{2007Ç¯1·î14Æü(Æü)@Âçºå}
-\pagebreak{}
-
-\section{BSD¤Ë´Ø¤¹¤ë¾ğÊó}
-%\subsection{½ñÀÒ}
-\subsection{¥ê¥ó¥¯½¸}
-\begin{itemize}
-\item JNUG(Japan NetBSD Users Group)\\
-  º£²ó¤´°ì½ï¤Ë¥Ö¡¼¥¹¤ò½Ğ¤µ¤»¤Æ¤¤¤¿¤À¤­¤Ş¤·¤¿(\_o\_)\\
-  \url{http://www.jp.netbsd.org/}
-\item FreeBSDÍ§¤Î²ñ  \url{http://www.jp.freebsd.org/}
-\item OpenBSDËÜ²È  \url{http://www.openbsd.org/ja/}
-%\item ¼ãÁğOpenBSDÍ§¤Î²ñ\\
-%  \url{http://www.openbsd.ics.nara-wu.ac.jp/wakakusa/}
+\item æœ€è¿‘ã®(BSDã§ã®)Squeak
+\item éŸ³å£°ã§éŠã¼ã†
+\item ãŠã¿ã‚„ã’: HD-30 ã©ã“ã§ã‚‚ãƒ‰ãƒ©ã‚¤ãƒãƒ¼
+\item æ–°å¹´ä¼š:ã‚“ã¾ã„
 \end{itemize}
 
 \begin{center}
-{\Large\bf ¥á¥â}
+ \includegraphics[width=4cm]{CIMG0535}\\
+ å‹‰å¼·ä¼šã§ã®ç™ºè¡¨: ãƒã‚®æŒ¯ã‚Šã‚µãƒ¼ãƒœ
 \end{center}
+
+\subsection{2007å¹´12æœˆ8æ—¥(åœŸ)@å¤§é˜ª}
+\begin{itemize}
+\item ç·ä¼š
+\item å¿˜å¹´ä¼š %:???
+\end{itemize}
+\subsection{2007å¹´11æœˆ10æ—¥(åœŸ)@KOF2007ã«åˆæµ}
+\begin{itemize}
+\item JNUGãƒ–ãƒ¼ã‚¹ã«åˆæµ%???
+\item æ‡‡è¦ªä¼š%:???
+\end{itemize}
+\subsection{ãã®ä»–}
+ä»¥ä¸‹ã®ã‚ˆã†ãªURLã§ã€ãƒ¡ãƒ³ãƒãƒ¼ã®ç™ºè¡¨ãŒç´¹ä»‹ã•ã‚Œã¦ã„ã¾ã™ã®ã§ã€æ´»å‹•å†…å®¹ã‚’çŸ¥ã‚‹ãŸã‚ã«å‚è€ƒã«ã—ã¦ãã ã•ã„ã€‚
+\begin{itemize}
+ \item \url{http://hp.vector.co.jp/authors/VA012337/misc/presentation.html}
+ \item \url{http://qml.610t.org/FreeBSD/BUG.html}
+\end{itemize}
+
+\section{K*BUG@KOF2008}
+\subsection{å±•ç¤º}
+\begin{itemize}
+ \item é­…æƒ‘ã®ãˆã³ã˜ã‚…ã‚“ã‚³ãƒ¬ã‚¯ã‚·ãƒ§ãƒ³
+ \item â—‹â—‹ã‚»ã‚° @ \{Net,Free\}BSD
+ \item \{Net,Open\}BSD/sparc
+ \item å›º (Hardware?)
+ \begin{itemize}
+  \item Gainer\footnote{\url{http://gainer.cc/}}, Arduino\footnote{\url{http://arduino.cc/}}, DWM 2008/05åŸºæ¿ @ FreeBSD
+  \item å‚è€ƒå‡ºå“: AVR\footnote{\url{http://sacraya.610t.org/Press/No9/avr/}}, MAX232
+ \end{itemize}
+ \item éŸ¿ (sound?)
+ \begin{itemize}
+  \item ãƒã‚³ãƒŸãƒŸã‚µãƒ¼ãƒœã‚·ã‚¹ãƒ†ãƒ \footnote{\url{http://www.rogiken.org/daemon/works.html}}
+  \item ä¸–ç•Œè´è¨ºå™¨\footnote{\url{http://swikis.ddo.jp/WorldSthethoscope/2}}
+  \item audioã‚ªã‚·ãƒ­ã‚¹ã‚³ãƒ¼ãƒ—\footnote{\url{http://xoscope.sourceforge.net/}}
+ \end{itemize}
+ \item BSD Magazine(not ASCII)\footnote{\url{http://www.bsdmag.org/}}å±•ç¤º
+ \item \textcolor{red}{\Large ä»–ã«ã‚‚ãŸãã•ã‚“ã®â—‹â—‹BSDãŒâ€¦}
+\end{itemize}
+
+\section{BSDã«é–¢ã™ã‚‹æƒ…å ±}
+\subsection{ãƒªãƒ³ã‚¯é›†}
+\begin{itemize}
+\item JNUG(Japan NetBSD Users Group)\\
+  ä»Šå›ã”ä¸€ç·’ã«ãƒ–ãƒ¼ã‚¹ã‚’å‡ºã•ã›ã¦ã„ãŸã ãã¾ã—ãŸ(\_o\_)\\
+  \url{http://www.jp.netbsd.org/}
+\item FreeBSDå‹ã®ä¼š  \url{http://www.jp.freebsd.org/}
+\item OpenBSDæœ¬å®¶  \url{http://www.openbsd.org/ja/}
+\end{itemize}
+
 \pagebreak{}
-\section{ºÇ¶á¤Î¥Ë¥å¡¼¥¹}
+\section{ã“ã‚Œã‹ã‚‰ã®é–¢é€£ã‚¤ãƒ™ãƒ³ãƒˆ(äºˆå®š)}
+è©³ç´°ã¯ã€Webãƒšãƒ¼ã‚¸ã‚’ã”ç¢ºèªãã ã•ã„ã€‚
+
 \begin{itemize}
-\item AsiaBSDCon2008³«ºÅ\\
- ÅìµşÍı²ÊÂç³Ø¿¹¸Íµ­Ç°´Û¤Ç¡¢BSD¤Ë´Ø¤¹¤ë¹ñºİ²ñµÄ¤¬¹Ô¤ï¤ì¤Ş¤·¤¿¡£\\
- \url{http://2008.asiabsdcon.org/}
-\item BSD MagazineÁÏ´©!!(ASCII¤Î¤Ç¤ï¤¢¤ê¤Ş¤»¤ó;-)\\
- \url{http://www.bsdmag.org/}
+\item 2008å¹´12æœˆ 6æ—¥(åœŸ) 	å®šæœŸç·ä¼š+ç¬¬7å›ç ”ç©¶ä¼š+å¿˜å¹´ä¼š@å¤§é˜ª
+\item 2009å¹´ 3æœˆ12æ—¥(æœ¨)-15(æ—¥) AsiaBSDCon 2009 \footnote{\url{http://2009.asiabsdcon.org/}}
 \end{itemize}
-%\subsection{¥Ë¥å¡¼¥¹}
 
-%\begin{center}
-% \includegraphics[width=5cm]{oval-mandara}
-%\end{center}
+\section{BSDãªã²ã¨ã¨ã}
+ä»¥ä¸‹ã®ã‚ˆã†ã«BSDãªã²ã¨ã¨ãã‚’ãŠã“ãªã„ã¾ã™ã®ã§ã€ã”å‚åŠ ãã ã•ã„ã€‚
 
-%\subsection{¥¤¥Ù¥ó¥È}
-
-%\pagebreak{}
-\section{¤³¤ì¤«¤é¤Î´ØÏ¢¥¤¥Ù¥ó¥È(Í½Äê)}
 \begin{itemize}
-\item 2008Ç¯ 9·î 6Æü(ÅÚ) 	Âè5²ó¸¦µæ²ñ 	Âçºå(or Ä»¼è?)
-\item 2008Ç¯11·î 7Æü(¶â),8(ÅÚ)  KOF2008 \\ (\url{http://k-of.jp/})
-\item 2008Ç¯11·î 8Æü(ÅÚ) 	Âè6²ó¸¦µæ²ñ 	¿À¸Í
-\item 2008Ç¯12·î 6Æü(ÅÚ) 	Äê´üÁí²ñ+Âè7²ó¸¦µæ²ñ+ËºÇ¯²ñ 	Âçºå
-\item 2009Ç¯ 3·î12Æü(ÌÚ)-15(Æü) AsiaBSDCon 2009 (\url{http://2009.asiabsdcon.org/})
+\item æ—¥æ™‚: 2008/11/07 17:00-17:50
+\item ä¼šå ´: 9F-ã‚»ãƒŸãƒŠãƒ¼ãƒ«ãƒ¼ãƒ 1
+\item è¬›å¸«: è›¯åŸ ç´” (æ ªå¼ä¼šç¤¾å‰µå¤¢/The NetBSD Project)
+\item ä¸»å‚¬:æ—¥æœ¬NetBSDãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚°ãƒ«ãƒ¼ãƒ—
+\item \url{http://k-of.jp/2008/list_seminar.html#23}
 \end{itemize}
+
+\begin{comment}
+BSDç³»UNIXã‚’å–ã‚Šå·»ãç’°å¢ƒã¨ã€å°†æ¥ã®å±•æœ›ã«ã¤ã„ã¦è­°è«–ã—ã€ BSDã‚³ãƒŸãƒ¥ãƒ‹ãƒ†ã‚£é–“ã®æƒ…å ±äº¤æ›ã‚’è¡Œãªã†BOFã‚»ãƒƒã‚·ãƒ§ãƒ³ã§ã™ã€‚
+4.4BSDã®æµã‚Œã‚’ãã‚€FreeBSD/NetBSD/OpenBSDãªã©ã€ BSDç³»UNIXã®ãƒ¦ãƒ¼ã‚¶ã‚°ãƒ«ãƒ¼ãƒ—åˆåŒã§ã€BSDç³»UNIXå…¨èˆ¬ã‚’å¯¾è±¡ã¨ã—ãŸå¹…åºƒã„ãƒ†ãƒ¼ãƒã§è­°è«–ã—ã¾ã™ã€‚
+\end{comment}
+
+\vfill
 
 \begin{minipage}{\textwidth}
 \begin{boxnote}
-\section{kbug-users¥á¡¼¥ê¥ó¥°¥ê¥¹¥È}
-K*BUG¤Ç¤Ï¡¢K*BUG¥á¥ó¥Ğ¡¼¤Î¾ğÊó¸ò´¹¤ä¡¢¥¤¥Ù¥ó¥È¤Ê¤É¤Î¾ğÊóÅÁÃ£ÍÑ¤Ë
-kbug-users¥á¡¼¥ê¥ó¥°¥ê¥¹¥È¤òÍÑ°Õ¤·¤Æ¤¤¤Ş¤¹¡£
 
-K*BUG¥á¥ó¥Ğ¡¼¤Ï¡¢´ğËÜÅª¤Ë¤Ï¤³¤Î¥á¡¼¥ê¥ó¥°¥ê¥¹¥È¤òÆÉ¤ó¤Ç¤¤¤ë¤³¤È¤¬´üÂÔ
-¤µ¤ì¤Ş¤¹¡£
+\section{kbug-usersãƒ¡ãƒ¼ãƒªãƒ³ã‚°ãƒªã‚¹ãƒˆ}
+K*BUGã§ã¯ã€K*BUGãƒ¡ãƒ³ãƒãƒ¼ã®æƒ…å ±äº¤æ›ã‚„ã€ã‚¤ãƒ™ãƒ³ãƒˆãªã©ã®æƒ…å ±ä¼é”ç”¨ã«
+kbug-usersãƒ¡ãƒ¼ãƒªãƒ³ã‚°ãƒªã‚¹ãƒˆã‚’ç”¨æ„ã—ã¦ã„ã¾ã™ã€‚
 
-¹ØÆÉ¤Ï°Ê²¼¤ÎURL¤ò¤´»²¾È¤¯¤À¤µ¤¤¡£
+K*BUGãƒ¡ãƒ³ãƒãƒ¼ã¯ã€åŸºæœ¬çš„ã«ã¯ã“ã®ãƒ¡ãƒ¼ãƒªãƒ³ã‚°ãƒªã‚¹ãƒˆã‚’èª­ã‚“ã§ã„ã‚‹ã“ã¨ãŒæœŸå¾…
+ã•ã‚Œã¾ã™ã€‚
+
+è³¼èª­ã¯ä»¥ä¸‹ã®URLã‚’ã”å‚ç…§ãã ã•ã„ã€‚
 \begin{itemize}
  \item \url{http://www.kbug.gr.jp/maillist.html}
 \end{itemize}
 \end{boxnote}
 \end{minipage}
-
-%\vfill
 
 \end{document}  
