@@ -1,6 +1,9 @@
-.SUFFIXES: .png .gif .eps
+.SUFFIXES: .png .gif .eps .jpg .svg
 
-TARGETS=OSC2008-logo.eps kbug-logo.eps
+TARGETS=OSC2008-logo.eps kbug-logo.eps \
+	banner2008.eps CIMG2521.eps CIMG2018.eps CIMG0535.eps \
+	kyoto_tower.eps banner.eps CIMG3131.eps \
+	banner2009.eps
 
 all: ${TARGETS}
 
@@ -12,3 +15,7 @@ clean:
 
 .png.eps: $(.IMPSRC)
 	convert $(.IMPSRC) $(.TARGET)
+.jpg.eps: $(.IMPSRC)
+	convert $(.IMPSRC) $(.TARGET)
+.svg.eps: $(.IMPSRC)
+	inkscape --export-eps=$(.TARGET) $(.IMPSRC)
