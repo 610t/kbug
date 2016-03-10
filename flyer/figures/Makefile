@@ -4,7 +4,9 @@ TARGETS=OSC2008-logo.eps kbug-logo.eps \
 	banner2008.eps CIMG2521.eps CIMG2018.eps CIMG0535.eps \
 	kyoto_tower.eps banner.eps CIMG3131.eps \
 	banner2009.eps \
-	logo-kobe-2010.eps kof2009-1.eps
+	logo-kobe-2010.eps kof2009-1.eps \
+	74251436.eps \
+	logo-kyoto-2011.eps
 
 all: ${TARGETS}
 
