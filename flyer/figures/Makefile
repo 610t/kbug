@@ -6,7 +6,8 @@ TARGETS=OSC2008-logo.eps kbug-logo.eps \
 	banner2009.eps \
 	logo-kobe-2010.eps kof2009-1.eps \
 	74251436.eps \
-	logo-kyoto-2011.eps
+	logo-kyoto-2011.eps \
+	turret.eps osc2012-kyoto.eps 1310698938093.eps
 
 all: ${TARGETS}
 
