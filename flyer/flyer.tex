@@ -7,9 +7,11 @@
 \usepackage{comment}
 \usepackage{here}
 \usepackage{wrapfig}
+\usepackage{floatflt}
 
 \makeatletter
-% from leaflet.cls
+% Section color
+%% from leaflet.cls
 \renewcommand\section{\@startsection{section}{1}{\z@}%
   {-3.5ex \@plus -.75ex}%
   {1ex} %{1.5ex}%
@@ -17,24 +19,23 @@
 \renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
   {-2.5ex plus -.5ex}%
   {1\p@} %{1ex}%
-  {\normalfont\normalsize\sectfont\color{BrickRed}}}
+  {\normalfont\normalsize\sectfont\color{Green}}}
 \makeatother
 
 \graphicspath{{figures/}} 
 
 \title{
 	\includegraphics[width=\textwidth]{kbug-logo}\\
-        \parbox[c]{2cm}{\resizebox{2cm}{!}{\textcolor{red}{\bf{@}}}}
-	\includegraphics[width=\textwidth]{KOF2012}\\
+        \parbox[c]{2cm}{\resizebox{2cm}{!}{\textcolor{red}{\bf{@}}}}\\
+	\includegraphics[width=6cm]{osc2013-kyoto-logo}\\
 	\vfill
-	\parbox[c]{4cm}{\includegraphics[width=4cm]{514px-Atc_osaka03s3200}}\\
-        \hfill{{\footnotesize \copyright 663highland @ Wikipedia-ja}}
+	\parbox[c]{\textwidth}{\includegraphics[width=\textwidth]{MyKyotoIchiba.eps}}\\
         \vfill
 	\resizebox{\linewidth}{!}{\bf 関西*BSDユーザ会}\\
         \resizebox{\linewidth}{!}{{\bf \url{http://www.kbug.gr.jp/}}}\\
+        \includegraphics[width=3cm]{kbug.gr.jp.eps}\\
         \parbox[c]{1cm}{\resizebox{1cm}{!}{\textcolor{Orange}{\bf{@}}}}
-        \resizebox{\linewidth}{!}{{\bf \url{http://2012.k-of.jp/}}}\\
-        \resizebox{\linewidth}{!}{2012年11月8日(金),9日(土)}\\
+        \resizebox{\linewidth}{!}{2013年8月2日(金),3日(土)}\\
 }
 
 
@@ -52,8 +53,7 @@ BSD系OSのユーザ同士の情報交換のための{\Large\em \textcolor{red}{
 年に数度の勉強会やイベントの参加、そして{\Large\em \textcolor{red}{飲み会}}を行っています。
 
 \subsection{K*BSDの基本理念}
-K*BUGの基本理念はのとおりです
-\footnote{\url{http://www.kbug.gr.jp/charter.html}}。
+K*BUGの基本理念はのとおりです。
 
 \fbox{\begin{minipage}{\textwidth}
 \begin{itemize}
@@ -65,14 +65,14 @@ K*BUGの基本理念はのとおりです
 \end{minipage}}
 
 少し難しく感じるかもしれないですが、
-\textcolor{red}{BSDへの愛と情熱}
+\textcolor{red}{\bf\Large BSDへの愛と情熱}
 があれば、
 あなたが
 \textcolor{blue}{やりたいと思うことができる場}
 がK*BUGなのです。
 
 \section{K*BUG Keywords}
-K*BUGでは、これまで以下のようなKeywordに関する発表や展示を行いました。
+K*BUGでは、以下のようなKeywordに関する発表や展示を行いました。
 
 {\large\bf\textcolor{red}{{BSD}}} (FreeBSD (PC-BSD), NetBSD, OpenBSD, DragonlyBSD, {\footnotesize Mac OS X(?), iOS(??) }, ...
 の更新情報 / 利用方法 / ...,
@@ -92,17 +92,57 @@ hardware (UPS, HDD, Server, ...),
 雑誌付録基板 ,
 Physical Computing (Gainer (gainerm-lib), Arduino, ...),
 木彫, でーもんくん, でもんむし君 , \\
-{\textcolor{red}{{\bf\large 飲み会}}}, and {\em\textcolor{red}{{ more with }}{\Large\bf\textcolor{red}{{YOU!!}}}}
+\hfill{\textcolor{red}{{\bf\large 飲み会}}}, and {\em\textcolor{red}{{ more with }}{\Large\bf\textcolor{red}{{YOU!!}}}}
 
+\newpage
 \section{K*BUGの活動}
 最近の活動はこんな感じです。
-発表資料URLはここ
-\footnote{\url{http://qml.610t.org/FreeBSD/KOF2012.html}}に
-あります。
 もし、興味のあるテーマがあったら、
 \begin{center}
 {\huge\bf \textcolor{red}{遊びに来てね!!}}
 \end{center}
+
+\subsection{2013年06月22日(土)@大阪 第3回研究会}
+\begin{itemize}
+\item 会場ナレッジキャピタルに関して
+\item FreeBSD ports 与太話
+\item Raspberry Pi の話
+\item ARMのおはなし 
+\end{itemize}
+
+\subsection{2013年4月20日(土)@大阪 第2回研究会}
+
+\subsection{2013年4月6日(土)\\\hfill  第13回イベント@奈良高専(第1.5回研究会)}
+\begin{itemize}
+\item 付録基板で遊ぼ (BSD編)
+\item Open Source Software (OSS) の魅力 (パネル)
+\end{itemize}
+
+\subsection{2013年2月16日(土)@大阪 第1回研究会}
+\begin{itemize}
+\item カーネル/VM勉強会@関西4に合流
+\end{itemize}
+
+\subsection{2012年12月8日(土)@京都 \\\hfill 定期総会+第7回研究会+忘年会}
+\begin{itemize}
+\item 関西FPGA・DE0勉強会に行ってきました
+\item PCIブリッジのコンフィグレーション
+\item FreeBSD portsと暮らす
+\item Contao Open Source CMSでコンテンツ管理
+\end{itemize}
+
+\subsection{2012年11月9日(金), 10日(土) @大阪 \\\hfill KOF2012}
+\begin{itemize}
+\item BSDなひととき(JNUGセミナーに合流)
+  \begin{itemize}
+  \item K*BUGってなあに?@KOF2012
+  \end{itemize}
+\item 魅惑の付録基板の世界
+\end{itemize}
+
+  \begin{center}
+    \includegraphics[width=4cm]{KOF2012Booth}
+  \end{center}
 
 \subsection{2012年10月20日(土)@大阪 第6回研究会}
 \begin{itemize}
@@ -114,7 +154,8 @@ Physical Computing (Gainer (gainerm-lib), Arduino, ...),
 \item 新しいレノボPC X230買いました
 \item NetBSD on kobo
 \item FREQUPS UPF F and NetBSD
-\item Multi Thread Tiny BASIC on PIC32 and RetroBSD
+\item Multi Thread Tiny BASIC on PIC32\\
+  and RetroBSD
 \item androidのアプリ
 \item Buffaloルータのシリアル
 \end{itemize}
@@ -132,136 +173,27 @@ Physical Computing (Gainer (gainerm-lib), Arduino, ...),
 \item チラシとでもんむし君シール配布
 \end{itemize}
 
-\begin{center}
- \includegraphics[width=4cm]{osc2012booth}
-\end{center}
-
-\subsection{2012年 7月29日(日)イベント@奈良高専\\\hfill 第4回研究会}
-K*BUGメンバー参加者、2名だけだったけど、若者が多かったのよろしかったかと。
-\begin{itemize}
-\item PC-BSDをはじめよう!! %(インストール実習) %\footnote{\url{http://qml.610t.org/FreeBSD/PCBSD.html}}
-\item K*BUGをはじめよう!! %\footnote{\url{http://qml.610t.org/FreeBSD/WhatIsKBUG.html}}
-\item おしごとBSDを推めよう
-\item 展示: RetroBSD, Physical Computing, BSD書籍
-\end{itemize}
-
-\begin{center}
- \includegraphics[width=4cm]{event_nnct}
-\end{center}
-
-\subsection{2012年 6月23日(土)@大阪 第3回研究会}
-\subsection{2012年 4月21日(土)@京都 第2回研究会}
-\begin{itemize}
-\item Sony NEWSのMOをサルベージする
-\item USB memstickで使うFreeBSD
-\item n12iさんちのお話
-\item FreeBSD portsと暮らす(2) - ports作成編 %\footnote{\url{http://www.slideshare.net/umq_876/making-freebsdports}}
-\item FreeBSD portsと暮らす(3) - redportsを使おう %\footnote{\url{http://www.slideshare.net/umq_876/using-redports}}
-\item lang/squeak portの更新 %\footnote{\url{http://qml.610t.org/squeak4_4_7_2375.html}}
-\item BSDお仕事の会のお話 (BSD-BA) %\footnote{\url{http://www.bsd-ba.org/}}
-\end{itemize}
-\subsection{2012年 2月18日(土)@大阪 第1回研究会}
-\begin{itemize}
-\item FreeBSD portsと暮らす(1) - github編 %\footnote{\url{http://www.slideshare.net/umq_876/making-freebsdports}}
-\end{itemize}
-
-\subsection{2011年12月17日(土)@大阪 \\\hfill 定期総会+第5回研究会+忘年会}
-\begin{itemize}
-\item USBガイガーカウンターをつなぐ＋USBサウンドI/Fをつくる＋USBでデジカメ制御
-\item はじめてのNetBSD
-\item dnssec authenicated https
-\item 2011 K-OF K*BUG出展まとめとこれまでやってみて考えたこと
-\end{itemize}
-
 \newpage
-\section{BSDに関する情報}
-\subsection{BSD開発元リンク}
-\begin{itemize}
-\item NetBSD情報
-  \url{http://www.jp.netbsd.org/}
-\item FreeBSD友の会  \url{http://www.jp.freebsd.org/}
-\item OpenBSD本家  \url{http://www.openbsd.org/ja/}
-\item DragonFly BSD \url{http://dragonflybsd.org/}
-\end{itemize}
-
-\subsection{K*BUG関連}
-以下のURLなどで、活動が紹介されています。
-
-\begin{minipage}{\textwidth}
-\begin{shadebox}
-\begin{itemize}
- \item Twitter \url{http://twitter.com/610t/kbug}
- \item いしはら \\\hfill{\small \url{http://www.tunagu.gr.jp/fswiki/isihara/}}
- \item うえだ {\small \url{http://www.ueo.co.jp/~tueda/diary/}}
- \item 西東 \url{http://d.hatena.ne.jp/tunefs/}
- \item 白井 \url{http://hp.vector.co.jp/authors/VA012337/misc/presentation.html}
- \item たけおか \url{http://www.takeoka.org/}
- \item 寺本 \url{http://d.hatena.ne.jp/mteramoto/}
- \item 野田 \url{http://d.hatena.ne.jp/akira_you/}
- \item みつなが \url{http://n.mtng.org/ele/}
- \item むとう \url{http://qml.610t.org/FreeBSD/}
-\end{itemize}
-\end{shadebox}
-\end{minipage}
-
 \section{これからの関連イベント(予定)}
-K*BUGでは、だいたい2ヶ月に1度の頻度で勉強会を行っています。
+K*BUGでは、2ヶ月に1度程度の頻度で勉強会を行っています。
 また、主に関西のイベントで、展示などを行っています。
 
 現在、予定されているイベントは、以下のとおりです。
 詳細に関しては、K*BUGのWebページをご確認ください。
 
 \begin{itemize} 
-\item 2012年12月8日(土)@京都 (AXE会議室) \\ % 学院大学
-  第14回定期総会 + 第7回研究会 + 忘年会
-\item \textcolor{Gray}{2013年8月(?) OSC2013 Kansai@Kyoto}
-\item \textcolor{Gray}{2013年11月(?) KOF2013}
-\item \textcolor{Gray}{2013年(?)月 イベント@奈良高専}
+\item 
+\textcolor{red}{\Large\em もうすぐ!!}
+  2013年8月24日(土)@グランフロント大阪ナレッジキャピタル7F ナレッジサロン\\
+  第4回研究会
+\item 2013年10月19日(土)@AXE会議室(京都)\\
+  第5回研究会
+\item \textcolor{Gray}{2013年11月8日(金),9日(土) KOF2013} (参加未定)
+\item 2013年12月7日(土)@大阪学院大学2号館02-03-02教室\\
+  第15回定期総会 + 第6回研究会
 \end{itemize}
-
-\newpage
-\section{K*BUG @ KOF2012}
-BSD使って、以下の様な展示をしています。
-
-\begin{center}
-{\huge\bf \textcolor{red}{遊びに来てね!!}}
-\end{center}
-
-\begin{itemize}
-\item 魅惑の付録基板の世界
-\item Physical Computing, 工作でーもんくん
-%\item Squeak / Scratch でもI/O
-\item でもんむし君シールとチラシ%\footenote{\url{}} 
-\textcolor{red}{\Large\em 強制配布!!}
-\item JNUG: 我ら絶好調、ちっちゃいものクラブ!!のご相伴
-\end{itemize}
-
-\section{BSDなひととき} % by 日本NetBSDユーザーグループ}
-\begin{wrapfigure}[8]{r}{2.5cm}
- \includegraphics[width=2.5cm]{seal2}
-\end{wrapfigure}
-
-\begin{itemize}
-\item 日時: 2012/11/09(金) 14:00-15:00
-\item 会場: 9F セミナールーム２
-\item 講師: 蛯原 純 (The NetBSD Project/株式会社創夢)
-\item 主催:日本NetBSDユーザーグループ
-\item \url{http://2012.k-of.jp/session/244}
-\end{itemize}
-
-内容:
-来場者によるライトニングトーク大会; 
-話題提供を歓迎します。お気軽にひとことどうぞ。
-\begin{comment}
-BSD系UNIXを取り巻く環境と、将来の展望について議論し、
-BSDコミュニティ間の情報交換を行なうBOFセッションです。
-4.4BSDの流れをくむFreeBSD/NetBSD/OpenBSDなど、
-BSD系UNIXのユーザグループ合同で、BSD系UNIX全般を
-対象とした幅広いテーマで議論します。
-\end{comment}
 
 \vfill
-
 \begin{minipage}{\textwidth}
 \begin{boxnote}
 
@@ -269,14 +201,75 @@ BSD系UNIXのユーザグループ合同で、BSD系UNIX全般を
 K*BUGでは、K*BUGメンバーの情報交換や、イベントなどの情報伝達用に
 kbug-usersメーリングリストを用意しています。
 
+  \begin{floatingfigure}[r]{2.5cm}{
+      \includegraphics[width=2.5cm]{mailto.kbug-users.eps}
+  }
+  \end{floatingfigure}
+
 K*BUGメンバーは、基本的にはこのメーリングリストを読んでいることが期待
 されます。
 
-購読は以下のURLをご参照ください。
+購読は、右のQRコードを使うか、このURL
+\footnote{\url{http://www.kbug.gr.jp/maillist.html}}
+をご参照ください。
 
- \url{http://www.kbug.gr.jp/maillist.html}
 \end{boxnote}
 \end{minipage}
-\verb+$Date: 2012/11/07 21:33:53 $ $Revision: 1.20 $+
+
+\newpage
+\section{K*BUG at OSC2013 Kansai@Kyoto}
+  \begin{floatingfigure}[r]{2cm}{
+      \includegraphics[width=2cm]{qml.610t.org.freebsd.OSC2013Kyoto.eps}
+  }
+  \end{floatingfigure}
+
+K*BUGは、今回OSC2013 Kansai@Kyotoに以下のような活動で参加しています。
+
+右のQRコードで、K*BUG OSC2013 Kansai@Kyoto特設ページ
+\footnote{\url{http://qml.610t.org/FreeBSD/OSC2013Kyoto.html}}
+にアクセスできます。
+
+\subsection{K*BUGブース}
+BSDを使って、以下の様な展示をしています。
+
+\begin{itemize}
+\item こんなにあるよ!! BSD色々展示  
+\item 真夏のレシピ: 基板の気分
+\item 
+\textcolor{red}{\Large\em 配布!!}
+でもんむし君シールとチラシ%\footenote{\url{}} 
+\end{itemize}
+
+\subsection{関連セミナー}
+BSDに関して、みんなでお話しましょう!!
+来場者によるライトニングトークなどの話題提供を歓迎します。
+発表希望者は、お気軽にひとことどうぞ。
+
+\subsubsection{NetBSDユーザのご紹介} % by 日本NetBSDユーザーグループ}
+\begin{itemize}
+\item 日時と会場: 2013/8/2(金) 15:15-16:00 at 会議室C
+\item 発表: 蛯原 純 (The NetBSD Project)
+\item 内容:
+  \begin{itemize}
+  \item NetBSD/luna68kはmlterm-fbでTwitterの夢を見るか(仮)
+  \item NetBSD だと USB 3.0 がここまで動いてます(キリッ
+    \hfill など
+  \end{itemize}
+\end{itemize}
+
+\subsubsection{関西*BSDユーザ会のご紹介}
+\begin{itemize}
+\item 日時と会場: 2013/8/2(金) 16:15-17:00 at 会議室C
+\item 発表: 関西*BSDユーザ会有志一同
+\item 内容:
+  \begin{itemize}
+  \item K*BUGってなぁに?
+  \item 真夏のレシピ: 基板の気分
+    \hfill など
+  \end{itemize}
+\end{itemize}
+
+\vfill
+\verb+$Date: 2013/07/27 07:40:14 $ $Revision: 1.25 $+
 
 \end{document}

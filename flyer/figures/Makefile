@@ -8,7 +8,8 @@ TARGETS=OSC2008-logo.eps kbug-logo.eps \
 	74251436.eps \
 	logo-kyoto-2011.eps \
 	turret.eps osc2012-kyoto.eps 1310698938093.eps \
-	KOF2012.eps 514px-Atc_osaka03s3200.eps osc2012booth.eps event_nnct.eps seal2.eps
+	KOF2012.eps 514px-Atc_osaka03s3200.eps osc2012booth.eps event_nnct.eps seal2.eps \
+	osc2013-kyoto-logo.eps MyKyotoIchiba.eps kbug.gr.jp.eps KOF2012Booth.eps mailto.kbug-users.eps qml.610t.org.freebsd.OSC2013Kyoto.eps
 
 all: ${TARGETS}
 
