@@ -7,7 +7,8 @@ TARGETS=OSC2008-logo.eps kbug-logo.eps \
 	logo-kobe-2010.eps kof2009-1.eps \
 	74251436.eps \
 	logo-kyoto-2011.eps \
-	turret.eps osc2012-kyoto.eps 1310698938093.eps
+	turret.eps osc2012-kyoto.eps 1310698938093.eps \
+	KOF2012.eps 514px-Atc_osaka03s3200.eps osc2012booth.eps event_nnct.eps seal2.eps
 
 all: ${TARGETS}
 
