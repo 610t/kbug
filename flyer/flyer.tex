@@ -1,10 +1,4 @@
 \documentclass[notumble,combine]{leaflet}
-%\documentclass[a4paper,notumble,combine,debug]{leaflet}
-%\usepackage[utf8]{inputenc}
-%\usepackage[T1]{fontenc}
-%\usepackage{lmodern}
-%\renewcommand{\bfdefault}{b}
-%\usepackage{microtype}
 \usepackage[dvipsnames,usenames]{color}
 \usepackage{graphicx}
 \usepackage{alltt}
@@ -14,7 +8,6 @@
 \usepackage{here}
 \usepackage{wrapfig}
 \usepackage{floatflt}
-%\usepackage{ifthen}
 
 \makeatletter
 % Section color
@@ -32,29 +25,19 @@
 \graphicspath{{figures/}} 
 
 \title{
-	\includegraphics[width=\textwidth]{kbug-logo}\\
+	\includegraphics[width=\textwidth]{facebook_banner}\\
         \parbox[c]{2cm}{\resizebox{2cm}{!}{\textcolor{red}{\bf{@}}}}\\
-	\includegraphics[width=\textwidth]{osc2015-kyoto-logo}\\
-%	[\baselineskip]
+	\includegraphics[width=\textwidth]{osc2016-kyoto-logo}\\
 	\vfill
-	\parbox[c]{6cm}{\includegraphics[width=6cm]{kbug-summervacation-raspi}}\\
-%	\parbox[c]{\textwidth}{\includegraphics[width=\textwidth]{kbug-summervacation-raspi}}\\
+	\parbox[c]{\textwidth}{\includegraphics[width=\textwidth]{daimonji}}\\
         \vfill
 	\resizebox{7cm}{!}{\bf 関西*BSDユーザ会}\\
         \resizebox{6cm}{!}{{\bf \url{http://www.kbug.gr.jp/}}}\\
         \includegraphics[width=2cm]{kbug.gr.jp.eps}\\
-        \resizebox{7cm}{!}{2015年8月7日(金),8日(土)}\\
+        \resizebox{7cm}{!}{2016年7月29日(金),30日(土)}\\
 }
 
 \date{}
-%\CutLine*{1} \CutLine*{2} \CutLine*{3} \CutLine*{4} \CutLine*{5}
-%\CutLine*{6}
-
-% \AddToBackground*{2}{% Background of a large page
-%   \put(\LenToUnit{.25\paperwidth},\LenToUnit{.4\paperheight}){%
-%     \includegraphics[width=14.85cm]{kbug-logo}
-% }}
-
 
 \begin{document}
 \maketitle
@@ -65,7 +48,7 @@
 関西 *BSD ユーザ会 (Kansai *BSD Users Group; K*BUG)とは、
 BSD系OSのユーザ同士の情報交換のための{\Large\em \textcolor{red}{場}}で、1999年に設立されました。
 
-年に数度の勉強会やイベントの参加、そして{\Large\em \textcolor{red}{飲み会}}を行っています。
+年に数度の勉強会やイベントへの参加、そして{\Large\em \textcolor{red}{飲み会}}を行っています。
 
 \subsection{K*BSDの基本理念}
 K*BUGの基本理念はのとおりです。
@@ -86,28 +69,24 @@ K*BUGの基本理念はのとおりです。
 \textcolor{blue}{やりたいと思うことができる場}
 がK*BUGなのです。
 
-%また、メンバーは色々な技術に詳しいですし、技術に関する話も大好きなので、
-%あなたの疑問などもぶつけてみてください。
-
 \section{K*BUG Keywords}
-K*BUGでは、以下のようなKeywordに関する発表や展示を行いました。
+K*BUGでは、以下のようなKeywordに関する発表や展示が行われています。
 
-{\large\bf\textcolor{red}{{BSD}}} (FreeBSD (PC-BSD), NetBSD, OpenBSD, DragonlyBSD, {\footnotesize Mac OS X(?), iOS(??) }, ...
+{\large\bf\textcolor{red}{{BSD}}} (FreeBSD (PC-BSD), NetBSD, OpenBSD, DragonlyBSD, {\footnotesize Mac OS X(?), iOS(??) }, ...)
 の更新情報 / 利用方法 / ...,
-arch {\footnotesize (i386, amd64, macppc, landisk, zaurus, wzero3, hpcmips, fonera, netwalker, ipaq, fonera, ...)},
+arch (i386, amd64, arm (Raspberry Pi), macppc, landisk, zaurus, wzero3, hpcmips, netwalker, ipaq, fonera, vax, ...),
 kernel hackや新技術 (DTrace, ZFS, シリアルドライバ, ...),
-FreeBSD portsってなに?,
-Security, 
+FreeBSD portsってなに? (portsの作り方, redports, ...),
+Security (実際のセキュリティ問題に関して, セキュリティを向上するために, ...), 
 教育,
-Prolog, Lisp, awk,
-Squeak, Scratch,
+いろいろな言語 (Prolog, Lisp, awk, Squeak, Scratch, ...),
 OpenCV,
 ContaoCMS, 
-hardware (UPS, HDD, Server, Bluetooth, ...),
+hardware (UPS, HDD, Server, Bluetooth, GPIO, ...),
 ものづくり,
 電子工作,
-ニコ動技術部 (猫耳サーボ % (USB audio servo controler)
-, 鼻ホタル, ...),
+ニコ動技術部 (猫耳サーボ (USB audio servo controler)
+, ...),
 雑誌付録基板 ,
 Physical Computing (Gainer (gainerm-lib), Arduino, ...),
 木彫, でーもんくん, でもんむし君 , \\
@@ -120,6 +99,60 @@ Physical Computing (Gainer (gainerm-lib), Arduino, ...),
 \begin{center}
 {\huge\bf \textcolor{red}{遊びに来てね!!}}
 \end{center}
+
+\subsection{2016年6月18日(土)@京都 第3回研究会}
+\begin{itemize}
+\item NetBSDをsysupgradeで更新
+\item Bluetooth LE Mouse on FreeBSD
+\item おっさん porter のリハビリ
+\item pkgsrc on OS X 10.11
+\end{itemize}
+
+\subsection{2016年4月23日(土)@大阪 第2回研究会}
+\begin{itemize}
+\item XIJな話
+\end{itemize}
+
+\subsection{2016年2月20日(土)@京都 第1回研究会}
+\begin{itemize}
+\item マシンが増えた場合の管理方法について
+\item 今さらsh(1)で作ってみた
+\item 宅内ネットワークトラブル
+\item efiの話
+\item DNSの名前怪傑エラー(現在進行中)
+\end{itemize}
+
+\subsection{2016年1月23日(土)@大阪\\\hfill 第17回定期総会 + 併設研究会}
+\begin{itemize}
+\item sshdのログの傾向
+\item こんなん買いました: FIOD U2F
+\item iPad \& Apple Configuratorよもやま話
+\item 2015年版AAJ
+\end{itemize}
+
+\subsection{2015年10月24日(土)@京都 第5回研究会}
+\begin{itemize}
+\item 京都醸造所試飲スペースの報告
+\item FreeBSDをVirtualBoxにインストールしてみた
+\item Apple Configurator 2についての軽いデモなど
+\end{itemize}
+
+\subsection{2015年8月22日(土)@大阪 第4回研究会}
+\begin{itemize}
+%\item 会場の説明
+\item CIM技術研究会の取り組み
+\item (番外) Wi-Fiにつながらない問題、異なるIPアドレスが割り当て
+\item 大学のサーバーの更新
+\item 「エノキサンタスケテ」の呪文を唱えたこと
+\item 今さらZFS (デモあり)
+\item Letsencrypt.orgについて
+\end{itemize}
+
+\subsection{2015年8月7日(金), 8日(土)@京都\\\hfill OSC2015 Kansai@Kyoto}
+\begin{itemize}
+\item NetBSD distccを使ったpkgsrcの分散コンパイル環境
+\item FreeBSD 11-currentでMZTX-PI-EXT表示
+\end{itemize}
 
 \subsection{2015年6月27日(土)@京都 第3回研究会}
 \begin{itemize}
@@ -142,58 +175,13 @@ Physical Computing (Gainer (gainerm-lib), Arduino, ...),
 
 \subsection{2015年3月7日(土)@大阪 第1回研究会}
 \begin{itemize}
-\item うめきた9Fオフィスの紹介
+%\item うめきた9Fオフィスの紹介
 \item blink1について
-\item FreebSDでRaspberry  PIでGPIO
+\item FreeBSDでRaspberry  PIでGPIO
 \item 周回遅れの HTTP/2
 \item iPadに関する軽い話
 \end{itemize}
 
-\subsection{2015年1月24日(土)@京都\\\hfill 第16回定期総会 + 併設研究会}
-\begin{itemize}
-\item 高専におけるBSD化の試みとその顛末
-\item dump(8)でバックアップ
-\end{itemize}
-
-\subsection{2014年8月23日(土)@京都 第3回研究会}
-\begin{itemize}
-\item wide cloud の FreeBSD 8.0 を freebsd-update(8) で upgrade
-\item Bluetooth LE で遊びはじめた
-\item tcpcrypt 導入してみた
-\end{itemize}
-
-\subsection{2014年6月28日(土)@大阪 第2回研究会}
-\begin{itemize}
-\item Wide Cloud で NetBSD VM が止まってしまって途方に暮れている話
-\item 国土交通省CIMと OSS 
-\item ソフトウェアラジオで遊ぼう (rtl2832)
-\item ssh-agent を OS X の notification center に対応させる
-\item HMZ-T2 + CubieBoard で OpenGL の wearable virtual reality experience
-\end{itemize}
-
-\subsection{2014年2月22日(土)@京都 第1回研究会}
-
-\subsection{2013年12月7日(土)@大阪 \\\hfill 第15回定期総会+第6回研究会+忘年会}
-\begin{itemize}
-\item OSC Kansai@Kyoto 参加報告
-\item AWK のあれこれ
-\item Contao のイベント機能について
-\item DKMSのはなし
-\end{itemize}
-
-\subsection{2013年10月19日(土)@大阪 第5回研究会}
-\begin{itemize}
-\item カーネル/VM 勉強会@関西 ごかいめ に合流
-\end{itemize}
-
-\subsection{2013年8月24日(土)@大阪 第4回研究会}
-\begin{itemize}
-\item *BSDでは生きにくい?
-\item Wintel支配からの脱獄
-\item rubygem and pkgsrc
-\end{itemize}
-
-%\newpage
 \section{これからの関連イベント(予定)}
 K*BUGでは、2ヶ月に1度程度の頻度で勉強会を行っています。
 また、主に関西のイベントで、展示などを行っています。
@@ -202,17 +190,18 @@ K*BUGでは、2ヶ月に1度程度の頻度で勉強会を行っています。
 詳細は、K*BUGのWebページをご確認ください。
 
 \begin{itemize} 
-\item 2015年8月22日(土)@大阪 第4回研究会
-\item 2015年10月24日(土)@京都 第5回研究会
-\item 2015年11月6日(金),7日(土) KOF2015: 未定
-\item 2015年12月5日(土)@京都\\
-  \hfill 第17回定期総会 + 併設研究会
+\item 2016年8月20日(土)@大阪 第4回研究会
+\item 2016年10月22日(土)@大阪 第5回研究会
+\item 2016年11月11日(金),12日(土) KOF2016: 未定
+\item 2016年12月10日(土)@京都\\
+  \hfill 第18回定期総会 + 併設研究会
 \end{itemize}
 
 \section{写真集}
-\subsection{KOF2012}
-    \includegraphics[width=3.5cm]{KOF2012Booth}
-    \includegraphics[width=4.5cm]{kof2012-mutoh}
+\subsection{OSC2015 Kansai@Kyoto}
+    \includegraphics[width=3.5cm]{osc2015-kyoto-booth}
+    \includegraphics[width=4.5cm]{distcc-rpi}
+
 \subsection{OSC2013 Kansai@Kyoto}
     \includegraphics[width=4cm]{osc2013kyoto}
     \includegraphics[width=4cm]{osc2013icat}
@@ -220,26 +209,36 @@ K*BUGでは、2ヶ月に1度程度の頻度で勉強会を行っています。
     \begin{center}
       \includegraphics[width=6cm]{MyKyotoIchiba}
     \end{center}
+
 \newpage
-\section{K*BUG at OSC2015 Kansai@Kyoto}
+\section{K*BUG @ OSC2016 Kyoto}
 K*BUGは、今回以下のような活動で参加しています。
 
-\subsection{チラシとシールの配布} % by 日本NetBSDユーザーグループ}
-JNUGさんのブースをお借りして、このチラシとK*BUGシールを配布しています。
+\subsection{ブース展示}
+「K*BUG + 中村和志(個人)」として、以下の様なブース展示を行っています。
+\begin{itemize}
+\item RetroBSDとLiteBSD
+\item Raspberry Piと仲間たちのdistccコンパイルクラスタ
+\end{itemize}
 
-\subsection{JNUGセミナー:NetBSDのご紹介}
+\subsection{チラシとシールの配布} % by 日本NetBSDユーザーグループ}
+このチラシとK*BUGシール
+を配布しています。
+
+\subsection{JNUGセミナー: NetBSDのご紹介}
 NetBSDは、自由に利用可能で、BSDライセンスに基づき再配布可能なUNIX-likeオペレーティングシステムです。
 NetBSDの概要および最近の動向をご紹介します。
 
 \begin{itemize}
-\item 日時: 2015/8/7(金) 15:15-16:00
-\item 会場: 会議室B
-\item 発表: 蛯原 純 (The NetBSD Project)
+\item 日時: 2016年7月29日(金) 16:15-17:00
+\item 会場: 1号館4F A会議室
+\item 講師：蛯原 純（The NetBSD Project,developer ）ら
+\item 対象者：コンピュータとかゲーム機とかシャープとかオムロンとか好きな人。
 \end{itemize}
 
-\begin{center}
- \includegraphics[width=4cm]{oval-seal-4}
-\end{center}
+%\begin{center}
+% \includegraphics[width=4cm]{oval-seal-4}
+%\end{center}
 
 \vfill
 \begin{minipage}{\textwidth}
@@ -256,10 +255,9 @@ K*BUGメンバーは、基本的にはこのメーリングリストを読んで
 このURL
 \footnote{\scriptsize \url{http://www.kbug.gr.jp/kbug-mailing-lists.html}}
 をご参照ください。
-
 \end{boxnote}
 \end{minipage}
 \vfill
 \hfill
-{\scriptsize \verb+$Date: 2015/08/06 04:38:37 $ $Revision: 1.29 $+}  
+{\footnotesize\input{date.tex}}
 \end{document}
