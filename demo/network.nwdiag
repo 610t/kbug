@@ -1,38 +1,46 @@
 nwdiag{
-  inet [shape = cloud];
-  inet -- "Nexus 5"
+  Internet [shape = cloud];
+  Internet -- Nexus5X;
+##  Internet -- "OSC Network";
 
-  network wireless {
+  network "無線LAN MUTOH_HOME" {
+    address = "192.168.24(?).x/24"
+
     "FreeBSD RaspPi B" [address = "DHCP"];
-    "Nexus 5";
-
-#    "OpenBSD kohjin" [address = "DHCP"];
-    "OpenBSD vaio" [address = "DHCP"];
-#    "OpenBSD kohjin" [address = "DHCP", shape="cisco.upc"];
-#    "OpenBSD vaio" [address = "DHCP", shape="cisco.upc"];
+    Nexus5X;
   }
 
-  network internal {
+  network "USB Ether接続" {
+    address = "192.168.7.x/24"
+
+    "FreeBSD RaspPi B" [address = ".1"];
+    "RaspBSD BeagleBoard Black" [address = ".2"];
+  }
+
+  network "内部LAN" {
     address = "192.168.60.x/24";
 
     "FreeBSD RaspPi B" [address = ".1"];
 
-    NetWalker [address = ".2"];
+    "NetBSD RaspPi2 B" [address = ".12, 192.168.2.100, distcc head/HDMI/Serial"];
+    "NetBSD Banana Pi" [address = ".14"];
+  }
 
-    "NetBSD RaspPi B+" [address = ".11"];
-    "NetBSD RaspPi2 B" [address = ".12"];
-    "(NetBSD BeagleBoard)" [address = ".13"];
+  network "無線LAN BSD_FARM" {
+    address = "192.168.61.x/24";
 
-#    "OpenBSD kohjin" [address = "DHCP"];
-    "OpenBSD vaio" [address = "DHCP"];
+    "NetBSD RaspPi2 B" [address = ".1, 無線LAN AP"];
+    "Raspbian RaspPi3 B" [address = ".15"];
+    "NetBSD RaspPi Zero" [address = ".16, GPIO"];
+  }
 
-    group distcc {
-      label="distcc cluster"
+  group distcc {
+    label="distcc cluster"
 
-      "NetBSD RaspPi2 B";
-      "NetBSD RaspPi B+";
-      "(NetBSD BeagleBoard)";
-      NetWalker;
-    }
+    "NetBSD RaspPi2 B";
+    "Raspbian RaspPi3 B";
+    "NetBSD RaspPi Zero";
+    "NetBSD Banana Pi";
+    "RaspBSD BeagleBoard Black";
   }
 }
