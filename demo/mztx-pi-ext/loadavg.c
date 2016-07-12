@@ -22,7 +22,7 @@ int main(int argc,char** argv)
 {
     int c;
     int posx,val;
-    float avg;
+    double avg;
     int i;
     char str[256];
     
@@ -37,28 +37,33 @@ int main(int argc,char** argv)
         }
     }
 
-    if(argc != 3) usage(argv[0]);
+//    if(argc != 3) usage(argv[0]);
 
-    posx=atoi(argv[1]);
-    avg=atof(argv[2]);
-    val=(int)(avg/LOAD_MAX*MAX_Y);
-
-    printf("Input: %d %d\n",posx,val);
-
-    sprintf(str, "Loadavg: %f", avg);
-    DisplayString(str,0,0);
-
-    for(i=0;i<val;i++)
+    posx=0;
+    while(1) 
     {
-        write_dot(posx, i, RGB565(255,0,0));
-    }
-    for(;i<MAX_X;i++)
-    {
-        write_dot(posx, i, RGB565(0,255,0));
-    }
-    for(;i>val;i--)
-    {
-        write_dot(posx, i, RGB565(255,255,255));
+        getloadavg(&avg,1);
+        val=(int)(avg/LOAD_MAX*MAX_Y);
+
+        printf("Input: %d %f(%d)\n",posx,avg,val);
+
+        sprintf(str, "Loadavg: %.2f", avg);
+        DisplayString(str,0,0);
+
+        for(i=0;i<val;i++)
+        {
+            write_dot(posx, i, RGB565(255,0,0));
+        }
+        for(;i<MAX_X;i++)
+        {
+            write_dot(posx, i, RGB565(0,255,0));
+        }
+        for(;i>val;i--)
+        {
+            write_dot(posx, i, RGB565(255,255,255));
+        }
+        posx+=1;
+        if(posx>=MAX_X) posx=0;
     }
 
     return 0 ;

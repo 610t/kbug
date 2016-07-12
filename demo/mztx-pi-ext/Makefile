@@ -1,5 +1,5 @@
-all:
-	cc -o loadavg -l rt loadavg.c bcm2835_new.c mztx06a.c
+all: loadavg.o bcm2835_new.o mztx06a.o
+	cc -o loadavg -l rt $>
 
 old-all:
 	gcc -o mztx06a -l rt mztx06a.c bcm2835.c
