@@ -1,23 +1,36 @@
 nwdiag{
   Internet [shape = cloud];
-  Internet -- Nexus5X;
-##  Internet -- "OSC Network";
+  Internet -- "OSC router";
 
-  network "無線LAN MUTOH_HOME" {
-    address = "192.168.24(?).x/24"
+  network "OSC公式無線LAN" {
+    address = "192.168.??.x/24(?)"
 
-    "FreeBSD RaspPi B" [address = "DHCP"];
-    Nexus5X;
+    "OSC router";
+    "OSC用無線LAN AP";
   }
 
-  network "USB Ether接続" {
+  network OSC公式無線LAN {
+    address = "??.??.??.??/??"
+
+    "OSC用無線LAN AP" [address = "DHCP"];
+  }
+
+  network OSC用有線LAN {
+    address = "192.168.24.x/24"
+
+    "OSC用無線LAN AP" [address = ".1"];
+    "FreeBSD RaspPi B" [address = ".2"];
+    "中村さんマシン(s)";
+  }
+
+  network USB-Ether接続 {
     address = "192.168.7.x/24"
 
     "FreeBSD RaspPi B" [address = ".1"];
     "RaspBSD BeagleBoard Black" [address = ".2"];
   }
 
-  network "内部LAN" {
+  network 内部LAN {
     address = "192.168.60.x/24";
 
     "FreeBSD RaspPi B" [address = ".1"];
@@ -26,7 +39,7 @@ nwdiag{
     "NetBSD Banana Pi" [address = ".14"];
   }
 
-  network "無線LAN BSD_FARM" {
+  network 無線LAN-BSD_FARM {
     address = "192.168.61.x/24";
 
     "NetBSD RaspPi2 B" [address = ".1, 無線LAN AP"];
