@@ -3,15 +3,24 @@ LED_PORT=/dev/porte
 ADC_PITCH=50
 
 # Init port
-echo ........iiiioooo > /dev/confe
+echo ........oooooooo > /dev/confe
 c=0
-out=0000
-header=............
+out=00000000
+header=........
+# Blink
+l=0
+while [ ${l} -lt 8 ]
+do
+  echo ........11111111 > /dev/porte
+  echo ........00000000 > /dev/porte
+  l=`expr ${l} + 1`
+done
+
 while true
 do
     # ADC
     dev=0
-    while [ ${dev} -lt 4 ]
+    while [ ${dev} -lt 5 ]
     do
         adc=`cat /dev/adc${dev}|head -1`
         echo -n "ADC\t${dev}:\t"${adc}"\t"
@@ -28,7 +37,7 @@ do
     echo "---"
 
     # GPIO LED
-    if [ `expr ${c} % 4` -eq 0 ]; then
+    if [ `expr ${c} % 8` -eq 0 ]; then
       out=`echo ${out}|sed 's/^.//'|sed 's/$/1/'`
     else
       out=`echo ${out}|sed 's/^.//'|sed 's/$/0/'`
