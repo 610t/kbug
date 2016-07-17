@@ -1,33 +1,41 @@
 nwdiag{
   Internet [shape = cloud];
+  Internet -- "WiMAX router";
   Internet -- "OSC router";
 
   network "OSC公式無線LAN" {
     address = "192.168.??.x/24(?)"
 
     "OSC router";
-    "OSC用無線LAN AP";
+    "OSC用無線LAN(ブリッジ)";
   }
 
   network OSC公式無線LAN {
-    address = "??.??.??.??/??"
+    address = "ab.cd.ef.gh/ij"
 
-    "OSC用無線LAN AP" [address = "DHCP"];
+    "OSC用無線LAN(ブリッジ)";
   }
 
-  network OSC用有線LAN {
-    address = "192.168.24.x/24"
+  network "WiMAX" {
+    address = "192.168.100.x/24"
 
-    "OSC用無線LAN AP" [address = ".1"];
-    "FreeBSD RaspPi B" [address = ".2"];
-    "中村さんマシン(s)";
+    "WiMAX router" [address = ".1"];
+    "FreeBSD RaspPi B";
+  }
+
+  network "OSC用有線LAN(ブリッジ)" {
+    address = "ab.cd.ef.gh/ij"
+
+    "OSC用無線LAN(ブリッジ)";
+    "FreeBSD RaspPi B" [address = "DHCP, LCD loadavg"];
+    "中村さんマシン(s)" [address = "DHCP"];
   }
 
   network USB-Ether接続 {
     address = "192.168.7.x/24"
 
     "FreeBSD RaspPi B" [address = ".1"];
-    "RaspBSD BeagleBoard Black" [address = ".2"];
+    "RaspBSD BeagleBone Black" [address = ".2, USB-Ether, USB-Serial"];
   }
 
   network 内部LAN {
@@ -37,6 +45,7 @@ nwdiag{
 
     "NetBSD RaspPi2 B" [address = ".12, 192.168.2.100, distcc head/HDMI/Serial"];
     "NetBSD Banana Pi" [address = ".14"];
+    "NetBSD RaspPi Zero" [address = ".16, GPIO LED loadavg"];
   }
 
   network 無線LAN-BSD_FARM {
@@ -44,16 +53,15 @@ nwdiag{
 
     "NetBSD RaspPi2 B" [address = ".1, 無線LAN AP"];
     "Raspbian RaspPi3 B" [address = ".15"];
-    "NetBSD RaspPi Zero" [address = ".16, GPIO"];
   }
 
   group distcc {
-    label="distcc cluster"
+    label="distccクラスタ"
 
     "NetBSD RaspPi2 B";
     "Raspbian RaspPi3 B";
     "NetBSD RaspPi Zero";
     "NetBSD Banana Pi";
-    "RaspBSD BeagleBoard Black";
+    "RaspBSD BeagleBone Black";
   }
 }
