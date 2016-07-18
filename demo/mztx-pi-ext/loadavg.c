@@ -56,7 +56,7 @@ int main(int argc,char** argv)
         }
         for(;i<MAX_X;i++)
         {
-            write_dot(posx, i, RGB565(0,255,0));
+            write_dot(posx, i, RGB565(0,0,0));
         }
         for(;i>val;i--)
         {
