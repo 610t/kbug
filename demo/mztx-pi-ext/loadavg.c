@@ -14,14 +14,14 @@ long myrand(long max)
 
 void usage(char *prog)
 {
-	fprintf(stderr,"Usage: %s [-c] posx value\n",prog);
+	fprintf(stderr,"Usage: %s [-c]\n",prog);
 	exit(-1);
 }
 
 int main(int argc,char** argv)
 {
     int c;
-    int posx,val;
+    int pos,val;
     double avg;
     int i;
     char str[256];
@@ -37,33 +37,31 @@ int main(int argc,char** argv)
         }
     }
 
-//    if(argc != 3) usage(argv[0]);
-
-    posx=0;
+    pos=0;
     while(1) 
     {
         getloadavg(&avg,1);
         val=(int)(avg/LOAD_MAX*MAX_Y);
 
-        printf("Input: %d %f(%d)\n",posx,avg,val);
+        printf("Input: %d %f(%d)\n",pos,avg,val);
 
         sprintf(str, "Loadavg: %.2f", avg);
         DisplayString(str,0,0);
 
+        for(i=MAX_Y;i>=MAX_Y-val;i--)
+        {
+            write_dot(i, pos, RGB565(255,0,0));
+        }
+        for(;i>=0;i--)
+        {
+            write_dot(i, pos, RGB565(0,0,0));
+        }
         for(i=0;i<val;i++)
         {
-            write_dot(posx, i, RGB565(255,0,0));
+            write_dot(i, pos, RGB565(255,255,255));
         }
-        for(;i<MAX_X;i++)
-        {
-            write_dot(posx, i, RGB565(0,0,0));
-        }
-        for(;i>val;i--)
-        {
-            write_dot(posx, i, RGB565(255,255,255));
-        }
-        posx+=1;
-        if(posx>=MAX_X) posx=0;
+        pos+=1;
+        if(pos>=MAX_X) pos=0;
     }
 
     return 0 ;
