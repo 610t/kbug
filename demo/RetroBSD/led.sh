@@ -18,7 +18,7 @@ blink () {
 
 # Init port
 echo ........oooooooo > /dev/confe
-echo ..............i. > /dev/confd
+echo ..............ii > /dev/confd
 c=0
 out=00000000
 header=........
@@ -63,8 +63,9 @@ do
 #    echo ${c}" "`date`
 
     # GPIO SW
-    sw=`cat ${SW_PORT}|sed -e 's/^-*\([01]\)-$/\1/'`
-    echo "SW:"${sw}
+    portd=`cat /dev/portd`
+    sw=`echo ${portd}|sed -e 's/^-*\([01]\).$/\1/'`
+    echo "SW:${sw}(${portd})"
     if [ ${sw} -eq 1 ]; then
       blink
     fi
