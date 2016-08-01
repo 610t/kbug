@@ -6,8 +6,8 @@ nwdiag{
   network "OSC公式無線LAN" {
     address = "192.168.??.x/24(?)"
 
-    "OSC router";
     "EX6100(ブリッジ)";
+    "OSC router";
   }
 
   network OSC公式無線LAN {
@@ -27,7 +27,6 @@ nwdiag{
     address = "ab.cd.ef.gh/ij"
 
     "EX6100(ブリッジ)";
-    "FreeBSD RaspPi B" [address = "DHCP"];
     "中村さんマシン(s)" [address = "DHCP"];
   }
 
@@ -52,14 +51,12 @@ nwdiag{
     address = "192.168.61.x/24";
 
     "NetBSD RaspPi2 B" [address = ".1, 無線LAN AP"];
-    "Raspbian RaspPi3 B" [address = ".15, VNC"];
   }
 
   group distcc {
     label="distccクラスタ"
 
     "NetBSD RaspPi2 B";
-    "Raspbian RaspPi3 B";
     "NetBSD RaspPi Zero";
     "NetBSD Banana Pi";
     "RaspBSD BeagleBone Black";
