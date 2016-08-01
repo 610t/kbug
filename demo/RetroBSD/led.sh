@@ -50,15 +50,15 @@ do
     # GPIO LED
 #    echo "2 o ${c} p" | dc
     if [ `expr ${c} % 8` -eq 0 ]; then
-      out=`echo ${out}|sed 's/^.//'|sed 's/$/1/'`
+      out=`echo ${out}|sed -e 's/^.//' -e 's/$/1/'`
     else
-      out=`echo ${out}|sed 's/^.//'|sed 's/$/0/'`
+      out=`echo ${out}|sed -e 's/^.//' -e 's/$/0/'`
     fi
     echo ${header}${out} > ${LED_PORT}
     echo ${out}
-    in=`cat ${LED_PORT}`
-    sw=`echo ${in}|sed 's/^........//'|sed 's/....$//'`
-    echo ${in}:${sw}
+#    in=`cat ${LED_PORT}`
+#    sw=`echo ${in}|sed 's/^........//'|sed 's/....$//'`
+#    echo ${in}:${sw}
     c=`expr ${c} + 1`
 #    echo ${c}" "`date`
 
