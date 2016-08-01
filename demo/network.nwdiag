@@ -7,13 +7,13 @@ nwdiag{
     address = "192.168.??.x/24(?)"
 
     "OSC router";
-    "OSC用無線LAN(ブリッジ)";
+    "EX6100(ブリッジ)";
   }
 
   network OSC公式無線LAN {
     address = "ab.cd.ef.gh/ij"
 
-    "OSC用無線LAN(ブリッジ)";
+    "EX6100(ブリッジ)";
   }
 
   network "Nexus 5X LAN" {
@@ -26,7 +26,7 @@ nwdiag{
   network "OSC用有線LAN(ブリッジ)" {
     address = "ab.cd.ef.gh/ij"
 
-    "OSC用無線LAN(ブリッジ)";
+    "EX6100(ブリッジ)";
     "FreeBSD RaspPi B" [address = "DHCP"];
     "中村さんマシン(s)" [address = "DHCP"];
   }
