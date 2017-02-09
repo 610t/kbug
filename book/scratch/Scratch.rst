@@ -26,23 +26,23 @@ BSDで楽しむ!! Scratch / Squeak
 目次
 ----
 - Squeak Etoys
--- Squeak VM環境構築
--- Etoysのインストール
--- Squeak+Gainerで遊ぶ
+- Squeak VM環境構築
+- Etoysのインストール
+- Squeak+Gainerで遊ぶ
 - Scratch 2.0
--- Scratch 2.0環境構築
---- 対応ブラウザをインストールする
---- flashpluginの設定
+- Scratch 2.0環境構築
+- 対応ブラウザをインストールする
+- flashpluginの設定
 - Scratch 1.4
--- Scratch 1.4環境の構築
--- USB Camera
--- Pico Board
--- Scratch Remote Sensor
---- Android
---- ESP8266
---- micro:bit (chibi:bit)
+- Scratch 1.4環境の構築
+- USB Camera
+- Pico Board
+- Scratch Remote Sensor
+- Android
+- ESP8266
+- micro:bit (chibi:bit)
 - Scratch 3.0に向けて
--- Scratch 3.0環境の構築
---- Node.js関連の設定
---- Scratch 3.0 github版のインストール
+- Scratch 3.0環境の構築
+- Node.js関連の設定
+- Scratch 3.0 github版のインストール
 - CogVM
