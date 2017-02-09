@@ -198,21 +198,6 @@ void loop() {
     pixels.setPixelColor(0, pixels.Color(r, g, b));
     pixels.show();
 
-    // BUILTIN LED blinking (not work)
-    /*
-      if (msg.equals("LED")) {
-      if (ledOn) {
-        Serial.println("LED off");
-        digitalWrite(LED_BUILTIN, LOW);
-        ledOn = false;
-      } else {
-        Serial.println("LED on");
-        digitalWrite(LED_BUILTIN, HIGH);
-        ledOn = true;
-      }
-      }
-    */
-
     // send broadcast message
     if (digitalRead(D3) != sw) {
       sw = digitalRead(D3); stat = 1;
