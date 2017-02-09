@@ -28,6 +28,9 @@ BSDで楽しむ!! Scratch / Squeak
 ============
 * http://qml.610t.org/FreeBSD/ScratchBSD.html
 
+.. toctree::
+   :maxdepth: 2
+
 ============
 Squeak Etoys
 ============
@@ -96,7 +99,6 @@ ESP8266
 
 .. literalinclude:: src/ScratchSensorBoard_ESP8266.ino
    :language: c
-   :lineos:
 
 micro:bit (chibi:bit)
 ^^^^^^^^^^^^^^^^^^^^^
@@ -215,74 +217,3 @@ Scratch 3.0 github版のインストール
 CogVM
 =====
 
-========================================
-付録: BSDでのソフトウエアのインストール
-========================================
-BSDで、様々なソフトウエアをインストールする方法には、ふた通りの方法があります。
-
-一つ目の方法は、実行可能形式であるバイナリ形式でソフトウエアをインストールする方式です。
-すでにプログラムの設計図であるソースからのコンパイルが終わっている状態なので、
-比較的短時間でインストールが完了します。
-
-二つ目の方法は、ソースからコンパイルをしてバイナリ形式を作成する方式です。
-この方法では、コンパイル時に様々なオプションを指定することが可能である場合があり、
-特殊なオプションを指定したい場合にはこちらを使うことになります。
-
-以下、順にこれらの方法を見ていきましょう。
-
-バイナリ形式でのソフトウエアのインストール
-------------------------------------------
-
-FreeBSD pkgの場合
-^^^^^^^^^^^^^^^^^
-::
-
-% sudo pkg install scratch
-
-NetBSD pkgの場合
-^^^^^^^^^^^^^^^^
-::
-
-  % export "PKG_PATH=ftp://ftp.jaist.ac.jp/pub/pkgsrc/packages/OPSYS/ARCH/VERSIONS/All"
-
-::
-
-  % sudo pkg_add squeak
-
-OpenBSD pakageの場合
-^^^^^^^^^^^^^^^^^^^^
-はじめに、packageをどこから取得するのかを指定するための環境変数PKG_PATHを定義しておきます。
-この設定は、シェルの環境設定ファイルに書き込んでおくと良いでしょう。
-
-* sh系の場合: 環境設定ファイル ~/.profile, ~/.zshrc など
-::
-
-  export PKG_PATH=http://ftp.jaist.ac.jp/pub/OpenBSD/$(uname -r)/packages/$(uname -p)/
-
-* csh系の場合:環境設定ファイル ~/.cshrc など
-::
-
-  setenv PKG_PATH http://ftp.jaist.ac.jp/pub/OpenBSD/$(uname -r)/packages/$(uname -p)/
-
-::
-
-% sudo pkg_add scratch
-
-ソースからのインストール
-------------------------
-FreeBSD portsの場合
-^^^^^^^^^^^^^^^^^^^
-::
-
-% sudo portsnap fetch extract
-
-::
-
-% cd /usr/ports/lang/squeak
-% sudo make install
-
-NetBSD pkgsrcの場合
-^^^^^^^^^^^^^^^^^^^
-
-OpenBSD pakageの場合
-^^^^^^^^^^^^^^^^^^^^
