@@ -32,15 +32,12 @@ BSDで楽しむ!! Scratch / Squeak
 Squeak Etoys
 ============
 
--------------------
 Squeak VM環境構築
 -------------------
 
--------------------
 Etoysのインストール
 -------------------
 
--------------------
 Squeak+Gainerで遊ぶ
 -------------------
 
@@ -48,30 +45,24 @@ Squeak+Gainerで遊ぶ
 Scratch 2.0
 ============
 
----------------------
 Scratch 2.0環境構築
 ---------------------
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-対応ブラウザをインストールする
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+flash対応ブラウザをインストールする
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 flashpluginの設定
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ============
 Scratch 1.4
 ============
-------------------------
 Scratch 1.4環境の構築
 ------------------------
 
-------------------------
 USB Camera
 ------------------------
 
-------------------------
 Scratch Sensor Board
 ------------------------
 * 日本で買えるScratchセンサーボード http://swikis.ddo.jp/WorldStethoscope/54
@@ -79,38 +70,58 @@ Scratch Sensor Board
 * なのぼ～ど http://tiisai.dip.jp/?page_id=935
 * nekoboard2 https://www.switch-science.com/catalog/2700/
 
-------------------------
 Scratch Remote Sensor
 ------------------------
 * http://qml.610t.org/squeak/CodarDojoNara201612.html
 
 * http://qml.610t.org/squeak/ScratchDay2016.html
 
-^^^^^^^^^^^^^^^^^^^^^
+.. .. image:: images/
+
 Android
 ^^^^^^^^^^^^^^^^^^^^^
+.. image:: images/PhysicalSensor4Scratch.png
 
-^^^^^^^^^^^^^^^^^^^^^
 ESP8266
 ^^^^^^^^^^^^^^^^^^^^^
+.. image:: images/ESP8266-Scratch.png
 
-^^^^^^^^^^^^^^^^^^^^^
 micro:bit (chibi:bit)
 ^^^^^^^^^^^^^^^^^^^^^
+* BBC micro:bit(chibi:bit)+scratch でのプログラミングテスト http://qiita.com/asondemita/items/8ad1a9d224ee54428bed
+
+.. image:: images/microbit-Scratch.png
+
+.. code-block:: python
+
+
+
+  from microbit import *
+
+  def get_sensor_data():
+    x, y, z = accelerometer.get_x(), accelerometer.get_y(), accelerometer.get_z()
+    a, b = button_a.is_pressed(), button_b.is_pressed()
+    print(x, y, z, a, b)
+  
+  uart.init(115200)
+  
+  while True:
+    sleep(100)
+    get_sensor_data()
+    if uart.any():
+        str=uart.readline()
+        display.scroll(str,wait=False,loop=True)
 
 ============
 Scratch 3.0
 ============
 
----------------------
 Scratch 3.0環境の構築
 ---------------------
 
-^^^^^^^^^^^^^^^^^
 Node.js関連の設定
 ^^^^^^^^^^^^^^^^^
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Scratch 3.0 github版のインストール
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
