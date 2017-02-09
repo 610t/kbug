@@ -26,6 +26,7 @@ BSDで楽しむ!! Scratch / Squeak
 ============
 はじめに
 ============
+* http://qml.610t.org/FreeBSD/ScratchBSD.html
 
 ============
 Squeak Etoys
@@ -62,7 +63,6 @@ flashpluginの設定
 ============
 Scratch 1.4
 ============
-
 ------------------------
 Scratch 1.4環境の構築
 ------------------------
@@ -72,13 +72,19 @@ USB Camera
 ------------------------
 
 ------------------------
-Pico Board
+Scratch Sensor Board
 ------------------------
+* 日本で買えるScratchセンサーボード http://swikis.ddo.jp/WorldStethoscope/54
+
+* なのぼ～ど http://tiisai.dip.jp/?page_id=935
+* nekoboard2 https://www.switch-science.com/catalog/2700/
 
 ------------------------
 Scratch Remote Sensor
 ------------------------
+* http://qml.610t.org/squeak/CodarDojoNara201612.html
 
+* http://qml.610t.org/squeak/ScratchDay2016.html
 
 ^^^^^^^^^^^^^^^^^^^^^
 Android
