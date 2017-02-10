@@ -10,13 +10,6 @@ BSDのパッケージシステムについて
    :maxdepth: 2
    :caption: Contents:
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
 BSDで、様々なソフトウエアをインストールする方法には、ふた通りの方法があります。
 
 一つ目の方法は、実行可能形式であるバイナリ形式でソフトウエアをインストールする方法です。
