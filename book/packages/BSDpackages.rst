@@ -69,10 +69,45 @@ OpenBSD portsの場合
 
 NetBSD pkgの場合
 ------------------------
+pkgsrcでコンパイルされた成果物は、package(pkg)としてまとめられます。
+
+インストールするためには、pkgファイルをpkg_addするだけです。
+
+pkg_addでは、ネットワーク経由でのインストールにも対応しています。
+この場合、環境変数PKG_PATHに利用するサーバの情報を設定することで、そこにあるpkgのインストールが可能です。
+
+
+環境変数PKG_PATHの設定
+^^^^^^^^^^^^^^^^^^^^^^
+環境変数PKG_PATHは、以下のように設定します。
 ::
 
-  % export "PKG_PATH=ftp://ftp.jaist.ac.jp/pub/pkgsrc/packages/OPSYS/ARCH/VERSIONS/All"
+  % export "PKG_PATH=ftp://ftp.netbsd.org/pub/pkgsrc/packages/OPSYS/ARCH/VERSIONS/All"
 
+コマンドライン中で、以下の部分は自分の環境に読み変えます。
+* OPSYS: オペレーティングシステムの名称。"NetBSD", "MirBSD", "Minix"など。
+* ARCH: CPUアーキテクチャ。"i386", "amd64", "evbarm"など。
+* VERSION: OSのリリースバージョン。"7.0.2", "7.0_2016Q4"など。
+
+例えば、NetBSDでamd64アーキテクチャ、OSバージョンが7.0.2の場合は、以下のように指定します。
+::
+
+  % export "PKG_PATH=ftp://ftp.netbsd.org/pub/pkgsrc/packages/NetBSD/amd64/7.0.2/All"
+
+ここで、ホスト部分(ftp.netbsd.org)は、NetBSDの場合、 http://netbsd.org/mirrors/ のミラーサイトを利用することができます。
+できるだけ近くのサーバを利用するようにしましょう。
+
+セキュリティ対策
+^^^^^^^^^^^^^^^^^^^^^^
+::
+
+  % pkg_admin fetch-pkg-vulnerabilities
+  % pkg_admin audit
+
+
+実際のインストール
+^^^^^^^^^^^^^^^^^^^^^^
+インストールは、以下のようにpkg_addを実行します。
 ::
 
   % sudo pkg_add squeak
@@ -95,6 +130,21 @@ FreeBSD pkgの更新
 ::
 
 % sudo pkg upgrade
+
+FreeBSD pkgのセキュリティ対策
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+::
+
+  % pkg audit|head
+  python27-2.7.11_3 is vulnerable:
+  Python -- smtplib StartTLS stripping vulnerability
+  CVE: CVE-2016-0772
+  WWW: https://vuxml.FreeBSD.org/freebsd/8d5368ef-40fe-11e6-b2ec-b499baebfeaf.html
+  
+  libgcrypt-1.7.1 is vulnerable:
+  gnupg -- attacker who obtains 4640 bits from the RNG can trivially predict the next 160 bits of output
+  CVE: CVE-2016-6313
+  WWW: https://vuxml.FreeBSD.org/freebsd/e1c71d8d-64d9-11e6-b38a-25a46b33f2ed.html
 
 OpenBSD packageの場合
 ------------------------
