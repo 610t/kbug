@@ -1,0 +1,17 @@
+{
+ "fontsAlias" : {
+   "stdFont": "M+2P+IPAG",
+   "stdBold": "M+2P+IPAG",
+   "stdItalic": "M+2P+IPAG",
+   "stdBoldItalic": "M+2P+IPAG",
+   "stdMono": "M+2P+IPAG-circle"
+ },
+ "styles" : [
+   ["base" , {
+     "wordWrap": "CJK"
+   }],
+   ["literal" , {
+     "wordWrap": "None"
+   }]
+ ]
+}
