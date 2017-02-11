@@ -3,18 +3,38 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to K*BUG Booth Guide's documentation!
+K*BUG Booth Guide
 =============================================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
+OSC2016 Kyoto
+=====================
+* https://www.ospn.jp/osc2016-kyoto/
+* http://qml.610t.org/FreeBSD/OSC2016Kyoto.html
+.. image:: images/OSC2016KyotoBooth.jpg
+.. image:: images/RogueOne.jpg
+.. image:: images/OSC2016KyotoNetwork.jpg
+.. image:: images/OSC2016KyotoMeshi.jpg
 
+OSC2015 Kansai@Kyoto
+=====================
+* https://www.ospn.jp/osc2015-kyoto/
+* http://qml.610t.org/FreeBSD/OSC2015Kyoto.html
+.. image:: images/OSC2015KyotoBooth.jpg
+.. image:: images/OSC2015KyotoGirl.jpg
+.. image:: images/OSC2015KyotoNetwork.jpg
+.. image:: images/OSC2015KyotoMeshi.jpg
 
-Indices and tables
-==================
+OSC2013 Kansai@Kyoto
+=====================
+* https://www.ospn.jp/osc2013-kyoto/
+* http://qml.610t.org/FreeBSD/OSC2013Kyoto.html
+.. image:: images/OSC2013KyotoAudio.png
+.. image:: images/OSC2013KyotoRetroBSD.png
+.. image:: images/OSC2013KyotoBoard.png
+.. image:: images/OSC2013KyotoMeshi1.png
+.. image:: images/OSC2013KyotoMeshi2.png
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
