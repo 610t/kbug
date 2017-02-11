@@ -12,8 +12,8 @@ K*BUG Booth Guide
 
 OSC2016 Kyoto
 =====================
-* https://www.ospn.jp/osc2016-kyoto/
-* http://qml.610t.org/FreeBSD/OSC2016Kyoto.html
+* 公式ページ: https://www.ospn.jp/osc2016-kyoto/
+* 報告: http://qml.610t.org/FreeBSD/OSC2016Kyoto.html
 .. image:: images/OSC2016KyotoBooth.jpg
 .. image:: images/RogueOne.jpg
 .. image:: images/OSC2016KyotoNetwork.jpg
@@ -21,8 +21,8 @@ OSC2016 Kyoto
 
 OSC2015 Kansai@Kyoto
 =====================
-* https://www.ospn.jp/osc2015-kyoto/
-* http://qml.610t.org/FreeBSD/OSC2015Kyoto.html
+* 公式ページ: https://www.ospn.jp/osc2015-kyoto/
+* 報告: http://qml.610t.org/FreeBSD/OSC2015Kyoto.html
 .. image:: images/OSC2015KyotoBooth.jpg
 .. image:: images/OSC2015KyotoGirl.jpg
 .. image:: images/OSC2015KyotoNetwork.jpg
@@ -30,8 +30,9 @@ OSC2015 Kansai@Kyoto
 
 OSC2013 Kansai@Kyoto
 =====================
-* https://www.ospn.jp/osc2013-kyoto/
-* http://qml.610t.org/FreeBSD/OSC2013Kyoto.html
+* 公式ページ: https://www.ospn.jp/osc2013-kyoto/
+* 特設ページ: http://qml.610t.org/FreeBSD/OSC2013Kyoto.html
+* 報告: http://qml.610t.org/FreeBSD/OSC2013KyotoReport.html
 .. image:: images/OSC2013KyotoAudio.png
 .. image:: images/OSC2013KyotoRetroBSD.png
 .. image:: images/OSC2013KyotoBoard.png
