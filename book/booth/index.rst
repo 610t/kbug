@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-関西*BSDユーザ会(K*BUG) イベント出展ガイド
+Kansai *BSD Users Group event guide
 =============================================
 
 * http://www.kbug.gr.jp/
@@ -12,103 +12,72 @@
    :maxdepth: 2
    :caption: Contents:
 
-関西*BSDユーザ会2017年第1回研究会
+Kansai *BSD Users Group 2017/2/11 meeting
 ==========================================
-* 公式ページ: http://www.kbug.gr.jp/events/2017-1st.html
+* Official page: http://www.kbug.gr.jp/events/2017-1st.html
 * Facebook: https://www.facebook.com/events/920179428083721/
 
-.. figure:: images/Booth.jpg
+.. figure:: images/Booth.png
 
-   ブース全景
+   Kansai *BSD Users Group 2017/2/11 Booth
 
-.. figure:: images/RetroBSD.jpg
-   :scale: 30%
-
-   RetroBSD
-
-.. figure:: images/LiteBSD.jpg
-   :scale: 30%
-
-   LiteBSD with PocketC.H.I.P. console
-
-.. figure:: images/RaspberryPiZero.jpg
-   :scale: 30%
-
-   Raspberry Pi Zero
+.. image:: images/RetroBSD.png
+.. image:: images/LiteBSD.png
+.. image:: images/RaspberryPiZero.png
 
 OSC2016 Kyoto
 =====================
-* 公式ページ: https://www.ospn.jp/osc2016-kyoto/
-* チラシ: http://sacraya.610t.org/kbug/flyer/flyer-OSC2016Kyoto.pdf
-* 報告: http://qml.610t.org/FreeBSD/OSC2016Kyoto.html
+* Official page: https://www.ospn.jp/osc2016-kyoto/
+* Flyer: http://sacraya.610t.org/kbug/flyer/flyer-OSC2016Kyoto.pdf
+* Report(in Japanese): http://qml.610t.org/FreeBSD/OSC2016Kyoto.html
 
-.. figure:: images/OSC2016KyotoBooth.jpg
-   :scale: 30%
+.. figure:: images/OSC2016KyotoBooth.png
 
-   OSC2016 Kyotoブース展示全景
+   OSC2016 Kyoto booth
 
-.. figure:: images/RogueOne.jpg
-   :scale: 35%
+.. image:: images/RogueOne.png
+   :alt: Rogue One
+.. image:: images/OSC2016KyotoMeshi.png
+   :alt: Cafe lunch
 
-   Rogue One: rogueをひとりでする看蛮むすこ
-
-.. figure:: images/OSC2016KyotoNetwork.jpg
-
-   OSC2016 Kyotoのネットワーク構成図
-
-.. figure:: images/OSC2016KyotoMeshi.jpg
-   :scale: 30%
-
-   会場隣のカフェテリアめし
+.. image:: images/OSC2016KyotoNetwork.png
+   :alt: OSC2016 Kyoto network
 
 OSC2015 Kansai@Kyoto
 =====================
-* 公式ページ: https://www.ospn.jp/osc2015-kyoto/
-* 報告: http://qml.610t.org/FreeBSD/OSC2015Kyoto.html
+* Official Page: https://www.ospn.jp/osc2015-kyoto/
+* Report (in Japanese): http://qml.610t.org/FreeBSD/OSC2015Kyoto.html
 .. figure:: images/OSC2015KyotoBooth.jpg
 
-   OSC2015 Kansai@Kyotoブース展示
-
-.. figure:: images/OSC2015KyotoGirl.jpg
-   :scale: 30%
-
-   看蛮むすめ、手芸をする。
+   OSC2015 Kansai@Kyoto booth
 
 .. figure:: images/OSC2015KyotoNetwork.jpg
 
-   OSC2015 Kansai@Kyotoのネットワーク構成図
+   OSC2015 Kansai@Kyoto network
 
-.. figure:: images/OSC2015KyotoMeshi.jpg
-   :scale: 40%
-
-   隣のカフェテリアのメシ
+.. image:: images/OSC2015KyotoGirl.png
+   :alt: Booth girl
+.. image:: images/OSC2015KyotoMeshi.png
+   :alt: Cafe lunch
 
 OSC2013 Kansai@Kyoto
 =====================
-* 公式ページ: https://www.ospn.jp/osc2013-kyoto/
-* 特設ページ: http://qml.610t.org/FreeBSD/OSC2013Kyoto.html
-* 報告: http://qml.610t.org/FreeBSD/OSC2013KyotoReport.html
-.. figure:: images/OSC2013KyotoAudio.png
-   :scale: 40%
+* Official page: https://www.ospn.jp/osc2013-kyoto/
+* Booth page (in Japanese): http://qml.610t.org/FreeBSD/OSC2013Kyoto.html
+* Report (in Japanese): http://qml.610t.org/FreeBSD/OSC2013KyotoReport.html
 
-   OSC2013 Kansai@ブース展示:前川さんの展示
+OSC2013 Kansai@Kyoto booth
+---------------------------
+.. image:: images/OSC2013KyotoAudio.png
+   :alt: OSC2013 Kansai@Kyoto Audio system
+.. image:: images/OSC2013KyotoRetroBSD.png
+   :alt: OSC2013 Kansai@Kyoto RetroBSD
+.. image:: images/OSC2013KyotoBoard.png
+   :alt: OSC2013 Kansai@Kyoto Boards
 
-.. figure:: images/OSC2013KyotoRetroBSD.png
-   :scale: 40%
-
-   OSC2013 Kansai@ブース展示: RetroBSD
-
-.. figure:: images/OSC2013KyotoBoard.png
-   :scale: 50%
-
-   OSC2013 Kansai@Kyotoブース展示:基板の気分
-
-.. figure:: images/OSC2013KyotoMeshi1.png
-   :scale: 50%
-
-   1日目:隣のカフェテリア定食
-
-.. figure:: images/OSC2013KyotoMeshi2.png
-   :scale: 50%
-
-   1日目:だいこんの花のチキンカツ
+Wonderful meal
+------------------
+.. image:: images/OSC2013KyotoMeshi1.png
+   :alt:   1st day: Cafe lunch
+.. image:: images/OSC2013KyotoMeshi2.png
+   :alt:   2nd day: Daikon no Hana, Chiken fly
