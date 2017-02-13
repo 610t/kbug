@@ -10,7 +10,13 @@ BUILDDIR      = _build
 
 all:
 	make html
+	make singlehtml
 	rst2pdf index.rst
+
+sync:
+	rsync -azv _build/ sacraya.610t.org:/mnt/vela/www/apache22/data/kbug/book/booth/
+	rsync index.pdf sacraya.610t.org:/mnt/vela/www/apache22/data/kbug/book/booth/KBUG-Booth.pdf
+	rsync KBUGBoothGuide.pdf sacraya.610t.org:/mnt/vela/www/apache22/data/kbug/book/booth/KBUGBoothGuide.pdf
 
 # Put it first so that "make" without argument is like "make help".
 help:
