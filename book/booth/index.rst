@@ -68,9 +68,7 @@ OSC2016 Kyoto
    OSC2016 Kyoto booth
 
 .. image:: images/RogueOne.png
-   :alt: Rogue One
 .. image:: images/OSC2016KyotoMeshi.png
-   :alt: Cafe lunch
 
 OSC2016 Kyoto network
 ------------------------------
@@ -105,9 +103,7 @@ OSC2015 Kansai@Kyoto network
 OSC2015 Kansai@Kyoto photographs
 ---------------------------------
 .. image:: images/OSC2015KyotoGirl.png
-   :alt: Booth girl
 .. image:: images/OSC2015KyotoMeshi.png
-   :alt: Cafe lunch
 
 Japan NetBSD Users Group at OSC2015 Kyoto
 ------------------------------------------
@@ -119,6 +115,16 @@ Japan NetBSD Users Group at OSC2015 Kyoto
    :align: center
 
    Japan NetBSD Users Group booth at OSC2015 Kansai@Kyoto
+
+OSC2014 Kansai@Kyoto
+=====================
+* Official page: https://www.ospn.jp/osc2014-kyoto/
+
+.. image:: images/OSC2014KyotoMeshi1.png
+.. image:: images/OSC2014KyotoMeshi2.png
+.. image:: images/OSC2014Kyoto.png
+.. image:: images/OSC2014Kyoto.png
+.. image:: images/OSC2014Kyoto.png
 
 OSC2013 Kansai@Kyoto
 =====================
@@ -140,15 +146,33 @@ Japan NetBSD Users Group at OSC2013 Kyoto
 
 .. figure:: images/OSC2013KyotoJNUG.jpg
 
-Wonderful lunch
-------------------
 .. image:: images/OSC2013KyotoMeshi1.png
 .. image:: images/OSC2013KyotoMeshi2.png
 .. image:: images/OSC2013KyotoMeshi3.png
 .. image:: images/OSC2013KyotoMeshi4.png
 
+OSC2012 Kansai@Kyoto
+=====================
+* Official page: https://www.ospn.jp/osc2012-kyoto/
+* JNUG togetter report (in Japanese): https://togetter.com/li/350035
+
+.. figure:: images/OSC2012KyotoBooth.png
+   :align: center
+
+.. image:: images/OSC2012KyotoKBUG.jpg
+.. image:: images/OSC2012KyotoRetroBSD.jpg
+.. image:: images/OSC2012KyotoBoothBack.png
+.. image:: images/OSC2012KyotoBoothView.png
+.. image:: images/OSC2012KyotoZaurus.png
+.. image:: images/OSC2012KyotoMyRoom.png
+.. image:: images/OSC2012KyotoMeshi1.png
+.. image:: images/OSC2012KyotoMeshi2.png
+.. image:: images/OSC2012KyotoMeshi3.png
+
 Event @ Nara National College of Technology
 ===========================================
+* Official page: http://qml.610t.org/NNCT/event12.html
+
 .. image:: images/Event@NNCT-all.png
 .. image:: images/Event@NNCT-dreamcast.png
 .. image:: images/Event@NNCT-sharp.png
@@ -156,9 +180,33 @@ Event @ Nara National College of Technology
 .. image:: images/Event@NNCT-PenCentra.png
 .. image:: images/Event@NNCT-Fonera.png
 
+OSC2011 Kansai@Kyoto
+=====================
+* Official page: https://www.ospn.jp/osc2011-kyoto/
+* JNUG togetter report (in Japanese): 
+
+.. figure:: images/OSC2011KyotoBooth.png
+   :align: center
+
+.. image:: images/OSC2011KyotoBuild.png
+.. image:: images/OSC2011KyotoVM.png
+.. image:: images/OSC2011KyotoOpenBSD.png
+.. image:: images/OSC2011KyotoJoyStick.png
+.. image:: images/OSC2011KyotoGion1.png
+
+OSC2010 Kansai@Kyoto
+=====================
+* Official page: https://www.ospn.jp/osc2010-kyoto/
+* JNUG togetter report (in Japanese): 
+
+OSC2009 Kansai@Kyoto
+=====================
+* Official page: https://www.ospn.jp/osc2009-kansai/
+* JNUG togetter report (in Japanese): 
+
 OSC2008 Kansai@Kyoto
 =====================
-* Official page: https://www.ospn.jp/osc2008-kyoto/
+* Official page: https://www.ospn.jp/osc2008-kansai/
 * Flyer: 
 
 .. figure:: images/OSC2008KyotoBooth.png
@@ -176,7 +224,7 @@ OSC2008 Kansai@Kyoto
 .. figure:: images/KBUGseal2.jpg
    :align: center
 
-.. table::
+.. csv-table::
 
-   2017/3/11 First edition is pushed at AsiaBSD Conference 2017
+   "2017/3/11", "First edition is pushed at AsiaBSD Conference 2017"
 
