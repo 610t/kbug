@@ -6,45 +6,55 @@
 Kansai * BSD Users Group Event Guide
 =============================================
 
-.. figure:: images/Booth.png
-   :align: center
+AsiaBSD Conference 2017 https://2017.asiabsdcon.org/ Edition
 
-.. figure:: images/KBUGseal2.jpg
+.. figure:: images/Booth.png
    :align: center
 
    http://www.kbug.gr.jp/
 
-.. image:: images/QRcode.png
-
-   PDF
+.. image:: images/QRcodePDF.png
+.. image:: images/QRcodeWWW.png
+.. image:: images/QRcodeFacebook.png
 
 .. figure:: images/facebook_banner.png
    :align: center
 
-   K*BUG Books
+.. contents::
 
+AsiaBSD Conference 2017
+==========================================
+* Official page: https://2017.asiabsdcon.org/
+* twitter: #abc
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-
-Kansai *BSD Users Group 2017/2/11 meeting
+Kansai * BSD Users Group 2017/2/11 meeting
 ==========================================
 * Official page: http://www.kbug.gr.jp/events/2017-1st.html
 * Facebook: https://www.facebook.com/events/920179428083721/
+* togetter summary: https://togetter.com/li/1078967
 
 .. figure:: images/Booth.png
    :align: center
 
-   Kansai *BSD Users Group 2017/2/11 Booth
-
-.. image:: images/RetroBSD.png
-.. image:: images/LiteBSD.png
-.. image:: images/RaspberryPiZero.png
+   Kansai * BSD Users Group 2017/2/11 Booth
 
 * RetroBSD: 2.11BSD on MIPS(PIC32MX). The board name is Pinguino-RetroBSD.
 * LiteBSD: 4.4BSDLite on MIPS(PIC32MZ). The board name is Chipkit WiFi
 * Raspberry Pi Zero
+
+Presentation at K*BUG 2017/2/11 meeting
+---------------------------------------
+* IOzone graph with Excel
+* K*BUG @ OSC2015 (in Japanse): http://qml.610t.org/FreeBSD/OSC2015Kyoto.html
+* Raspberry Pi on FreeBSD
+* Scratch on BSD (in Japanse): http://qml.610t.org/FreeBSD/ScratchBSD.html
+* iOS with wired LAN
+
+K*BUG 2017/2/11 meeting photographs
+---------------------------------
+.. image:: images/RetroBSD.png
+.. image:: images/LiteBSD.png
+.. image:: images/RaspberryPiZero.png
 
 OSC2016 Kyoto
 =====================
@@ -62,8 +72,9 @@ OSC2016 Kyoto
 .. image:: images/OSC2016KyotoMeshi.png
    :alt: Cafe lunch
 
-.. figure:: images/OSC2016KyotoNetwork-1png
-   :title: OSC2016 Kyoto network
+OSC2016 Kyoto network
+------------------------------
+.. figure:: images/OSC2016KyotoNetwork-1.png
    :align: center
 
 Japan NetBSD Users Group at OSC2016 Kyoto
@@ -75,7 +86,7 @@ Japan NetBSD Users Group at OSC2016 Kyoto
 .. figure:: images/OSC2016KyotoJNUG.jpg
    :align: center
 
-   Japan NetBSD Users Group booth @ 
+   Japan NetBSD Users Group booth @ OSC2016 Kyoto
 
 OSC2015 Kansai@Kyoto
 =====================
@@ -86,11 +97,13 @@ OSC2015 Kansai@Kyoto
 
    OSC2015 Kansai@Kyoto booth
 
+OSC2015 Kansai@Kyoto network
+------------------------------
 .. figure:: images/OSC2015KyotoNetwork.jpg
    :align: center
 
-   OSC2015 Kansai@Kyoto network
-
+OSC2015 Kansai@Kyoto photographs
+---------------------------------
 .. image:: images/OSC2015KyotoGirl.png
    :alt: Booth girl
 .. image:: images/OSC2015KyotoMeshi.png
@@ -112,34 +125,36 @@ OSC2013 Kansai@Kyoto
 * Official page: https://www.ospn.jp/osc2013-kyoto/
 * Booth page (in Japanese): http://qml.610t.org/FreeBSD/OSC2013Kyoto.html
 * Report (in Japanese): http://qml.610t.org/FreeBSD/OSC2013KyotoReport.html
+* togetter report (in Japanese): https://togetter.com/li/506220
 
 OSC2013 Kansai@Kyoto booth
 ---------------------------
 .. image:: images/OSC2013KyotoAudio.png
-   :alt: OSC2013 Kansai@Kyoto Audio system
 .. image:: images/OSC2013KyotoRetroBSD.png
-   :alt: OSC2013 Kansai@Kyoto RetroBSD
 .. image:: images/OSC2013KyotoBoard.png
-   :alt: OSC2013 Kansai@Kyoto Boards
 
 Japan NetBSD Users Group at OSC2013 Kyoto
 ------------------------------------------
 * Official Page: http://www.jp.netbsd.org/
-* togetter: 
 * netbsd-advocacy "": 
 
 .. figure:: images/OSC2013KyotoJNUG.jpg
-   :align: center
-
-   Japan NetBSD Users Group booth at OSC2013 Kansai@Kyoto
 
 Wonderful lunch
 ------------------
 .. image:: images/OSC2013KyotoMeshi1.png
-   :alt:   1st day: Cafe lunch
 .. image:: images/OSC2013KyotoMeshi2.png
-   :alt:   2nd day: Daikon no Hana, Chiken fly
 .. image:: images/OSC2013KyotoMeshi3.png
+.. image:: images/OSC2013KyotoMeshi4.png
+
+Event @ Nara National College of Technology
+===========================================
+.. image:: images/Event@NNCT-all.png
+.. image:: images/Event@NNCT-dreamcast.png
+.. image:: images/Event@NNCT-sharp.png
+.. image:: images/Event@NNCT-MobileGear.png
+.. image:: images/Event@NNCT-PenCentra.png
+.. image:: images/Event@NNCT-Fonera.png
 
 OSC2008 Kansai@Kyoto
 =====================
@@ -147,6 +162,7 @@ OSC2008 Kansai@Kyoto
 * Flyer: 
 
 .. figure:: images/OSC2008KyotoBooth.png
+   :align: center
 
 .. image:: images/OSC2008KyotoIshihara.png
 .. image:: images/OSC2008KyotoMiku.png
@@ -156,4 +172,11 @@ OSC2008 Kansai@Kyoto
 .. image:: images/OSC2008KyotoKonomi.png
 .. image:: images/OSC2008KyotoYakiRamen.png
 .. image:: images/OSC2008KyotoCheese.png
+
+.. figure:: images/KBUGseal2.jpg
+   :align: center
+
+.. table::
+
+   2017/3/11 First edition is pushed at AsiaBSD Conference 2017
 
