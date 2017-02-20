@@ -7,55 +7,54 @@
 
 .. |Japanese| image:: images/Japan-flag.png 
 
-Kansai * BSD Users Group Event Guide
-=============================================
-
-AsiaBSDCon 2017 https://2017.asiabsdcon.org/ Edition
-
-.. figure:: images/Booth.png
-   :align: center
-
-   http://www.kbug.gr.jp/
-
-.. image:: images/QRcodePDF.png
-.. image:: images/QRcodeWWW.png
-.. image:: images/QRcodeFacebook.png
-
-.. figure:: images/facebook_banner.png
-   :align: center
-
 What is Kansai * BSD Users Group?
 ==========================================
+Kansai * BSD Users Group (K*BUG) is regional BSD Users Group at Kansai area in Japan.
+Kansai area has many cities including Osaka, Kyoto, Kobe, Nara and so on.
 
-Policy
---------
+.. Policy
+.. --------
 
+Deamon-Mushi
+-------------
+Deamon-Mushi is a mascot character for K*BUG.
+
+.. figure:: images/KBUGseal2.jpg
+   :align: center
 
 Meeting
 --------
+We hold meeting every 2 monthes.
+
+We use these meeting rooms:
+
+* AXE Inc. meeting room at Kyoto: http://www.axe-inc.co.jp/english/index.html
+* Grand front Osaka: https://www.grandfront-osaka.jp/multilingulal/
 
 Event activities
 ------------------
+We open booth at these events:
+
 * Open Source Conference |Japanese|: http://ospn.jp/
 * Kansai Open Forum |Japanese|: https://k-of.jp/
 
 AsiaBSDCon 2017
 ==========================================
 * Official page: https://2017.asiabsdcon.org/
-* twitter: #abc
+.. * twitter: #abc
 
 Kansai * BSD Users Group 2017/2/11 meeting
 ==========================================
 * Official page |Japanese| : http://www.kbug.gr.jp/events/2017-1st.html
 * 2017/2/11(Sat) at Axe inc (Kyoto)
 * Facebook |Japanese|: https://www.facebook.com/events/920179428083721/
-* togetter summary |Japanese|: https://togetter.com/li/1078967
+* togetter |Japanese|: https://togetter.com/li/1078967
 
 .. figure:: images/Booth.png
    :align: center
 
-.. image:: images/RetroBSD-1.png
-.. image:: images/LiteBSD-1.png
+.. image:: images/RetroBSD.png
+.. image:: images/LiteBSD.png
 .. image:: images/RaspberryPiZero.png
 
 * RetroBSD: 2.11BSD on MIPS(PIC32MX). The board name is Pinguino-RetroBSD.
@@ -75,11 +74,18 @@ Open Source Conference (OSC) 2017 Osaka
 * Official page |Japanese|: https://www.ospn.jp/osc2017-osaka/
 * 2017/1/27(Fri), 28(Sat) at Osaka Sansokan
 * K*BUG flyer (not published) |Japanese|: http://sacraya.610t.org/kbug/flyer/flyer-OSC2017Osaka.pdf
+* togetter by JNUG |Japanese|: https://togetter.com/li/1075115
 
 JNUG Seminar
 -------------
 * NetBSD Guide |Japanese|: http://www.soum.co.jp/~jun/OSC2017osaka.pdf
 * NetBSD+pkgsrc PC-6001 emulator |Japanese|: https://speakerdeck.com/tsutsui/osc2017-osaka-pc-6001-emulator-on-netbsd-and-pkgsrc
+
+KOF 2016
+=====================
+* Official page |Japanese|: https://2016.k-of.jp/
+* 2016/11/(Fri), (Sat) at ATC (Osaka)
+* togetter by JNUG |Japanese|: https://togetter.com/li/1047263
 
 Open Source Conference (OSC) 2016 Kyoto
 =========================================
@@ -90,7 +96,7 @@ Open Source Conference (OSC) 2016 Kyoto
 * togetter by JNUG |Japanese|: https://togetter.com/li/1005828
 * netbsd-advocacy "NetBSD machines at Open Source Conference 2016 Kyoto": http://mail-index.netbsd.org/netbsd-advocacy/2016/08/01/msg000712.html
 
-.. figure:: images/OSC2016KyotoBooth-1.png
+.. figure:: images/OSC2016KyotoBooth.png
    :align: center
 
 .. image:: images/OSC2016KyotoPiZero.png
@@ -100,7 +106,7 @@ Open Source Conference (OSC) 2016 Kyoto
 .. image:: images/RogueOne.png
 .. image:: images/OSC2016KyotoMeshi.png
 
-.. figure:: images/OSC2016KyotoNetwork-1.png
+.. figure:: images/OSC2016KyotoNetwork.png
    :align: center
 
 JNUG Seminar
@@ -116,6 +122,7 @@ OSC2015 Kansai@Kyoto
 * K*BUG flyer |Japanese|: http://sacraya.610t.org/kbug/flyer/flyer-OSC2015Kyoto.pdf
 * Report |Japanese|: http://qml.610t.org/FreeBSD/OSC2015Kyoto.html
 * togetter by JNUG |Japanese|: https://togetter.com/li/857157
+
 .. figure:: images/OSC2015KyotoBooth.png
    :align: center
 
@@ -128,10 +135,25 @@ OSC2015 Kansai@Kyoto
 JNUG Seminar
 -------------
 * NetBSD Guide |Japanese|: http://www.soum.co.jp/~jun/OSC2015kyoto.pdf
+* Maintainance 20 years before machine at NetBSD: https://speakerdeck.com/tsutsui/osc2015kyoto-netbsd-and-old-machines
+
+KOF 2014
+=====================
+* Official page |Japanese|: https://2016.k-of.jp/
+* 2014/11/7(Fri), 8(Sat) at ATC (Osaka)
+* K*BUG flyer |Japanese|: http://sacraya.610t.org/kbug/flyer/flyer-KOF2014.pdf
+* togetter by JNUG |Japanese|: https://togetter.com/li/742243
+
+JNUG Seminar
+-------------
+* NetBSD Guide |Japanese|: http://www.soum.co.jp/~jun/KOF2014.pdf
+* LUNA at KOF |Japanese|: https://speakerdeck.com/tsutsui/kof-and-luna-at-netbsd-booth
 
 OSC2014 Kansai@Kyoto
 =====================
 * Official page |Japanese|: https://www.ospn.jp/osc2014-kyoto/
+* 2016/8/7(Fri), 8(Sat) at Kyoto Research Park (KRP)
+* togetter by JNUG |Japanese|: https://togetter.com/li/857157
 
 .. image:: images/OSC2014KyotoMeshi1.png
 .. image:: images/OSC2014KyotoMeshi2.png
@@ -143,7 +165,7 @@ OSC2013 Kansai@Kyoto
 * Booth page |Japanese|: http://qml.610t.org/FreeBSD/OSC2013Kyoto.html
 * Report |Japanese|: http://qml.610t.org/FreeBSD/OSC2013KyotoReport.html
 * Board, board, board!! |Japanese| at JNUG seminar: http://qml.610t.org/FreeBSD/OSC2013Kyoto610.html
-* togetter report |Japanese|: https://togetter.com/li/506220
+* togetter by JNUG |Japanese|: https://togetter.com/li/506220
 
 .. image:: images/OSC2013KyotoAudio.png
 .. image:: images/OSC2013KyotoRetroBSD.png
@@ -191,7 +213,7 @@ KOF 2012
 OSC2012 Kansai@Kyoto
 =====================
 * Official page |Japanese|: https://www.ospn.jp/osc2012-kyoto/
-* togetter report by JNUG |Japanese|: https://togetter.com/li/350035
+* togetter by JNUG |Japanese|: https://togetter.com/li/350035
 
 .. figure:: images/OSC2012KyotoBooth.png
    :align: center
@@ -228,7 +250,7 @@ OSC2011 Kansai@Kyoto
 =====================
 * Official page |Japanese|: https://www.ospn.jp/osc2011-kyoto/
 * K*BUG flyer |Japanese|: http://sacraya.610t.org/kbug/flyer/flyer-OSC2011Kyoto.pdf
-* togetter report by JNUG |Japanese|: 
+* togetter by JNUG |Japanese|: 
 
 .. figure:: images/OSC2011KyotoBooth.png
    :align: center
@@ -249,10 +271,21 @@ OSC2010 Kansai@Kobe
 * Official page |Japanese|: https://www.ospn.jp/osc2010-kobe/
 * K*BUG flyer |Japanese|: http://sacraya.610t.org/kbug/flyer/flyer-OSC2010Kobe.pdf
 
+KOF 2009
+=====================
+* Official page |Japanese|: https://k-of.jp/2009/
+* 2009/11/6(Fri), 7(Sat) at ATC
+* K*BUG flyer |Japanese|: http://sacraya.610t.org/kbug/flyer/flyer-KOF2009.pdf
+
+.. figure:: images/KOF2009Booth.png
+   :align: center
+
 OSC2009 Kansai@Kyoto
 =====================
 * Official page |Japanese|: https://www.ospn.jp/osc2009-kansai/
-* togetter report by JNUG |Japanese|: 
+* 2008/7/18(Fri), 19(Sat) at kcg.edu: http://www.kcg.ac.jp/
+.. * togetter by JNUG |Japanese|: 
+
 
 KOF 2008
 =====================
@@ -273,7 +306,8 @@ KOF 2008
 OSC2008 Kansai@Kyoto
 =====================
 * Official page |Japanese|: https://www.ospn.jp/osc2008-kansai/
-* K*BUG flyer |Japanese|: 
+* 2008/7/18(Fri), 19(Sat) at kcg.edu: http://www.kcg.ac.jp/
+.. * K*BUG flyer |Japanese|: 
 
 .. figure:: images/OSC2008KyotoBooth.png
    :align: center
@@ -293,12 +327,12 @@ OSC2008 Kansai@Kyoto
 
 Event @ NNCT 11st
 =================================================
-* Official page: http://qml.610t.org/NNCT/event13.html
+* Official page |Japanese|: http://qml.610t.org/NNCT/event13.html
 * 2017/3/31(Sat) at NNCT
 
-* [Presentation] Introduction NNCT Information Engineering Computer Room.
-* [Presentation] FreeBSD ports: RoboCup 2D simulator
-* [Presentation] Create Squeak Dual Boot CDROM |Japanese|: http://qml.610t.org/squeak/squeak_cdrom.html
+* Introduction NNCT Information Engineering Computer Room.
+* FreeBSD ports: RoboCup 2D simulator
+* Create Squeak Dual Boot CDROM |Japanese|: http://qml.610t.org/squeak/squeak_cdrom.html
 
 .. image:: images/Event@NNCT11-OLPC.png
 .. image:: images/Event@NNCT11-GRUB.png
@@ -315,16 +349,12 @@ Event @ NNCT 3rd
 
 Presentations
 ---------------------------------------
-* [Report] xcast6 online meeting
+* Report: xcast6 online meeting
 * Postfix
 * One chip microcomputer AVR
 * Recovery 48 computers using PXEBOOT in 30 minutes
 * Document using SmartDoc
 * About DocBook/SGML
-
-Event @ NNCT 2nd
-=================================================
-* 2002/3/23(Sat) at NNCT
 
 Event @ NNCT 1st
 =================================================
@@ -351,5 +381,6 @@ Presentations
 
 .. csv-table::
 
-   "2017/3/11", "First edition is pushed at AsiaBSDCon 2017"
+   "2017/2/25", "Photobook edition"
+   "2017/3/11", "AsiaBSDCon 2017 edition"
 
