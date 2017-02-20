@@ -46,8 +46,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'K*BUG Booth Guide'
-copyright = u'2017, K*BUG Booth Guide'
-author = u'K*BUG Booth Guide'
+copyright = u'2017, K*BUG'
+author = u'K*BUG'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -148,7 +148,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
     (master_doc, 'KBUGBoothGuide', u'K*BUG Booth Guide Documentation',
-     author, 'KBUGBoothGuide', 'One line description of project.',
+     author, 'K*BUG', 'One line description of project.',
      'Miscellaneous'),
 ]
 
