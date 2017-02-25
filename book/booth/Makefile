@@ -9,10 +9,10 @@ SOURCEDIR     = .
 BUILDDIR      = _build
 
 all:
-	make html
-	make singlehtml
+	${MAKE} html
+	${MAKE} singlehtml
 	rst2pdf index.rst
-	gs -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=book.pdf AsiaBSDConCover.pdf KBUGBoothGuide.pdf
+	gs -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=book.pdf AsiaBSDConCover.pdf KBUGBoothGuide.pdf BackCover.pdf
 
 sync:
 	rsync -azv _build/ sacraya.610t.org:/mnt/vela/www/apache22/data/kbug/book/booth/
