@@ -8,13 +8,18 @@
 
 .. |Japanese| image:: images/Japan-flag.png 
 
-.. contents:: Table of Contents
-   :depth: 1
-
 What is Kansai * BSD Users Group?
 ==========================================
 Kansai * BSD Users Group (K*BUG) is regional BSD Users Group at Kansai area in Japan.
 Kansai area has many cities including Osaka, Kyoto, Kobe, Nara and so on.
+
+Our web page is |Japanese| http://www.kbug.gr.jp/ .
+
+.. figure:: images/Kansai.png
+   :align: center
+   :scale: 70%
+
+   Kansai area (c) OpenStreetMap contributors
 
 .. Policy
 .. --------
@@ -22,7 +27,7 @@ Kansai area has many cities including Osaka, Kyoto, Kobe, Nara and so on.
 Daemon-Mushi (でもんむし)
 ---------------------------
 Deamon-Mushi (でもんむし) is a mascot character for K*BUG.
-SVG source file is at http://sacraya.610t.org/kbug/logo/ .
+Inkscape SVG source file is at http://sacraya.610t.org/kbug/logo/ .
 
 .. figure:: images/KBUGseal2.jpg
    :align: center
@@ -39,7 +44,7 @@ Interest
 * Languages: Prolog, Lisp, awk, Squeak, Scratch, ...
 * Hardware: UPS, HDD, Server, Bluetooth, GPIO, ...
 * Physical Computing: Gainer (gainerm-lib), Arduino, ...
-* Electronic work: hacked USB audio servo controller, lectric circuit with magazine, ...
+* Electronic work: hacked USB audio servo controller, electric circuit with magazine, ...
 * misc: OpenCV, ContaoCMS, ...
 * Woodworking: K*BUG sign, daemon wood carving, ...
 * Drinking party after every meeting
@@ -47,6 +52,7 @@ Interest
 Meeting
 --------
 We hold meeting every 2 monthes.
+Meeting schedule is |Japanese| http://www.kbug.gr.jp/workshops.html .
 
 We use these meeting rooms:
 
@@ -59,11 +65,14 @@ We open booth at these events:
 
 * Open Source Conference |Japanese|: http://ospn.jp/
 * Kansai Open Forum |Japanese|: https://k-of.jp/
+* Event@NNCT |Japanese|: http://qml.610t.org/NNCT/event.html
 
 AsiaBSDCon 2017
 ==========================================
 * Official page: https://2017.asiabsdcon.org/
 * 2017/3/9(Wed)-12(Sun) at Tokyo University of Science
+* Facebook: https://www.facebook.com/events/1718621151740857/
+* togetter: https://togetter.com/li/1084357
 
 Kansai * BSD Users Group 2017/2/11 meeting
 ==========================================
@@ -596,9 +605,23 @@ Event @ NNCT 1st
 * Install hands on
 * BSD media in Japan
 
-.. csv-table::
-   :align: center
+.. contents:: Table of Contents
+   :depth: 1
 
-   "2017/2/25", "Photobook edition"
+* Print version PDF is at http://sacraya.610t.org/kbug/book/booth/KBUGBoothGuide-print.pdf
+* Valid link PDF is at http://sacraya.610t.org/kbug/book/booth/KBUGBoothGuide.pdf
+* HTML version is at http://sacraya.610t.org/kbug/book/booth/singlehtml/
+* Source is at https://github.com/610t/kbug/tree/master/book/booth/
+
+.. image:: images/QRcodePDF.png
+.. image:: images/QRcodePDF-print.png
+.. image:: images/QRcodeWWW.png
+.. image:: images/QRcodeGithub.png
+   :scale: 70%
+
+.. csv-table::
+   :align: right
+
+   2017/2/25,	Photobook edition
 ..   "2017/3/11", "AsiaBSDCon 2017 edition"
 
