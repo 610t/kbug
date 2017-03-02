@@ -9,8 +9,8 @@ SOURCEDIR     = .
 BUILDDIR      = _build
 
 all:
-	make html
-	make singlehtml
+	${MAKE} html
+	${MAKE} singlehtml
 	rst2pdf index.rst
 	gs -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=book.pdf AsiaBSDConCover.pdf KBUGBoothGuide.pdf
 
