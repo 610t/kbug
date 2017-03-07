@@ -8,6 +8,9 @@
 
 .. |Japanese| image:: images/Japan-flag.png 
 
+.. contents:: Table of Contents
+   :depth: 1
+
 What is Kansai * BSD Users Group?
 ==========================================
 Kansai * BSD Users Group (K*BUG) is regional BSD Users Group at Kansai area in Japan.
@@ -113,6 +116,17 @@ JNUG Seminar
 * NetBSD Guide |Japanese|: http://www.soum.co.jp/~jun/OSC2017osaka.pdf
 * PC6001 emulator PC6001VX on NetBSD + pkgsrc by @tsutsui |Japanese|: https://speakerdeck.com/tsutsui/osc2017-osaka-pc-6001-emulator-on-netbsd-and-pkgsrc
 
+K*BUG 2016/12/10 meeting
+=========================
+* Official page |Japanese| : http://www.kbug.gr.jp/events/18th-plenary.html
+* 2016/12/10(Sat) at Axe inc (Kyoto)
+
+Presentations
+---------------------------------------
+* Ansible https://www.ansible.com/
+* PostgREST https://postgrest.com/
+* Something about BHyVe |Japanese|: https://people.freebsd.org/~kiri/kbug/bof/2016/No.5/
+
 KOF 2016
 =====================
 * Official page |Japanese|: https://k-of.jp/2016/
@@ -124,6 +138,31 @@ BSD BOF
 -------------
 * NetBSD travel guide |Japanese|: http://www.soum.co.jp/~jun/KOF2016.pdf
 * NetBSD/dreamcast IDE HDD again (more update from OSC2016Tokyo/Fall) by @tsutsui  |Japanese|: https://speakerdeck.com/tsutsui/kof2016-netbsd-dreamcast-ide-hdd
+
+K*BUG 2016/10/22 meeting
+=========================
+* Official page |Japanese| : http://www.kbug.gr.jp/events/2016-5th.html
+* 2016/10/22(Sat) at Grand front Osaka
+
+Presentations
+---------------------------------------
+* Smart Connect Managed Server
+* How to make XEmacs *-pkg.tar.gz |Japanese| : https://people.freebsd.org/~kiri/kbug/bof/2016/No.4/
+* Bluetooth 4.1 for Raspberry Pi 3
+* Broken /var/run by file system trouble 
+
+K*BUG 2016/8/20 meeting
+=========================
+* Official page |Japanese| : http://www.kbug.gr.jp/events/2016-4th.html
+* 2016/8/20(Sat) at Grand front Osaka
+
+Presentations
+---------------------------------------
+* Sphere display: WORLDEYE |Japanese| http://www.gakkensf.co.jp/worldeye/
+* KORG BLE MIDI Keyboard  |Japanese| http://www.korg.com/jp/products/computergear/microkey2_air/
+* SSO with OpenID Connect
+* https://www.codingame.com/
+* UEFI
 
 OSC2016 Kyoto
 ===============
@@ -162,6 +201,40 @@ JNUG Seminar
 * NetBSD Guide |Japanese|: http://www.soum.co.jp/~jun/OSC2016kyoto.pdf
 * PSG sound at NetBSD/luna |Japanese|: https://speakerdeck.com/tsutsui/osc2016-kyoto-psg-tunes-on-netbsd-luna68k
 * RetroBSD & LiteBSD by @610t |Japanese|: http://qml.610t.org/FreeBSD/OSC2016Kyoto_JNUG.html
+
+K*BUG 2016/6/18 meeting
+=========================
+* Official page |Japanese| : http://www.kbug.gr.jp/events/2016-3rd.html
+* 2016/6/18(Sat) at Axe inc (Kyoto)
+
+Presentations
+---------------------------------------
+* Upgrade NetBSD with sysupgrade
+* Bluetooth LE Mouse on FreeBSD
+* Old man porter's rehabilitation |Japanese| : https://people.freebsd.org/~kiri/kbug/bof/2016/No.3/
+* pkgsrc on OS X 10.11
+
+K*BUG 2016/4/23 meeting
+=========================
+* Official page |Japanese| : http://www.kbug.gr.jp/events/2016-2nd.html
+* 2016/4/23(Sat) at Grand front Osaka
+
+Presentations
+---------------------------------------
+* About XIJ (Xorg in Jail) |Japanese| : https://people.freebsd.org/~kiri/kbug/bof/2016/No.2/
+
+K*BUG 2016/2/20 meeting
+=========================
+* Official page |Japanese| : http://www.kbug.gr.jp/events/2016-2nd.html
+* 2016/2/20(Sat) at Axe inc (Kyoto)
+
+Presentations
+---------------------------------------
+* How to maintain many machines.
+* sh(II) - command line 
+* 
+* efi
+* DNS name resolving error
 
 OSC2015 Kansai@Kyoto
 =====================
@@ -605,9 +678,6 @@ Event @ NNCT 1st
 * Install hands on
 * BSD media in Japan
 
-.. contents:: Table of Contents
-   :depth: 1
-
 * Print version PDF is at http://sacraya.610t.org/kbug/book/booth/KBUGBoothGuide-print.pdf
 * Valid link PDF is at http://sacraya.610t.org/kbug/book/booth/KBUGBoothGuide.pdf
 * HTML version is at http://sacraya.610t.org/kbug/book/booth/singlehtml/
@@ -620,8 +690,8 @@ Event @ NNCT 1st
    :scale: 70%
 
 .. csv-table::
-   :align: right
+   :align: center
 
    2017/2/25,	Photobook edition
-..   "2017/3/11", "AsiaBSDCon 2017 edition"
+   2017/3/11,	AsiaBSDCon 2017 edition
 
