@@ -8,8 +8,8 @@
 
 .. |Japanese| image:: images/Japan-flag.png 
 
-.. contents:: Table of Contents
-   :depth: 1
+.. .. contents:: Table of Contents
+..   :depth: 1
 
 What is Kansai * BSD Users Group?
 ==========================================
@@ -225,16 +225,53 @@ Presentations
 
 K*BUG 2016/2/20 meeting
 =========================
-* Official page |Japanese| : http://www.kbug.gr.jp/events/2016-2nd.html
+* Official page |Japanese| : http://www.kbug.gr.jp/events/2016-1st.html
 * 2016/2/20(Sat) at Axe inc (Kyoto)
 
 Presentations
 ---------------------------------------
 * How to maintain many machines.
-* sh(II) - command line 
-* 
+* Nowadays sh(II) - how to resolve command line options |Japanese| : https://people.freebsd.org/~kiri/kbug/bof/2016/No.1/
+* Home network trouble
 * efi
 * DNS name resolving error
+
+K*BUG 2016/1/23 meeting
+=========================
+* Official page |Japanese| : http://www.kbug.gr.jp/events/17th-plenary.html
+* 2016/1/23(Sat) at Grand front Osaka
+
+Presentations
+---------------------------------------
+* Trend of ssh log
+* FIDO U2F
+* About iPad & Apple Configurator
+* One older person's monologue |Japanese| : https://people.freebsd.org/~kiri/kbug/bof/2016/No.0/article.html
+
+K*BUG 2015/10/24 meeting
+=========================
+* Official page |Japanese| : http://www.kbug.gr.jp/events/2015-5th.html
+* 2015/10/24(Sat) at Axe inc (Kyoto)
+
+Presentations
+---------------------------------------
+* Report of Kyoto Brewing Co tasting space |Japanese| : https://kyotobrewing.com/
+* Install FreeBSD at VirtualBox
+* Demo of Apple Configurator 2
+
+K*BUG 2015/8/22 meeting
+=========================
+* Official page |Japanese| : http://www.kbug.gr.jp/events/2015-4th.html
+* 2015/8/22(Sat) at Grand front Osaka
+
+Presentations
+---------------------------------------
+* About CIM technology research group
+* Can't connect to WiFi, because of assign different IP address
+* Replace a university server
+* I said "Help me, ENOKI-san"
+* Nowadays ZFS (with demo)
+* https://letsencrypt.org/
 
 OSC2015 Kansai@Kyoto
 =====================
