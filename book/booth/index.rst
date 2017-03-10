@@ -808,10 +808,13 @@ Event @ NNCT 1st
 * Source is at https://github.com/610t/kbug/tree/master/book/booth/
 
 .. image:: images/QRcodePDF.png
+   :scale: 80%
 .. image:: images/QRcodePDF-print.png
+   :scale: 80%
 .. image:: images/QRcodeWWW.png
+   :scale: 80%
 .. image:: images/QRcodeGithub.png
-   :scale: 70%
+   :scale: 60%
 
 .. csv-table::
    :align: center
