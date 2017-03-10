@@ -30,10 +30,12 @@ Our web page is |Japanese| http://www.kbug.gr.jp/ .
 Daemon-Mushi (でもんむし)
 ---------------------------
 Deamon-Mushi (でもんむし) is a mascot character for K*BUG.
+It symbolize "* (asterisk)".
 Inkscape SVG source file is at http://sacraya.610t.org/kbug/logo/ .
 
 .. figure:: images/KBUGseal2.jpg
    :align: center
+   :scale: 80%
 
 Interest
 ---------
@@ -77,6 +79,21 @@ AsiaBSDCon 2017
 * Facebook: https://www.facebook.com/events/1718621151740857/
 * togetter: https://togetter.com/li/1084357
 
+.. image:: images/AsiaBSDCon2017-demo.jpg
+   :scale: 40%
+.. image:: images/pcbsd-demo.png
+   :scale: 20%
+.. image:: images/giftbox-distcc.png
+   :scale: 18%
+.. image:: images/AsiaBSDCon2017-network.jpg
+   :scale: 30%
+
+* RetroBSD GPIO/ADC demo, LiteBSD GPIO demo
+* Giftbox distcc compile cluster
+* Scartch x Android, ESP8266, micro:bit
+* Squeak+Gainer
+* Coldfire x OpenGL
+
 Kansai * BSD Users Group 2017/2/11 meeting
 ==========================================
 * Official page |Japanese| : http://www.kbug.gr.jp/events/2017-1st.html
@@ -86,6 +103,7 @@ Kansai * BSD Users Group 2017/2/11 meeting
 
 .. figure:: images/Booth.png
    :align: center
+   :scale: 60%
 
 .. image:: images/RetroBSD.png
 .. image:: images/LiteBSD.png
@@ -175,6 +193,7 @@ OSC2016 Kyoto
 
 .. figure:: images/OSC2016KyotoBooth.png
    :align: center
+   :scale: 50%
 
 .. image:: images/OSC2016KyotoPiZero.png
 .. image:: images/OSC2016KyotoBox.png
@@ -276,7 +295,7 @@ Presentations
 OSC2015 Kansai@Kyoto
 =====================
 * Official Page |Japanese|: https://www.ospn.jp/osc2015-kyoto/
-* 2016/8/7(Fri), 8(Sat) at Kyoto Research Park (KRP)
+* 2015/8/7(Fri), 8(Sat) at Kyoto Research Park (KRP)
 * K*BUG flyer |Japanese|: http://sacraya.610t.org/kbug/flyer/flyer-OSC2015Kyoto.pdf
 * Report |Japanese|: http://qml.610t.org/FreeBSD/OSC2015Kyoto.html
 * togetter by JNUG |Japanese|: https://togetter.com/li/857157
@@ -284,6 +303,7 @@ OSC2015 Kansai@Kyoto
 
 .. figure:: images/OSC2015KyotoBooth.png
    :align: center
+   :scale: 70%
 
 .. figure:: images/OSC2015KyotoNetwork.jpg
    :align: center
@@ -306,6 +326,54 @@ JNUG Seminar
 * NetBSD Guide |Japanese|: http://www.soum.co.jp/~jun/OSC2015kyoto.pdf
 * Maintainance before 20 years machine at NetBSD |Japanese|: https://speakerdeck.com/tsutsui/osc2015kyoto-netbsd-and-old-machines
 
+K*BUG 2015/6/27 meeting
+=========================
+* Official page |Japanese| : http://www.kbug.gr.jp/events/2015-3rd.html
+* 2015/6/27(Sat) at Axe inc (Kyoto)
+
+Presentations
+---------------------------------------
+* Bluetooth LE
+* pkgsrc
+* linux Bluetooth LE
+* Raidframe and broken disk. Cant boot correctly.
+* Gdev: Open source GPGPU Runtime and Driver Software
+* Can't use Dell 4K display with FreeBSD
+
+K*BUG 2015/5/16 meeting
+=========================
+* Official page |Japanese| : http://www.kbug.gr.jp/events/2015-2nd.html
+* 2015/5/16(Sat) at Axe inc (Kyoto)
+
+Presentations
+---------------------------------------
+* Nowaday sh
+
+K*BUG 2015/3/7 meeting
+=========================
+* Official page |Japanese| : http://www.kbug.gr.jp/events/2015-1st.html
+* 2015/3/7(Sat) at Grand front Osaka
+
+Presentations
+---------------------------------------
+* blink1
+* Raspberry PI GPIO on FreeBSD
+* Nowaday HTTP/2
+* Light talk about iPad
+
+K*BUG 2015/1/24 meeting
+=========================
+* Official page |Japanese| : http://www.kbug.gr.jp/events/16th-plenary.html
+* 2015/1/24(Sat) at Axe inc (Kyoto)
+
+Presentations
+---------------------------------------
+* BSD-lization at a National College of Technology.
+* SmartDoc
+* Dake
+* ZBSDocs (on SourceForge)
+* Backup using dump(8)
+
 KOF 2014
 =====================
 * Official page |Japanese|: https://k-of.jp/2014/
@@ -318,6 +386,17 @@ BSD BOF
 -------------
 * NetBSD Guide |Japanese|: http://www.soum.co.jp/~jun/KOF2014.pdf
 * LUNA at KOF |Japanese|: https://speakerdeck.com/tsutsui/kof-and-luna-at-netbsd-booth
+
+K*BUG 2014/8/23 meeting
+=========================
+* Official page |Japanese| : http://www.kbug.gr.jp/events/16th-plenary.html
+* 2014/8/23(Sat) at Axe inc (Kyoto)
+
+Presentations
+---------------------------------------
+* Upgrade FreeBSD 8.0 with freebsd-update(8) at wide cloud
+* Start enjoying with Bluetooth LE
+* Introduce tcpcrypt
 
 OSC2014 Kansai@Kyoto
 =====================
@@ -352,9 +431,12 @@ OSC2013 Kansai@Kyoto
 .. image:: images/OSC2013KyotoBoard.png
 
 .. image:: images/OSC2013KyotoMeshi1.png
-.. image:: images/OSC2013KyotoMeshi2.png
+   :scale: 70%
 .. image:: images/OSC2013KyotoMeshi3.png
+   :scale: 80%
 .. image:: images/OSC2013KyotoMeshi4.png
+   :scale: 80%
+.. .. image:: images/OSC2013KyotoMeshi2.png
 
 * iCat audio system
 * RetroBSD, 2.11BSD on PIC32
@@ -379,7 +461,7 @@ Event @ Nara National College of Technology(NNCT) 13rd
 
 .. figure:: images/Event@NNCT13-booth.png
    :align: center
-   :scale: 30%
+   :scale: 20%
 
 .. image:: images/Event@NNCT13-mutoh.png
 .. image:: images/Event@NNCT13-board.png
@@ -394,7 +476,8 @@ KOF 2012
 * 2012/11/9(Fri), 10(Sat) at ATC (Osaka)
 
 .. figure:: images/KOF2012Booth.png
-   :alt: center
+   :align: center
+   :scale: 40%
 
 .. image:: images/KOF2012Penguin.png
 .. image:: images/KOF2012Arduino.png
@@ -426,6 +509,7 @@ OSC2012 Kansai@Kyoto
 
 .. figure:: images/OSC2012KyotoBooth.png
    :align: center
+   :scale: 80%
 
 .. image:: images/OSC2012KyotoBoothView.png
 .. image:: images/OSC2012KyotoZaurus.png
@@ -496,9 +580,10 @@ OSC2011 Kansai@Kyoto
 
 .. figure:: images/OSC2011KyotoBooth.png
    :align: center
-   :scale: 60%
+   :scale: 50%
 
 .. image:: images/OSC2011KyotoBuild.png
+   :scale: 75%
 .. image:: images/OSC2011KyotoVM.png
 .. image:: images/OSC2011KyotoOpenBSD.png
 .. image:: images/OSC2011KyotoJoyStick.png
@@ -547,6 +632,7 @@ KOF 2009
 
 .. figure:: images/KOF2009Booth.png
    :align: center
+   :scale: 60%
 
 * NetBSD/mac68k on LC475Upgrade
 
@@ -593,6 +679,7 @@ KOF 2008
 
 .. figure:: images/KOF2008Booth.png
    :align: center
+   :scale: 70%
 
 .. image:: images/KOF2008daemon.png
 .. image:: images/KOF2008USL-5P.png
@@ -612,7 +699,7 @@ OSC2008 Kansai@Kyoto
 * 2008/7/18(Fri), 19(Sat) at kcg.edu: http://www.kcg.ac.jp/
 
 .. figure:: images/OSC2008KyotoBooth.png
-   :scale: 80%
+   :scale: 70%
    :align: center
 
 .. image:: images/OSC2008KyotoIshihara.png
