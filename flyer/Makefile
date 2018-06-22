@@ -1,6 +1,8 @@
-.SUFFIXES: .dvi .tex .pdf
+.SUFFIXES: .dvi .tex .pdf .ps
 
-all: flyer.pdf
+all: flyer.pdf flyer.ps
+
+flyer.dvi: flyer.tex date.tex
 
 clean:
 	rm -rf *.blg *.bbl *.aux *.dvi *.log *.pdf *~
@@ -14,5 +16,9 @@ date.tex: flyer.tex
 .tex.dvi: $(.IMPSRC)
 	(cd figures;${MAKE})
 	platex $(.IMPSRC) 
-.dvi.pdf: $(.IMPSRC)
-	dvipdfm $(.IMPSRC)
+#.dvi.pdf: $(.IMPSRC)
+#	dvipdfm $(.IMPSRC)
+.dvi.ps: $(.IMPSRC)
+	dvips $(.IMPSRC)
+.ps.pdf: 
+	ps2pdf14 -dPDFSETTINGS=/default -sPAPERSIZE=a4 $(.IMPSRC) $(.TARGET)
