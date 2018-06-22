@@ -1,7 +1,8 @@
 .SUFFIXES: .png .gif .eps .jpg .svg
 
 TARGETS= \
-	osc2015-kyoto-logo.eps kbug-summervacation-raspi.eps OSC2016-Giftbox.eps     OSC2016-RetroBSD.eps \
+	osc2018-kyoto-logo.eps facebook_banner.eps daimonji.eps distcc-rpi.eps OSC2016-Giftbox.eps OSC2016-RetroBSD.eps \
+	osc2015-kyoto-logo.eps osc2015-kyoto-booth.eps kbug-summervacation-raspi.eps \
 	kof2014-logo.eps kof2012-atc.eps kof2012-mutoh.eps osc2013kyoto.eps osc2013icat.eps oval-seal-4.eps \
 	osc2013-kyoto-logo.eps MyKyotoIchiba.eps kbug.gr.jp.eps KOF2012Booth.eps mailto.kbug-users.eps qml.610t.org.freebsd.OSC2013Kyoto.eps \
 	KOF2012.eps 514px-Atc_osaka03s3200.eps osc2012booth.eps event_nnct.eps seal2.eps \
@@ -27,5 +28,4 @@ clean:
 .jpg.eps: $(.IMPSRC)
 	convert $(.IMPSRC) $(.TARGET)
 .svg.eps: $(.IMPSRC)
-	pwd
 	inkscape --export-eps=$(.TARGET) $(.IMPSRC)
