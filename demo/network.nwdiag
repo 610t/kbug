@@ -1,57 +1,38 @@
 nwdiag{
   Internet [shape = cloud];
-  Internet -- "Nexus 5X";
-  Internet -- "OSC router";
+  Internet -- "P10 lite";
+#  Internet -- "OSC router";
 
-  network "OSC公式無線LAN" {
-    address = "192.168.??.x/24(?)"
+#  network "OSC公式無線LAN" {
+#    address = "192.168.??.x/24(?)"
+#
+#    "OSC router";
+#  }
 
-    "EX6100(ブリッジ)";
-    "OSC router";
-  }
+#  network OSC公式無線LAN {
+#    address = "ab.cd.ef.gh/ij"
+#  }
 
-  network OSC公式無線LAN {
-    address = "ab.cd.ef.gh/ij"
-
-    "EX6100(ブリッジ)";
-  }
-
-  network "Nexus 5X LAN" {
+  network "P10 lite LAN" {
     address = "??.??.??.??/??"
 
-    "Nexus 5X" [address = ".1"];
+    "P10 lite" [address = ".1"];
     "FreeBSD RaspPi B" [address = "DHCP, LCD loadavg"];
-  }
-
-  network "OSC用有線LAN(ブリッジ)" {
-    address = "ab.cd.ef.gh/ij"
-
-    "EX6100(ブリッジ)";
-    "中村さんマシン(s)" [address = "DHCP"];
-  }
-
-  network USB-Ether接続 {
-    address = "192.168.7.x/24"
-
-    "FreeBSD RaspPi B" [address = ".1"];
-    "RaspBSD BeagleBone Black" [address = ".2, GPIO LED loadavg, USB-Ether, USB-Serial"];
+    "NetBSD Netwalker" [address = "DHCP"];
   }
 
   network 内部LAN {
     address = "192.168.60.x/24";
 
-    "FreeBSD RaspPi B" [address = ".1"];
+    "FreeBSD RaspPi B"		[address = ".1"];
 
-    "NetBSD RaspPi2 B" [address = ".12, (192.168.2.100), distcc head/HDMI/Serial"];
-    "NetBSD Banana Pi" [address = ".14"];
-    "NetBSD RaspPi Zero" [address = ".16, GPIO LED loadavg"];
-  }
-
-  network 無線LAN-BSD_FARM {
-    address = "192.168.61.x/24";
-
-    "NetBSD RaspPi2 B" [address = ".1, 無線LAN AP"];
-  }
+    "NetBSD RaspPi2 B"		[address = ".12, (.2.100), distcc head/HDMI/Serial"];
+    "NetBSD Banana Pi"		[address = ".14, loadavg LED"];
+    "NetBSD RaspPi Zero"	[address = ".16"];
+    "OpenBSD BeagleBone Black"	[address = ".17, (.2.105), loadavg LED x4"];
+    "NetBSD NanoPi NEO"		[address = ".18, (.2.106), loadavg LED"];
+    "NetBSD Orange Pi Zero"	[address = ".19, (.2.107), loadavg LED"];
+}
 
   group distcc {
     label="distccクラスタ"
@@ -59,6 +40,25 @@ nwdiag{
     "NetBSD RaspPi2 B";
     "NetBSD RaspPi Zero";
     "NetBSD Banana Pi";
-    "RaspBSD BeagleBone Black";
+    "OpenBSD BeagleBone Black";
+
+    "NetBSD NanoPi NEO";
+    "NetBSD Orange Pi Zero";
+  }
+
+  network "aarch64 LAN" {
+    address = "192.168.61.x/24";
+
+    "NetBSD Jetson TX1"  [address = ".10"];
+    "NetBSD RaspPi3 B"   [address = ".11, Blinkt!"];
+    "NetBSD NanoPi NEO2" [address = ".12"];
+  } 
+
+  group aarch64_distcc {
+    label="aarch64 distccクラスタ"
+
+    "NetBSD Jetson TX1";
+    "NetBSD RaspPi3 B";
+    "NetBSD NanoPi NEO2";
   }
 }
