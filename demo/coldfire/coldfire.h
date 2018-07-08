@@ -4,7 +4,7 @@
 #include <ctype.h>
 
 int coldfire2data(float *);
-#define DEBUG 1
+// #define DEBUG 1
 
 #ifdef DEBUG
 #define COLDFIRE_HOST "sacraya.610t.org"
@@ -17,5 +17,6 @@ int coldfire2data(float *);
 #define ACCEL_MAX 4095
 #define CF_DATA_NUM 3
 #define FRAME_NUM 10
+#define MAX_STR 256
 
 extern int errno;

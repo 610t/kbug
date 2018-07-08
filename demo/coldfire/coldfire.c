@@ -14,13 +14,12 @@ float conv_range(float v, float org_min, float org_max,
 }
 
 int coldfire2data(float *v) {
-  int vs, vn;
   int i;
-  char cmdline[255];
+  char cmdline[MAX_STR];
   FILE *f;
-  char data[256];
-  char *e;
-  char *p;
+  char data[MAX_STR];
+  char *d;
+  char *endp;
 
   /* Update coldfire data / FRAME_NUM frame */
   frame++;
@@ -42,41 +41,52 @@ int coldfire2data(float *v) {
 
   /* parse data */
   f=fopen(COLDFIRE_DATA,"r");
-  while (fgets(data,256,f) != NULL) {
+  while (fgets(data,MAX_STR-1,f) != NULL) {
 #ifdef DEBUG
     printf("%s",data);
 #endif
   }
   fclose(f);
-	 
+
+  /* NULL terminate */
+#ifdef DEBUG
+  printf("org data=\"%s\"\n",data);
+#endif
+  for(i=0;i<strlen(data);i++){
+    if(data[i]=='\n') {
+      data[i]=0;
+      break;
+    }
+  }
+#ifdef DEBUG
+  printf("null data=\"%s\"\n",data);
+#endif
+
 #ifdef DEBUG
   fprintf(stderr,"Original data='%s'\n",data);
   fprintf(stderr,"\tdata[0]=%ld",strtol(data,&e,10));
-  fprintf(stderr,"\te=%d\n",e);
-  fprintf(stderr,"\tsizeof(v)=%d, strlen(data)=%d\n",sizeof(v),strlen(data));
+//  fprintf(stderr,"\tsizeof(v)=%d, strlen(data)=%d\n",sizeof(v),strlen(data));
 #endif
 
-  vs=0;
-  vn=0;
-  for(p=data;p<(data+strlen(data)) && vn<sizeof(v)/sizeof(float);p++) {
+  d=data;
+  endp=d;
+  i=0;
+  while(*endp!=0) {
+    v[i]=strtol(d,&endp,10);
+    printf("v[%d]=%f,",i,v[i]);
+    if(*endp==0) break;
+    while(!(*endp>='0' && *endp<='9')) {
+      endp++;
 #ifdef DEBUG
-    fprintf(stderr,"::strtol(p)=%f, e=%d",(float)strtol(p,&e,10),e);
+      printf("loop:Rest str[%ld]:\"%s\"%d:\n",(long)endp,endp,(int)*endp);
 #endif
-    v[vn]=(float)strtol(p,&e,10);
-#ifdef DEBUG
-    fprintf(stderr, "v[%d]=%d, p:%d, errno=%d\n",vn,v[vn],p,errno);
-#endif
-    p=e;
-#ifdef DEBUG
-    fprintf(stderr, "v[%d]=%f, errno=%d, p=%d, e=%d\n",vn,v[vn],errno,p,e);
-#endif
-    while(! isdigit(*p)) {
-      p++;
+      if(*endp==0) break;
     }
-    p--;
-
-    vn++;
+    d=endp;
+    i++;
+    if(i>=CF_DATA_NUM) break;
   }
+  printf("\n");
 
 #ifdef DEBUG
   printf("Before conv:");
