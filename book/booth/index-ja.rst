@@ -4,19 +4,17 @@
    contain the root `toctree` directive.
 
 .. header:: Kansai * BSD Users Group Event Guide
-.. footer:: http://sacraya.610t.org/kbug/book/booth/KBUGBoothGuide.pdf
+.. footer:: https://sacraya.610t.org/kbug/book/booth/KBUGBoothGuide-20th.pdf
 
-.. |Japanese| image:: images/Japan-flag.png 
-
-.. .. contents:: Table of Contents
+.. .. contents:: 目次
 ..   :depth: 1
 
-What is Kansai * BSD Users Group?
-==========================================
-Kansai * BSD Users Group (K*BUG) is regional BSD Users Group at Kansai area in Japan.
-Kansai area has many cities including Osaka, Kyoto, Kobe, Nara and so on.
 
-Our web page is |Japanese| http://www.kbug.gr.jp/ .
+関西 *BSDユーザ会ってなあに?
+==========================================
+関西 *BSDユーザ会は、関西を中心として活動しているBSD(後述)ユーザの集まりです。
+
+Webページは、 http://www.kbug.gr.jp/ です。
 
 .. figure:: images/Kansai.png
    :align: center
@@ -24,58 +22,66 @@ Our web page is |Japanese| http://www.kbug.gr.jp/ .
 
    Kansai area (c) OpenStreetMap contributors
 
+BSDってなあに?
+---------------------------
+BSDはBerkeley Software Distributionの略で、
+元々はカリフォルニア大学バークレー校(University of California, Berkeley)で配布されたUNIXシステムの一つのことです。
+BSD UNIXは、4.4BSDまでバークレー校で開発された後、FreeBSDやNetBSD, OpenBSD, DragonFly BSDなどに派生し、その後も開発が続いています。
+
+BSDで特筆的なのはそのライセンスで、Copyrightの表示を求める程度の、かなりゆるい条件で再配布ができるようになっています。
+
 .. Policy
 .. --------
 
-Daemon-Mushi (でもんむし)
+でもんむし
 ---------------------------
-Deamon-Mushi (でもんむし) is a mascot character for K*BUG.
-It symbolize "* (asterisk)".
-Inkscape SVG source file is at http://sacraya.610t.org/kbug/logo/ .
+でもんむしは、K*BUGのマスコットキャラクターです。
+むしの頭部分は、K*BUGの「*(アスタリスク)」を表現しています。
+Inkscape SVGのソースファイルは、 http://sacraya.610t.org/kbug/logo/ にあります。
 
 .. figure:: images/KBUGseal2.jpg
    :align: center
    :scale: 80%
 
-Interest
----------
+K*BUGの興味のあること
+----------------------
 * BSD: FreeBSD (PC-BSD), NetBSD, OpenBSD, DragonlyBSD, (macOS?), (iOS??)...
-* arch: i386, amd64, arm (Raspberry Pi), macppc, landisk, zaurus, wzero3, hpcmips, netwalker, ipaq, fonera, vax, ...
-* kernel hack: kernel module, BLE, serial driver, ...
-* New technology: DTrace, ZFS, ...
-* Software package: FreeBSD ports, pkgsrc, ...
-* Security: pkg audit, maintainance my server, 
-* Education: Scratch, Squeak, ...
-* Languages: Prolog, Lisp, awk, Squeak, Scratch, ...
-* Hardware: UPS, HDD, Server, Bluetooth, GPIO, ...
-* Physical Computing: Gainer (gainerm-lib), Arduino, ...
-* Electronic work: hacked USB audio servo controller, electric circuit with magazine, ...
-* misc: OpenCV, ContaoCMS, ...
-* Woodworking: K*BUG sign, daemon wood carving, ...
-* Drinking party after every meeting
+* arch: i386, amd64, arm (Raspberry Pi), macppc, landisk, zaurus, wzero3, hpcmips, netwalker, ipaq, fonera, vax, …
+* kernel hack: kernel module, BLE, serial driver, …
+* 新しい技術: DTrace, ZFS, …
+* ソフトウエアパッケージ: FreeBSD ports/pkg, pkgsrc/pkg, …
+* セキュリティ: pkg audit, maintainance my server, 
+* 教育: Scratch, Squeak, …
+* プログラミング言語: Prolog, Lisp, awk, Squeak, Scratch, …
+* ハードウエア: UPS, HDD, Server, Bluetooth, GPIO, …
+* Physical Computing: Gainer (gainerm-lib), Arduino, …
+* 電子工作: USB オーディオサーボコントローラー, 雑誌付録基板(arm Gainer, Coldfire, …), …
+* その他: OpenCV, ContaoCMS, …
+* 木彫: K*BUG看板, デーモン君基板ケース兼トロフィー, …
+* **ミーディング後の懇親会(飲み会)**
 
-Meeting
+研究会
 --------
-We hold meeting every 2 monthes.
-Meeting schedule is |Japanese| http://www.kbug.gr.jp/workshops.html .
+約2か月に一度、研究会を行なっています。
+研究会のスケジュールは、 http://www.kbug.gr.jp/workshops.html にあります。
 
-We use these meeting rooms:
+以下の二つの会場で研究会が行われることが多いです。
 
-* AXE Inc. meeting room at Kyoto: http://www.axe-inc.co.jp/english/index.html
-* Grand front Osaka: https://www.grandfront-osaka.jp/multilingulal/
+* 株式会社アックス ミーティングルーム (京都): http://www.axe-inc.co.jp/
+* グランフロント大阪9F: https://www.grandfront-osaka.jp/
 
-Event activities
+イベント出展
 ------------------
-We open booth at these events:
+以下のようなイベントで、イベント出展やセミナーを開催しています。
 
-* Open Source Conference |Japanese|: http://ospn.jp/
-* Kansai Open Forum |Japanese|: https://k-of.jp/
-* Event@NNCT |Japanese|: http://qml.610t.org/NNCT/event.html
+* オープンソースカンファレンス : http://ospn.jp/
+* 関西オープンフォーラム : https://k-of.jp/
+* イベント@奈良高専 : http://qml.610t.org/NNCT/event.html
 
 AsiaBSDCon 2017
 ==========================================
-* Official page: https://2017.asiabsdcon.org/
-* 2017/3/9(Wed)-12(Sun) at Tokyo University of Science
+* 公式ページ: https://2017.asiabsdcon.org/
+* 2017/3/9(水)-12(日) at 東京理科大学
 * Facebook: https://www.facebook.com/events/1718621151740857/
 * togetter: https://togetter.com/li/1084357
 
@@ -88,18 +94,18 @@ AsiaBSDCon 2017
 .. image:: images/AsiaBSDCon2017-network.jpg
    :scale: 30%
 
-* RetroBSD GPIO/ADC demo, LiteBSD GPIO demo
-* Giftbox distcc compile cluster
-* Scartch x Android, ESP8266, micro:bit
+* RetroBSD GPIO/ADC デモ, LiteBSD GPIO デモ
+* ご贈答箱 distcc コンパイルクラスタ
+* Scartchと遊ぼう: Android, ESP8266, micro:bit
 * Squeak+Gainer
 * Coldfire x OpenGL
 
-Kansai * BSD Users Group 2017/2/11 meeting
+K*BUG 2017/2/11 研究会
 ==========================================
-* Official page |Japanese| : http://www.kbug.gr.jp/events/2017-1st.html
-* 2017/2/11(Sat) at Axe inc (Kyoto)
-* Facebook |Japanese|: https://www.facebook.com/events/920179428083721/
-* togetter |Japanese|: https://togetter.com/li/1078967
+* 公式ページ  : http://www.kbug.gr.jp/events/2017-1st.html
+* 2017/2/11(土) at 株式会社アックス (京都)
+* Facebook : https://www.facebook.com/events/920179428083721/
+* togetter : https://togetter.com/li/1078967
 
 .. figure:: images/Booth.png
    :align: center
@@ -109,86 +115,86 @@ Kansai * BSD Users Group 2017/2/11 meeting
 .. image:: images/LiteBSD.png
 .. image:: images/RaspberryPiZero.png
 
-* RetroBSD: 2.11BSD on MIPS(PIC32MX). The board name is Pinguino-RetroBSD.
-* LiteBSD: 4.4BSDLite on MIPS(PIC32MZ). The board name is Chipkit WiFire. Serial Console is Pocket C.H.I.P.
-* Raspberry Pi Zero
+* RetroBSD: 2.11BSD on MIPS(PIC32MX)。 Pinguino-RetroBSDを使用。
+* LiteBSD: 4.4BSDLite on MIPS(PIC32MZ)。 Chipkit WiFireを使用。 シリアルコンソールは、Pocket C.H.I.P。
+* NetBSD on Raspberry Pi Zero
 
 Presentations
 ---------------------------------------
-* IOzone graph with Excel
-* K*BUG @ OSC2015 |Japanese|: http://qml.610t.org/FreeBSD/OSC2015Kyoto.html
+* ExcelでIOzoneのグラフ化
+* OSC2015 Kansai@KyotoでのK*BUG : http://qml.610t.org/FreeBSD/OSC2015Kyoto.html
 * Raspberry Pi 3 on FreeBSD
-* Scratch on BSD |Japanese|: http://qml.610t.org/FreeBSD/ScratchBSD.html
-* iOS with wired LAN
+* Scratch1.4をBSDで使ってみるために : http://qml.610t.org/FreeBSD/ScratchBSD.html
+* iOSで有線LANを使う
 
 Open Source Conference (OSC) 2017 Osaka
 =========================================
-* Official page |Japanese|: https://www.ospn.jp/osc2017-osaka/
-* 2017/1/27(Fri), 28(Sat) at Osaka Sansokan
-* K*BUG flyer (not published) |Japanese|: http://sacraya.610t.org/kbug/flyer/flyer-OSC2017Osaka.pdf
-* togetter by JNUG |Japanese|: https://togetter.com/li/1075115
+* 公式ページ : https://www.ospn.jp/osc2017-osaka/
+* 2017/1/27(金), 28(土) 大阪産創館
+* K*BUG flyer (配布せず) : http://sacraya.610t.org/kbug/flyer/flyer-OSC2017Osaka.pdf
+* togetter by JNUG : https://togetter.com/li/1075115
 * netbsd-advocacy: "NetBSD machines at Open Source Conference 2017 Osaka" http://mail-index.netbsd.org/netbsd-advocacy/2017/01/28/msg000727.html
 
 JNUG Seminar
 -------------
-* NetBSD Guide |Japanese|: http://www.soum.co.jp/~jun/OSC2017osaka.pdf
-* PC6001 emulator PC6001VX on NetBSD + pkgsrc by @tsutsui |Japanese|: https://speakerdeck.com/tsutsui/osc2017-osaka-pc-6001-emulator-on-netbsd-and-pkgsrc
+* NetBSD Guide : http://www.soum.co.jp/~jun/OSC2017osaka.pdf
+* NetBSD + pkgsrc で PC6001　エミュレータ by @tsutsui : https://speakerdeck.com/tsutsui/osc2017-osaka-pc-6001-emulator-on-netbsd-and-pkgsrc
 
 K*BUG 2016/12/10 meeting
 =========================
-* Official page |Japanese| : http://www.kbug.gr.jp/events/18th-plenary.html
-* 2016/12/10(Sat) at Axe inc (Kyoto)
+* 公式ページ  : http://www.kbug.gr.jp/events/18th-plenary.html
+* 2016/12/10(土) at 株式会社アックス(京都)
 
 Presentations
 ---------------------------------------
 * Ansible https://www.ansible.com/
 * PostgREST https://postgrest.com/
-* Something about BHyVe |Japanese|: https://people.freebsd.org/~kiri/kbug/bof/2016/No.5/
+* BHyVeあれこれ : https://people.freebsd.org/~kiri/kbug/bof/2016/No.5/
 
 KOF 2016
 =====================
-* Official page |Japanese|: https://k-of.jp/2016/
-* 2016/11/11(Fri), 12(Sat) at ATC (Osaka)
-* togetter by JNUG |Japanese|: https://togetter.com/li/1047263
+* 公式ページ : https://k-of.jp/2016/
+* 2016/11/11(金), 12(土) at ATC (大阪)
+* togetter by JNUG : https://togetter.com/li/1047263
 * netbsd-advocacy: "NetBSD machines at KANSAI OPEN FORUM 2016" http://mail-index.netbsd.org/netbsd-advocacy/2016/11/16/msg000722.html
 
 BSD BOF
 -------------
-* NetBSD travel guide |Japanese|: http://www.soum.co.jp/~jun/KOF2016.pdf
-* NetBSD/dreamcast IDE HDD again (more update from OSC2016Tokyo/Fall) by @tsutsui  |Japanese|: https://speakerdeck.com/tsutsui/kof2016-netbsd-dreamcast-ide-hdd
+* NetBSD travel guide : http://www.soum.co.jp/~jun/KOF2016.pdf
+* NetBSD/dreamcast IDE HDD接続 ふたたび by @tsutsui  : https://speakerdeck.com/tsutsui/kof2016-netbsd-dreamcast-ide-hdd
 
 K*BUG 2016/10/22 meeting
 =========================
-* Official page |Japanese| : http://www.kbug.gr.jp/events/2016-5th.html
-* 2016/10/22(Sat) at Grand front Osaka
+* 公式ページ  : http://www.kbug.gr.jp/events/2016-5th.html
+* 2016/10/22(土) at グランフロント大阪
 
 Presentations
 ---------------------------------------
 * Smart Connect Managed Server
-* How to make XEmacs *-pkg.tar.gz |Japanese| : https://people.freebsd.org/~kiri/kbug/bof/2016/No.4/
+* How to make XEmacs *-pkg.tar.gz  : https://people.freebsd.org/~kiri/kbug/bof/2016/No.4/
 * Bluetooth 4.1 for Raspberry Pi 3
 * Broken /var/run by file system trouble 
 
 K*BUG 2016/8/20 meeting
 =========================
-* Official page |Japanese| : http://www.kbug.gr.jp/events/2016-4th.html
-* 2016/8/20(Sat) at Grand front Osaka
+* 公式ページ  : http://www.kbug.gr.jp/events/2016-4th.html
+* 2016/8/20(土) at グランフロント大阪
 
 Presentations
 ---------------------------------------
-* Sphere display: WORLDEYE |Japanese| http://www.gakkensf.co.jp/worldeye/
-* KORG BLE MIDI Keyboard  |Japanese| http://www.korg.com/jp/products/computergear/microkey2_air/
+* Sphere display: WORLDEYE  http://www.gakkensf.co.jp/worldeye/
+* KORG BLE MIDI Keyboard   http://www.korg.com/jp/products/computergear/microkey2_air/
 * SSO with OpenID Connect
 * https://www.codingame.com/
 * UEFI
 
 OSC2016 Kyoto
 ===============
-* Official page |Japanese|: https://www.ospn.jp/osc2016-kyoto/
-* 2016/7/29(Fri), 30(Sat) at Kyoto Research Park (KRP)
-* K*BUG flyer |Japanese|: http://sacraya.610t.org/kbug/flyer/flyer-OSC2016Kyoto.pdf
-* Report |Japanese|: http://qml.610t.org/FreeBSD/OSC2016Kyoto.html
-* togetter by JNUG |Japanese|: https://togetter.com/li/1005828
+* 公式ページ : https://www.ospn.jp/osc2016-kyoto/
+* 2016/7/29(金), 30(土) at Kyoto Research Park (KRP)
+* K*BUG flyer : http://sacraya.610t.org/kbug/flyer/flyer-OSC2016Kyoto.pdf
+* Report : http://qml.610t.org/FreeBSD/OSC2016Kyoto.html
+* togetter by JNUG : https://togetter.com/li/1005828
 * netbsd-advocacy: "NetBSD machines at Open Source Conference 2016 Kyoto" http://mail-index.netbsd.org/netbsd-advocacy/2016/08/01/msg000712.html
 
 .. figure:: images/OSC2016KyotoBooth.png
@@ -217,71 +223,71 @@ OSC2016 Kyoto
 
 JNUG Seminar
 -------------
-* NetBSD Guide |Japanese|: http://www.soum.co.jp/~jun/OSC2016kyoto.pdf
-* PSG sound at NetBSD/luna |Japanese|: https://speakerdeck.com/tsutsui/osc2016-kyoto-psg-tunes-on-netbsd-luna68k
-* RetroBSD & LiteBSD by @610t |Japanese|: http://qml.610t.org/FreeBSD/OSC2016Kyoto_JNUG.html
+* NetBSD Guide : http://www.soum.co.jp/~jun/OSC2016kyoto.pdf
+* PSG sound at NetBSD/luna : https://speakerdeck.com/tsutsui/osc2016-kyoto-psg-tunes-on-netbsd-luna68k
+* RetroBSD & LiteBSD by @610t : http://qml.610t.org/FreeBSD/OSC2016Kyoto_JNUG.html
 
 K*BUG 2016/6/18 meeting
 =========================
-* Official page |Japanese| : http://www.kbug.gr.jp/events/2016-3rd.html
-* 2016/6/18(Sat) at Axe inc (Kyoto)
+* 公式ページ  : http://www.kbug.gr.jp/events/2016-3rd.html
+* 2016/6/18(土) at 株式会社アックス (京都)
 
 Presentations
 ---------------------------------------
 * Upgrade NetBSD with sysupgrade
 * Bluetooth LE Mouse on FreeBSD
-* Old man porter's rehabilitation |Japanese| : https://people.freebsd.org/~kiri/kbug/bof/2016/No.3/
+* Old man porter's rehabilitation  : https://people.freebsd.org/~kiri/kbug/bof/2016/No.3/
 * pkgsrc on OS X 10.11
 
 K*BUG 2016/4/23 meeting
 =========================
-* Official page |Japanese| : http://www.kbug.gr.jp/events/2016-2nd.html
-* 2016/4/23(Sat) at Grand front Osaka
+* 公式ページ  : http://www.kbug.gr.jp/events/2016-2nd.html
+* 2016/4/23(土) at グランフロント大阪
 
 Presentations
 ---------------------------------------
-* About XIJ (Xorg in Jail) |Japanese| : https://people.freebsd.org/~kiri/kbug/bof/2016/No.2/
+* About XIJ (Xorg in Jail)  : https://people.freebsd.org/~kiri/kbug/bof/2016/No.2/
 
 K*BUG 2016/2/20 meeting
 =========================
-* Official page |Japanese| : http://www.kbug.gr.jp/events/2016-1st.html
-* 2016/2/20(Sat) at Axe inc (Kyoto)
+* 公式ページ  : http://www.kbug.gr.jp/events/2016-1st.html
+* 2016/2/20(土) at 株式会社アックス (京都)
 
 Presentations
 ---------------------------------------
 * How to maintain many machines.
-* Nowadays sh(II) - how to resolve command line options |Japanese| : https://people.freebsd.org/~kiri/kbug/bof/2016/No.1/
+* Nowadays sh(II) - how to resolve command line options  : https://people.freebsd.org/~kiri/kbug/bof/2016/No.1/
 * Home network trouble
 * efi
 * DNS name resolving error
 
 K*BUG 2016/1/23 meeting
 =========================
-* Official page |Japanese| : http://www.kbug.gr.jp/events/17th-plenary.html
-* 2016/1/23(Sat) at Grand front Osaka
+* 公式ページ  : http://www.kbug.gr.jp/events/17th-plenary.html
+* 2016/1/23(土) at グランフロント大阪
 
 Presentations
 ---------------------------------------
 * Trend of ssh log
 * FIDO U2F
 * About iPad & Apple Configurator
-* One older person's monologue |Japanese| : https://people.freebsd.org/~kiri/kbug/bof/2016/No.0/article.html
+* One older person's monologue  : https://people.freebsd.org/~kiri/kbug/bof/2016/No.0/article.html
 
 K*BUG 2015/10/24 meeting
 =========================
-* Official page |Japanese| : http://www.kbug.gr.jp/events/2015-5th.html
-* 2015/10/24(Sat) at Axe inc (Kyoto)
+* 公式ページ  : http://www.kbug.gr.jp/events/2015-5th.html
+* 2015/10/24(土) at 株式会社アックス (京都)
 
 Presentations
 ---------------------------------------
-* Report of Kyoto Brewing Co tasting space |Japanese| : https://kyotobrewing.com/
+* Report of Kyoto Brewing Co tasting space  : https://kyotobrewing.com/
 * Install FreeBSD at VirtualBox
 * Demo of Apple Configurator 2
 
 K*BUG 2015/8/22 meeting
 =========================
-* Official page |Japanese| : http://www.kbug.gr.jp/events/2015-4th.html
-* 2015/8/22(Sat) at Grand front Osaka
+* 公式ページ  : http://www.kbug.gr.jp/events/2015-4th.html
+* 2015/8/22(土) at グランフロント大阪
 
 Presentations
 ---------------------------------------
@@ -294,11 +300,11 @@ Presentations
 
 OSC2015 Kansai@Kyoto
 =====================
-* Official Page |Japanese|: https://www.ospn.jp/osc2015-kyoto/
-* 2015/8/7(Fri), 8(Sat) at Kyoto Research Park (KRP)
-* K*BUG flyer |Japanese|: http://sacraya.610t.org/kbug/flyer/flyer-OSC2015Kyoto.pdf
-* Report |Japanese|: http://qml.610t.org/FreeBSD/OSC2015Kyoto.html
-* togetter by JNUG |Japanese|: https://togetter.com/li/857157
+* 公式ページ : https://www.ospn.jp/osc2015-kyoto/
+* 2015/8/7(金), 8(土) at Kyoto Research Park (KRP)
+* K*BUG flyer : http://sacraya.610t.org/kbug/flyer/flyer-OSC2015Kyoto.pdf
+* Report : http://qml.610t.org/FreeBSD/OSC2015Kyoto.html
+* togetter by JNUG : https://togetter.com/li/857157
 * netbsd-advocacy: "OpenBSD and NetBSD machines at Open Source Conference 2015 Kansai@Kyoto" http://mail-index.netbsd.org/netbsd-advocacy/2015/08/10/msg000691.html
 
 .. figure:: images/OSC2015KyotoBooth.png
@@ -323,13 +329,13 @@ OSC2015 Kansai@Kyoto
 
 JNUG Seminar
 -------------
-* NetBSD Guide |Japanese|: http://www.soum.co.jp/~jun/OSC2015kyoto.pdf
-* Maintainance before 20 years machine at NetBSD |Japanese|: https://speakerdeck.com/tsutsui/osc2015kyoto-netbsd-and-old-machines
+* NetBSD Guide : http://www.soum.co.jp/~jun/OSC2015kyoto.pdf
+* Maintainance before 20 years machine at NetBSD : https://speakerdeck.com/tsutsui/osc2015kyoto-netbsd-and-old-machines
 
 K*BUG 2015/6/27 meeting
 =========================
-* Official page |Japanese| : http://www.kbug.gr.jp/events/2015-3rd.html
-* 2015/6/27(Sat) at Axe inc (Kyoto)
+* 公式ページ  : http://www.kbug.gr.jp/events/2015-3rd.html
+* 2015/6/27(土) at 株式会社アックス (京都)
 
 Presentations
 ---------------------------------------
@@ -342,8 +348,8 @@ Presentations
 
 K*BUG 2015/5/16 meeting
 =========================
-* Official page |Japanese| : http://www.kbug.gr.jp/events/2015-2nd.html
-* 2015/5/16(Sat) at Axe inc (Kyoto)
+* 公式ページ  : http://www.kbug.gr.jp/events/2015-2nd.html
+* 2015/5/16(土) at 株式会社アックス (京都)
 
 Presentations
 ---------------------------------------
@@ -351,8 +357,8 @@ Presentations
 
 K*BUG 2015/3/7 meeting
 =========================
-* Official page |Japanese| : http://www.kbug.gr.jp/events/2015-1st.html
-* 2015/3/7(Sat) at Grand front Osaka
+* 公式ページ  : http://www.kbug.gr.jp/events/2015-1st.html
+* 2015/3/7(土) at グランフロント大阪
 
 Presentations
 ---------------------------------------
@@ -363,8 +369,8 @@ Presentations
 
 K*BUG 2015/1/24 meeting
 =========================
-* Official page |Japanese| : http://www.kbug.gr.jp/events/16th-plenary.html
-* 2015/1/24(Sat) at Axe inc (Kyoto)
+* 公式ページ  : http://www.kbug.gr.jp/events/16th-plenary.html
+* 2015/1/24(土) at 株式会社アックス (京都)
 
 Presentations
 ---------------------------------------
@@ -376,21 +382,21 @@ Presentations
 
 KOF 2014
 =====================
-* Official page |Japanese|: https://k-of.jp/2014/
-* 2014/11/7(Fri), 8(Sat) at ATC (Osaka)
-* K*BUG flyer |Japanese|: http://sacraya.610t.org/kbug/flyer/flyer-KOF2014.pdf
-* togetter by JNUG |Japanese|: https://togetter.com/li/742243
+* 公式ページ : https://k-of.jp/2014/
+* 2014/11/7(金), 8(土) at ATC (大阪)
+* K*BUG flyer : http://sacraya.610t.org/kbug/flyer/flyer-KOF2014.pdf
+* togetter by JNUG : https://togetter.com/li/742243
 * netbsd-advocacy: "NetBSD machines at KANSAI OPEN FORUM 2014" https://mail-index.netbsd.org/netbsd-advocacy/2014/11/08/msg000672.html
 
 BSD BOF
 -------------
-* NetBSD Guide |Japanese|: http://www.soum.co.jp/~jun/KOF2014.pdf
-* LUNA at KOF |Japanese|: https://speakerdeck.com/tsutsui/kof-and-luna-at-netbsd-booth
+* NetBSD Guide : http://www.soum.co.jp/~jun/KOF2014.pdf
+* LUNA at KOF : https://speakerdeck.com/tsutsui/kof-and-luna-at-netbsd-booth
 
 K*BUG 2014/8/23 meeting
 =========================
-* Official page |Japanese| : http://www.kbug.gr.jp/events/16th-plenary.html
-* 2014/8/23(Sat) at Axe inc (Kyoto)
+* 公式ページ  : http://www.kbug.gr.jp/events/16th-plenary.html
+* 2014/8/23(土) at 株式会社アックス (京都)
 
 Presentations
 ---------------------------------------
@@ -400,9 +406,9 @@ Presentations
 
 OSC2014 Kansai@Kyoto
 =====================
-* Official page |Japanese|: https://www.ospn.jp/osc2014-kyoto/
-* 2014/8/1(Fri), 2(Sat) at Kyoto Research Park (KRP)
-* togetter by JNUG |Japanese|: https://togetter.com/li/700617
+* 公式ページ : https://www.ospn.jp/osc2014-kyoto/
+* 2014/8/1(金), 2(土) at Kyoto Research Park (KRP)
+* togetter by JNUG : https://togetter.com/li/700617
 * netbsd-advocacy: "NetBSD machines at Open Source Conference 2014 Kyoto" https://mail-index.netbsd.org/netbsd-advocacy/2014/08/09/msg000658.html
 
 .. image:: images/OSC2014KyotoNakamura.png
@@ -414,17 +420,17 @@ OSC2014 Kansai@Kyoto
 
 JNUG Seminar
 -------------
-* NetBSD Guide |Japanese|: http://www.soum.co.jp/~jun/OSC2014kyoto.pdf
-* NetBSD/luna68k event of the past year |Japanese|: https://speakerdeck.com/tsutsui/osc2014-kansai-at-kyoto-netbsd-luna68k-report
+* NetBSD Guide : http://www.soum.co.jp/~jun/OSC2014kyoto.pdf
+* NetBSD/luna68k event of the past year : https://speakerdeck.com/tsutsui/osc2014-kansai-at-kyoto-netbsd-luna68k-report
 
 OSC2013 Kansai@Kyoto
 =====================
-* Official page |Japanese|: https://www.ospn.jp/osc2013-kyoto/
-* K*BUG flyer |Japanese|: http://sacraya.610t.org/kbug/flyer/flyer-OSC2013Kyoto.pdf
-* Booth page |Japanese|: http://qml.610t.org/FreeBSD/OSC2013Kyoto.html
-* Report |Japanese|: http://qml.610t.org/FreeBSD/OSC2013KyotoReport.html
-* togetter by K*BUG |Japanese|: https://togetter.com/li/506220
-* togetter by JNUG |Japanese|: https://togetter.com/li/542885
+* 公式ページ : https://www.ospn.jp/osc2013-kyoto/
+* K*BUG flyer : http://sacraya.610t.org/kbug/flyer/flyer-OSC2013Kyoto.pdf
+* Booth page : http://qml.610t.org/FreeBSD/OSC2013Kyoto.html
+* Report : http://qml.610t.org/FreeBSD/OSC2013KyotoReport.html
+* togetter by K*BUG : https://togetter.com/li/506220
+* togetter by JNUG : https://togetter.com/li/542885
 
 .. image:: images/OSC2013KyotoAudio.png
 .. image:: images/OSC2013KyotoRetroBSD.png
@@ -447,17 +453,17 @@ OSC2013 Kansai@Kyoto
 
 JNUG Seminar
 -------------
-* NetBSD Guide |Japanese|: http://www.soum.co.jp/~jun/OSC2013kyoto.pdf
-* all about OMRON LUNA, Do LUNA68K Dream of mltermic Twitter Sheep? |Japanese|: http://www.ceres.dti.ne.jp/tsutsui/osc2013kyoto/NetBSD-luna68k_mlterm-fb_Twitter.html
-* Board, board, board!! |Japanese|: http://qml.610t.org/FreeBSD/OSC2013Kyoto610.html
+* NetBSD Guide : http://www.soum.co.jp/~jun/OSC2013kyoto.pdf
+* all about OMRON LUNA, Do LUNA68K Dream of mltermic Twitter Sheep? : http://www.ceres.dti.ne.jp/tsutsui/osc2013kyoto/NetBSD-luna68k_mlterm-fb_Twitter.html
+* Board, board, board!! : http://qml.610t.org/FreeBSD/OSC2013Kyoto610.html
 
 Event @ Nara National College of Technology(NNCT) 13rd
 ========================================================
-* Official page |Japanese|: http://qml.610t.org/NNCT/event13.html
-* 2013/4/6(Sat) at NNCT
+* 公式ページ : http://qml.610t.org/NNCT/event13.html
+* 2013/4/6(土) at NNCT
 
 * [Hands on] FreeBSD on PC-BSD 9.1
-* [Presentation] Let's enjoy BSD with boards |Japanese|: http://qml.610t.org/FreeBSD/furoku2013.html
+* [Presentation] Let's enjoy BSD with boards : http://qml.610t.org/FreeBSD/furoku2013.html
 
 .. figure:: images/Event@NNCT13-booth.png
    :align: center
@@ -472,8 +478,8 @@ Event @ Nara National College of Technology(NNCT) 13rd
 
 KOF 2012
 =====================
-* Official page |Japanese|: https://2012.k-of.jp/
-* 2012/11/9(Fri), 10(Sat) at ATC (Osaka)
+* 公式ページ : https://2012.k-of.jp/
+* 2012/11/9(金), 10(土) at ATC (大阪)
 
 .. figure:: images/KOF2012Booth.png
    :align: center
@@ -497,15 +503,15 @@ KOF 2012
 
 BSD BoF
 -------------
-* NetBSD Guide |Japanese|: http://www.soum.co.jp/~jun/KOF2012.pdf
-* Recent BSD I/O |Japanese|: http://qml.610t.org/FreeBSD/BSD_IO_2012_presen.html
-* (What is K*BUG? |Japanese|: http://qml.610t.org/FreeBSD/KBUG_KOF2012_presen.html )
+* NetBSD Guide : http://www.soum.co.jp/~jun/KOF2012.pdf
+* Recent BSD I/O : http://qml.610t.org/FreeBSD/BSD_IO_2012_presen.html
+* (What is K*BUG? : http://qml.610t.org/FreeBSD/KBUG_KOF2012_presen.html )
 
 OSC2012 Kansai@Kyoto
 =====================
-* Official page |Japanese|: https://www.ospn.jp/osc2012-kyoto/
-* 2012/8/3(Fri), 4(Sat) at KRP
-* togetter by JNUG |Japanese|: https://togetter.com/li/350035
+* 公式ページ : https://www.ospn.jp/osc2012-kyoto/
+* 2012/8/3(金), 4(土) at KRP
+* togetter by JNUG : https://togetter.com/li/350035
 
 .. figure:: images/OSC2012KyotoBooth.png
    :align: center
@@ -529,18 +535,18 @@ OSC2012 Kansai@Kyoto
 
 JNUG Seminar
 -------------
-* NetBSD Guide |Japanese|: http://www.soum.co.jp/~jun/OSC2012kyoto.pdf
-* Recent NetBSD/luna68k |Japanese|: http://www.ceres.dti.ne.jp/tsutsui/osc2012kyoto/NetBSD-luna68k-updates.html
-* Repair power unit of OMRON Luna-II |Japanese|: https://togetter.com/li/354562
+* NetBSD Guide : http://www.soum.co.jp/~jun/OSC2012kyoto.pdf
+* Recent NetBSD/luna68k : http://www.ceres.dti.ne.jp/tsutsui/osc2012kyoto/NetBSD-luna68k-updates.html
+* Repair power unit of OMRON Luna-II : https://togetter.com/li/354562
 
 Event @ NNCT 12nd
 =================================================
-* Official page |Japanese|: http://qml.610t.org/NNCT/event12.html
+* 公式ページ : http://qml.610t.org/NNCT/event12.html
 * 2012/7/29(Sun) at NNCT
 
-* [Hands on] Install PC-BSD |Japanese| http://qml.610t.org/FreeBSD/PCBSD.html
+* [Hands on] Install PC-BSD  http://qml.610t.org/FreeBSD/PCBSD.html
 * [Booth] Install BSD at various system
-* [Presentation] Use BSD at work by BSD-BA |Japanese|: http://www.bsd-ba.org/
+* [Presentation] Use BSD at work by BSD-BA : http://www.bsd-ba.org/
 
 .. image:: images/Event@NNCT-all.png
 .. image:: images/Event@NNCT-dreamcast.png
@@ -552,9 +558,9 @@ Event @ NNCT 12nd
 
 KOF 2011
 =====================
-* Official page |Japanese|: https://k-of.jp/2011/
-* 2011/11/11(Fri), 12(Sat) at ATC
-* togetter by JNUG |Japanese|: https://togetter.com/li/213724
+* 公式ページ : https://k-of.jp/2011/
+* 2011/11/11(金), 12(土) at ATC
+* togetter by JNUG : https://togetter.com/li/213724
 
 .. image:: images/KOF2011USL-5P.JPG
    :scale: 10%
@@ -563,20 +569,20 @@ KOF 2011
 .. image:: images/KOF2011Booth.JPG
    :scale: 15%
 
-* Active/Standby Firewall with 2 OpenBSD/landisk at USL-5P |Japanese|: http://www.rururu.org/fswiki/wiki.cgi?page=OpenBSD%2Flandisk%A4%C7Active%2DStandby+Firewall
+* Active/Standby Firewall with 2 OpenBSD/landisk at USL-5P : http://www.rururu.org/fswiki/wiki.cgi?page=OpenBSD%2Flandisk%A4%C7Active%2DStandby+Firewall
 * {Net, Free, Open DragonFly}BSD at NetBSD/xen 
 
 BSD BoF
 -------------
-* NetBSD Guide |Japanese|: http://www.soum.co.jp/~jun/KOF2011.pdf
-* Why enigmatic machines? by @tsutsuii |Japanese|: http://www.ceres.dti.ne.jp/tsutsui/kof2011/Why-enigmatic-machines.html
+* NetBSD Guide : http://www.soum.co.jp/~jun/KOF2011.pdf
+* Why enigmatic machines? by @tsutsuii : http://www.ceres.dti.ne.jp/tsutsui/kof2011/Why-enigmatic-machines.html
 * pkgsrc
 
 OSC2011 Kansai@Kyoto
 =====================
-* Official page |Japanese|: https://www.ospn.jp/osc2011-kyoto/
-* 2011/7/15(Fri), 16(Sat) at KRP
-* K*BUG flyer |Japanese|: http://sacraya.610t.org/kbug/flyer/flyer-OSC2011Kyoto.pdf
+* 公式ページ : https://www.ospn.jp/osc2011-kyoto/
+* 2011/7/15(金), 16(土) at KRP
+* K*BUG flyer : http://sacraya.610t.org/kbug/flyer/flyer-OSC2011Kyoto.pdf
 
 .. figure:: images/OSC2011KyotoBooth.png
    :align: center
@@ -598,14 +604,14 @@ OSC2011 Kansai@Kyoto
 
 JNUG Seminar
 -------------
-* NetBSD Guide |Japanese|: http://www.soum.co.jp/~jun/OSC2011kyoto.pdf
-* "NetBSD/m68k will never die!" |Japanese|:  http://www.ceres.dti.ne.jp/tsutsui/osc2011kyoto/NetBSD-m68k-will-never-die.html
+* NetBSD Guide : http://www.soum.co.jp/~jun/OSC2011kyoto.pdf
+* "NetBSD/m68k will never die!" :  http://www.ceres.dti.ne.jp/tsutsui/osc2011kyoto/NetBSD-m68k-will-never-die.html
 
 OSC2010 Kansai@Kyoto
 =====================
-* Official page |Japanese|: https://www.ospn.jp/osc2010-kyoto/
-* 2010/7/9(Fri), 10(Sat) at kcg.edu: http://www.kcg.ac.jp/
-* K*BUG flyer |Japanese|: http://sacraya.610t.org/kbug/flyer/flyer-OSC2010Kyoto.pdf
+* 公式ページ : https://www.ospn.jp/osc2010-kyoto/
+* 2010/7/9(金), 10(土) at kcg.edu: http://www.kcg.ac.jp/
+* K*BUG flyer : http://sacraya.610t.org/kbug/flyer/flyer-OSC2010Kyoto.pdf
 
 Booth
 ------
@@ -614,21 +620,21 @@ Booth
 
 OSC2010 Kansai@Kobe
 =====================
-* Official page |Japanese|: https://www.ospn.jp/osc2010-kobe/
-* 2010/3/13(Sat) at Kobe Industrial Promotion Center
-* K*BUG flyer |Japanese|: http://sacraya.610t.org/kbug/flyer/flyer-OSC2010Kobe.pdf
+* 公式ページ : https://www.ospn.jp/osc2010-kobe/
+* 2010/3/13(土) at Kobe Industrial Promotion Center
+* K*BUG flyer : http://sacraya.610t.org/kbug/flyer/flyer-OSC2010Kobe.pdf
 
 JNUG Seminar
 -------------
-* "making of SMC_TT - VME Ethernet using ISA NIC for ATARI TT030" by @tsutsuii |Japanese|: http://www.ceres.dti.ne.jp/tsutsui/osc2010kobe/SMC_TT-OSC2010Kobe.html
-* Ethernet card SMC_TT for ATARI TT030 |Japanese|:https://togetter.com/li/76769
+* "making of SMC_TT - VME Ethernet using ISA NIC for ATARI TT030" by @tsutsuii : http://www.ceres.dti.ne.jp/tsutsui/osc2010kobe/SMC_TT-OSC2010Kobe.html
+* Ethernet card SMC_TT for ATARI TT030 :https://togetter.com/li/76769
 
 KOF 2009
 =====================
-* Official page |Japanese|: https://k-of.jp/2009/
+* 公式ページ : https://k-of.jp/2009/
 
-* 2009/11/6(Fri), 7(Sat) at ATC
-* K*BUG flyer |Japanese|: http://sacraya.610t.org/kbug/flyer/flyer-KOF2009.pdf
+* 2009/11/6(金), 7(土) at ATC
+* K*BUG flyer : http://sacraya.610t.org/kbug/flyer/flyer-KOF2009.pdf
 
 .. figure:: images/KOF2009Booth.png
    :align: center
@@ -638,8 +644,8 @@ KOF 2009
 
 OSC2009 Kansai@Kyoto
 =====================
-* Official page |Japanese|: https://www.ospn.jp/osc2009-kansai/
-* 2009/7/10(Fri), 11(Sat) at kcg.edu: http://www.kcg.ac.jp/
+* 公式ページ : https://www.ospn.jp/osc2009-kansai/
+* 2009/7/10(金), 11(土) at kcg.edu: http://www.kcg.ac.jp/
 
 Booth
 ------
@@ -649,10 +655,10 @@ Booth
 
 Nico-Tech: Kyoto Meeting (NK:M)
 ================================
-* Official page |Japanese|: http://wiki.nicotech.jp/nico_tech/index.php?NTM2%2F%E9%96%A2%E8%A5%BF
-* 2009/3/21(Sat) at Saiin-Kasuga shrine (Kyoto) http://www.kasuga.or.jp/
-* Report |Japanese|: http://qml.610t.org/squeak/mutoh_20090321.html
-* Presentation |Japanese|: http://www.nicovideo.jp/watch/sm6562064 (7:00-9:40)
+* 公式ページ : http://wiki.nicotech.jp/nico_tech/index.php?NTM2%2F%E9%96%A2%E8%A5%BF
+* 2009/3/21(土) at Saiin-Kasuga shrine (京都) http://www.kasuga.or.jp/
+* Report : http://qml.610t.org/squeak/mutoh_20090321.html
+* Presentation : http://www.nicovideo.jp/watch/sm6562064 (7:00-9:40)
 
 .. image:: images/NKM2009Booth.png
    :scale: 60%
@@ -668,14 +674,14 @@ Nico-Tech: Kyoto Meeting (NK:M)
   * Scartch + PicoBoard
   * Servo motor daemon's tail  drive by USB audio device
 
-* WorldStethoscope |Japanese|: http://swikis.ddo.jp/WorldStethoscope/6
+* WorldStethoscope : http://swikis.ddo.jp/WorldStethoscope/6
 * Squeak on Pocket Post Pet (Windows CE)
 
 KOF 2008
 =====================
-* Official page |Japanese|: https://k-of.jp/2008/
-* 2008/11/7(Fri), 8(Sat) at ATC (Osaka)
-* K*BUG flyer |Japanese|: http://sacraya.610t.org/kbug/flyer/flyer-KOF2008.pdf
+* 公式ページ : https://k-of.jp/2008/
+* 2008/11/7(金), 8(土) at ATC (大阪)
+* K*BUG flyer : http://sacraya.610t.org/kbug/flyer/flyer-KOF2008.pdf
 
 .. figure:: images/KOF2008Booth.png
    :align: center
@@ -695,8 +701,8 @@ KOF 2008
 
 OSC2008 Kansai@Kyoto
 =====================
-* Official page |Japanese|: https://www.ospn.jp/osc2008-kansai/
-* 2008/7/18(Fri), 19(Sat) at kcg.edu: http://www.kcg.ac.jp/
+* 公式ページ : https://www.ospn.jp/osc2008-kansai/
+* 2008/7/18(金), 19(土) at kcg.edu: http://www.kcg.ac.jp/
 
 .. figure:: images/OSC2008KyotoBooth.png
    :scale: 70%
@@ -721,8 +727,8 @@ OSC2008 Kansai@Kyoto
 
 KOF 2007
 ===========
-* Official page |Japanese|: https://k-of.jp/2007/
-* 2007/11/9(Fri), 10(Sat) at ATC
+* 公式ページ : https://k-of.jp/2007/
+* 2007/11/9(金), 10(土) at ATC
 
 .. image:: images/KOF2007Booth.png
    :scale: 9%
@@ -733,9 +739,9 @@ KOF 2007
 
 Event @ NNCT 11st
 =================================================
-* Official page |Japanese|: http://qml.610t.org/NNCT/event13.html
-* 2007/3/31(Sat) at NNCT
-* Report |Japanese|: http://qml.610t.org/NNCT/report_event_11th.html
+* 公式ページ : http://qml.610t.org/NNCT/event13.html
+* 2007/3/31(土) at NNCT
+* Report : http://qml.610t.org/NNCT/report_event_11th.html
 
 .. image:: images/Event@NNCT11-OLPC.png
 .. image:: images/Event@NNCT11-GRUB.png
@@ -747,12 +753,12 @@ Event @ NNCT 11st
 
 * Introduction NNCT Information Engineering Computer Room.
 * FreeBSD ports: RoboCup 2D simulator
-* Create Squeak Dual Boot CDROM |Japanese|: http://qml.610t.org/squeak/squeak_cdrom.html
+* Create Squeak Dual Boot CDROM : http://qml.610t.org/squeak/squeak_cdrom.html
 
 KOF 2006
 ===========
-* Official page |Japanese|: https://k-of.jp/2006/
-* 2006/11/17(Fri), 18(Sat) at ATC
+* 公式ページ : https://k-of.jp/2006/
+* 2006/11/17(金), 18(土) at ATC
 
 .. image:: images/KOF2006Booth.png
    :scale: 20%
@@ -765,12 +771,12 @@ KOF 2006
 
   * Croquet: https://en.wikipedia.org/wiki/Croquet_Project
   * Squeak + WorldStethoscope
-  * Moeru Squeak ( http://moesuku.ofg.jp/ |Japanese|) on ONScripter ( https://onscripter.osdn.jp/onscripter.html |Japanese|) 
+  * Moeru Squeak ( http://moesuku.ofg.jp/ ) on ONScripter ( https://onscripter.osdn.jp/onscripter.html ) 
 
 Event @ NNCT 3rd
 =================================================
-* 2002/7/20(Sat) at NNCT
-* Report |Japanese| published at FreeBSD Press No12: http://sacraya.610t.org/Press/No12/nnct-event/
+* 2002/7/20(土) at NNCT
+* Report  published at FreeBSD Press No12: http://sacraya.610t.org/Press/No12/nnct-event/
 
 Presentations
 ---------------------------------------
@@ -783,8 +789,8 @@ Presentations
 
 Event @ NNCT 1st
 =================================================
-* 2001/8/4(Sat) at NNCT
-* Report |Japanese| published at FreeBSD Press No7: http://sacraya.610t.org/Press/No7/bugs/
+* 2001/8/4(土) at NNCT
+* Report published at FreeBSD Press No7: http://sacraya.610t.org/Press/No7/bugs/
 
 .. image:: images/Event@NNCT1-media.png
 .. image:: images/Event@NNCT1-working.png
@@ -819,6 +825,5 @@ Event @ NNCT 1st
 .. csv-table::
    :align: center
 
-   2017/2/25,	Photobook edition
-   2017/3/11,	AsiaBSDCon 2017 edition
+   2018/6/,	AsiaBSDCon 2017 edition
 

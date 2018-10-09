@@ -42,7 +42,7 @@ templates_path = ['_templates']
 source_suffix = '.rst'
 
 # The master toctree document.
-master_doc = 'index'
+master_doc = 'index-ja'
 
 # General information about the project.
 project = u'K*BUG Booth Guide'
@@ -151,6 +151,5 @@ texinfo_documents = [
      author, 'K*BUG', 'One line description of project.',
      'Miscellaneous'),
 ]
-
 
 
