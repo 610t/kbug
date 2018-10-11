@@ -315,17 +315,20 @@
       parent: heading
       fontName: stdBold
       fontSize: 175%
+      textColor: #ff0000
 
     heading2:
       parent: heading
       fontName: stdBold
       fontSize: 150%
+      textColor: #00ff00
 
     heading3:
       parent: heading
       fontName: stdBoldItalic
       fontSize: 125%
-
+      textColor: #0000ff
+ 
     heading4:
       parent: heading
       fontName: stdBoldItalic
