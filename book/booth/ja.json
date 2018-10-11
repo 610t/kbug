@@ -5,6 +5,7 @@
     "stdFont": "VL-PGothic-Regular",
     "stdBold": "VL-PGothic-Regular",
     "stdItalic": "VL-PGothic-Regular",
+    "stdBoldItalic": "VL-PGothic-Regular",
     "stdMono": "VL-Gothic-Regular"
   },
   "styles" : [
