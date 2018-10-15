@@ -8,17 +8,17 @@ SPHINXPROJ    = KBUGBoothGuide
 SOURCEDIR     = .
 BUILDDIR      = _build
 
-WEBDIR	="sacraya.610t.org:/mnt/vela/www/apache22/data/kbug/book/booth/"
+WEBDIR	=sacraya.610t.org:/mnt/vela/www/apache22/data/kbug/book/20th/
 
 all:
 	${MAKE} html
 	${MAKE} singlehtml
-	rst2pdf -s ja.json index-ja.rst -o KBUGBoothGuide.pdf
+	rst2pdf -s mystyles.txt,ja.json index-ja.rst -o KBUGBoothGuide.pdf
 	gs -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=book.pdf AsiaBSDConCover.pdf KBUGBoothGuide.pdf BackCover.pdf
 
 sync:
 	rsync -azv _build/ ${WEBDIR}
-	rsync KBUGBoothGuide.pdf ${WEBDIR}/KBUGBoothGuide.pdf
+	rsync KBUGBoothGuide.pdf ${WEBDIR}/KBUGBoothGuide-20th.pdf
 	rsync book.pdf ${WEBDIR}/KBUGBoothGuide-print.pdf
 
 # Put it first so that "make" without argument is like "make help".
