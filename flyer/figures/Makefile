@@ -1,6 +1,7 @@
 .SUFFIXES: .png .gif .eps .jpg .svg
 
 TARGETS= \
+	kof-logo2018-0.eps OSC2018-kyoto-booth.eps 20121110-atc-os.eps \
 	osc2018-kyoto-logo.eps facebook_banner.eps daimonji.eps distcc-rpi.eps OSC2016-Giftbox.eps OSC2016-RetroBSD.eps square_seal_20.eps Kyoto2018.eps Fushimi.eps \
 	osc2015-kyoto-logo.eps osc2015-kyoto-booth.eps kbug-summervacation-raspi.eps \
 	kof2014-logo.eps kof2012-atc.eps kof2012-mutoh.eps osc2013kyoto.eps osc2013icat.eps oval-seal-4.eps \
