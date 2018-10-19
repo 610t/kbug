@@ -16,9 +16,9 @@ date.tex: flyer.tex
 .tex.dvi: $(.IMPSRC)
 	(cd figures;${MAKE})
 	platex $(.IMPSRC) 
-#.dvi.pdf: $(.IMPSRC)
-#	dvipdfm $(.IMPSRC)
-.dvi.ps: $(.IMPSRC)
-	dvips $(.IMPSRC)
-.ps.pdf: 
-	ps2pdf14 -dPDFSETTINGS=/default -sPAPERSIZE=a4 $(.IMPSRC) $(.TARGET)
+.dvi.pdf: $(.IMPSRC)
+	dvipdfm $(.IMPSRC)
+#.dvi.ps: $(.IMPSRC)
+#	dvips $(.IMPSRC)
+#.ps.pdf: 
+#	ps2pdf14 -dPDFSETTINGS=/default -sPAPERSIZE=a4 $(.IMPSRC) $(.TARGET)
