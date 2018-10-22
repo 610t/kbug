@@ -14,32 +14,42 @@ nwdiag{
 #  }
 
   network "P10 lite LAN" {
-    address = "??.??.??.??/??"
+    address = "192.168.43.x/24";
 
-    "P10 lite" [address = ".1"];
-    "FreeBSD RaspPi B" [address = "DHCP, LCD loadavg"];
-    "NetBSD Netwalker" [address = "DHCP"];
+    "P10 lite"			[address = ".1, Scratch Remote Sensor"];
+    "FreeBSD RaspPi B"		[address = "DHCP, LCD loadavg"];
+    "TrueOS Thinkpad X61"	[address = ".61, DHCP, Scratch/Squeak"];
+    "NetBSD Netwalker"		[address = "DHCP, RetroBSD/LiteBSD"];
+#    "NetBSD Vaio-P"		[address = "DHCP"];
+
+    "ESP8266"	      	     	[address = "DHCP"]; 
   }
 
   network 内部LAN {
     address = "192.168.60.x/24";
 
-    "FreeBSD RaspPi B"		[address = ".1"];
+    "FreeBSD RaspPi B"		[address = ".1, (.2.2)"];
 
     "NetBSD RaspPi2 B"		[address = ".12, (.2.100), distcc head/HDMI/Serial"];
-    "NetBSD Banana Pi"		[address = ".14, loadavg LED"];
-    "NetBSD RaspPi Zero"	[address = ".16"];
+    "RaspBSD Banana Pi"		[address = ".14, (.2.102), loadavg LED"];
+    "NetBSD RaspPi Zero W"	[address = ".16, (.2.104)"];
     "OpenBSD BeagleBone Black"	[address = ".17, (.2.105), loadavg LED x4"];
     "NetBSD NanoPi NEO"		[address = ".18, (.2.106), loadavg LED"];
     "NetBSD Orange Pi Zero"	[address = ".19, (.2.107), loadavg LED"];
-}
+
+    "TrueOS Thinkpad X61"	[address = ".13, (.2.61)"];
+
+    "Coldfire"	      		[address = "(.2.201), 3軸加速度センサー"];
+  }
 
   group distcc {
     label="distccクラスタ"
 
+    "FreeBSD RaspPi B"
+
     "NetBSD RaspPi2 B";
-    "NetBSD RaspPi Zero";
-    "NetBSD Banana Pi";
+    "NetBSD RaspPi Zero W";
+    "RaspBSD Banana Pi";
     "OpenBSD BeagleBone Black";
 
     "NetBSD NanoPi NEO";
@@ -49,15 +59,15 @@ nwdiag{
   network "aarch64 LAN" {
     address = "192.168.61.x/24";
 
-    "NetBSD Jetson TX1"  [address = ".10"];
-    "NetBSD RaspPi3 B"   [address = ".11, Blinkt!"];
-    "NetBSD NanoPi NEO2" [address = ".12"];
+#    "NetBSD Jetson TX1"  [address = ".10, (.2.160), (.60.160)"];
+    "NetBSD RaspPi3 B"   [address = ".11, (.2.161), (.60.162), Blinkt!"];
+    "NetBSD NanoPi NEO2" [address = ".12, (.2.162), (.60.162)"];
   } 
 
   group aarch64_distcc {
     label="aarch64 distccクラスタ"
 
-    "NetBSD Jetson TX1";
+#    "NetBSD Jetson TX1";
     "NetBSD RaspPi3 B";
     "NetBSD NanoPi NEO2";
   }
